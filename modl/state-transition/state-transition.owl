@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#actsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#actsOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#endsFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#endsFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State Transition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasDescriptor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasDescriptor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Descriptor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Thing
+"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasStateTransition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasStateTransition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State Transition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#startsFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#startsFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State Transition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State Transition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasState
+     -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#hasState
+">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Action">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">570.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Descriptor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Descriptor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#EntityWithProvenance"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#EntityWithProvenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#EntityWithProvenance">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">430.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#EntityWithProvenance"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">560.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State Transition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#State Transition">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Thing
+     -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddave/ontologies/2023/2/untitled-ontology-11#Thing
+"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
