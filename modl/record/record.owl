@@ -1,0 +1,105 @@
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/record#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/record> .
+
+<https://archive.org/services/purl/domain/modular_ontology_design_library/record> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record#hasRecordType
+:hasRecordType rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record#hasTemporalExtent
+:hasTemporalExtent rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record#records
+:records rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record#wasDerivedFrom
+:wasDerivedFrom rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTemporalExtent ;
+                            owl:allValuesFrom <https://archive.org/services/purl/domain/modular_ontology_design_library/record/TemporalExtent>
+                          ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record/EntityWithProvenance
+<https://archive.org/services/purl/domain/modular_ontology_design_library/record/EntityWithProvenance> rdf:type owl:Class .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record/EventRecord
+<https://archive.org/services/purl/domain/modular_ontology_design_library/record/EventRecord> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <https://archive.org/services/purl/domain/modular_ontology_design_library/record/Record> .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record/Record
+<https://archive.org/services/purl/domain/modular_ontology_design_library/record/Record> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <https://archive.org/services/purl/domain/modular_ontology_design_library/record/EntityWithProvenance> ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :hasRecordType ;
+                                                                                                           owl:allValuesFrom <https://archive.org/services/purl/domain/modular_ontology_design_library/record/RecordType>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :hasTemporalExtent ;
+                                                                                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <https://archive.org/services/purl/domain/modular_ontology_design_library/record/TemporalExtent>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :records ;
+                                                                                                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :wasDerivedFrom ;
+                                                                                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <https://archive.org/services/purl/domain/modular_ontology_design_library/record/EventRecord>
+                                                                                                         ] ,
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :hasRecordType ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass <https://archive.org/services/purl/domain/modular_ontology_design_library/record/RecordType>
+                                                                                                         ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record/RecordType
+<https://archive.org/services/purl/domain/modular_ontology_design_library/record/RecordType> rdf:type owl:Class .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/record/TemporalExtent
+<https://archive.org/services/purl/domain/modular_ontology_design_library/record/TemporalExtent> rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :hasRecordType ;
+  owl:someValuesFrom <https://archive.org/services/purl/domain/modular_ontology_design_library/record/Record> ;
+  rdfs:subClassOf <https://archive.org/services/purl/domain/modular_ontology_design_library/record/Record>
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :records ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf <https://archive.org/services/purl/domain/modular_ontology_design_library/record/Record>
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
