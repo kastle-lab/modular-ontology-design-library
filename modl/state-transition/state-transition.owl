@@ -1,0 +1,195 @@
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition> .
+
+<https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPosition
+<http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionX
+<http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionY
+<http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#Triggers
+:Triggers rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#actsOn
+:actsOn rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#endsAt
+:endsAt rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#hasAction
+:hasAction rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#hasDescriptor
+:hasDescriptor rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#hasNextState
+:hasNextState rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#hasState
+:hasState rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#hasStateTransition
+:hasStateTransition rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#startsFrom
+:startsFrom rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasNextState ;
+                            owl:allValuesFrom :State
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasState ;
+                            owl:allValuesFrom :State
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :endsAt ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :State
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAction ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Action
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasStateTransition ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :StateTransition
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :startsFrom ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :State
+                          ] ;
+          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "39.74478213370605"^^xsd:double ;
+                                                                       <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "39.55358770910607"^^xsd:double ;
+                                                                       rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                     ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :Triggers ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :StateTransition
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :actsOn ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :State
+                        ] ;
+        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "559.8650417119828"^^xsd:double ;
+                                                                     <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "40.03341879617477"^^xsd:double ;
+                                                                     rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                   ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#Descriptor
+:Descriptor rdf:type owl:Class ;
+            rdfs:subClassOf :EntityWithProvenance ;
+            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "70.27790186981159"^^xsd:double ;
+                                                                         <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "259.62822027938626"^^xsd:double ;
+                                                                         rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                       ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#EntityWithProvenance
+:EntityWithProvenance rdf:type owl:Class ;
+                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "280.22305943819714"^^xsd:double ;
+                                                                                   <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "289.92643297340464"^^xsd:double ;
+                                                                                   rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                                 ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf :EntityWithProvenance ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasAction ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Action
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasState ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :State
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasStateTransition ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :StateTransition
+                         ] ;
+         <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "549.5764097461171"^^xsd:double ;
+                                                                      <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "290.0589224523205"^^xsd:double ;
+                                                                      rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                    ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#State
+:State rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNextState ;
+                         owl:allValuesFrom :State
+                       ] ;
+       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "59.89957555597948"^^xsd:double ;
+                                                                    <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "150.32908439552912"^^xsd:double ;
+                                                                    rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                  ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#StateTransition
+:StateTransition rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :endsAt ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :State
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :startsFrom ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :State
+                                 ] ;
+                 <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "249.71327414405147"^^xsd:double ;
+                                                                              <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "130.3436246013318"^^xsd:double ;
+                                                                              rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
+                                                                            ] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
