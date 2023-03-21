@@ -12,140 +12,134 @@
 #    Object Properties
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasEventNumber
-:hasEventNumber rdf:type owl:ObjectProperty .
+###  http://www.w3.org/2002/07/owl#hasEventNumber
+owl:hasEventNumber rdf:type owl:ObjectProperty .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasMemberEvent
-:hasMemberEvent rdf:type owl:ObjectProperty ;
-                rdfs:domain :RecurrentEventSeries ;
-                rdfs:range :Eventuality .
+###  http://www.w3.org/2002/07/owl#hasMemberEvent
+owl:hasMemberEvent rdf:type owl:ObjectProperty .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasNextEvent
-:hasNextEvent rdf:type owl:ObjectProperty .
+###  http://www.w3.org/2002/07/owl#hasNextEvent
+owl:hasNextEvent rdf:type owl:ObjectProperty .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasPreviousEvent
-:hasPreviousEvent rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf owl:topObjectProperty .
+###  http://www.w3.org/2002/07/owl#hasPreviousEvent
+owl:hasPreviousEvent rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasTimePeriod
-:hasTimePeriod rdf:type owl:ObjectProperty .
+###  http://www.w3.org/2002/07/owl#hasTimePeriod
+owl:hasTimePeriod rdf:type owl:ObjectProperty .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasTimePeriodBeforeNextEvent
-:hasTimePeriodBeforeNextEvent rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf owl:topObjectProperty .
+###  http://www.w3.org/2002/07/owl#hasTimePeriodBeforeNextEvent
+owl:hasTimePeriodBeforeNextEvent rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasUnifyingFactor
-:hasUnifyingFactor rdf:type owl:ObjectProperty ;
-                   rdfs:domain :RecurrentEventSeries ;
-                   rdfs:range :UnifyingFactor .
+###  http://www.w3.org/2002/07/owl#hasUnifyingFactor
+owl:hasUnifyingFactor rdf:type owl:ObjectProperty .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#isTheLastEvent
-:isTheLastEvent rdf:type owl:ObjectProperty .
+###  http://www.w3.org/2002/07/owl#isTheLastEvent
+owl:isTheLastEvent rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#hasEventNumber
-:hasEventNumber rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Event ;
-                rdfs:range xsd:int .
+###  http://www.w3.org/2002/07/owl#hasEventNumber
+owl:hasEventNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:int .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#isTheLastEvent
-:isTheLastEvent rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Event ;
-                rdfs:range xsd:boolean .
+###  http://www.w3.org/2002/07/owl#isTheLastEvent
+owl:isTheLastEvent rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:boolean .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#Collection
-:Collection rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#Collection
+owl:Collection rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#Concept
-:Concept rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#Concept
+owl:Concept rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#Event
-:Event rdf:type owl:Class ;
-       rdfs:subClassOf :Eventuality ,
-                       [ rdf:type owl:Class ;
-                         owl:unionOf ( [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasNextEvent ;
-                                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :Event
-                                       ]
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :hasPreviousEvent ;
-                                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                         owl:onClass :Event
-                                       ]
-                                     )
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :hasTimePeriodBeforeNextEvent ;
-                         owl:someValuesFrom :TimePeriod
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :hasEventNumber ;
-                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onDataRange xsd:integer
-                       ] ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :isTheLastEvent ;
-                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onDataRange xsd:boolean
-                       ] .
+###  http://www.w3.org/2002/07/owl#Event
+owl:Event rdf:type owl:Class ;
+          rdfs:subClassOf owl:Eventuality ,
+                          [ rdf:type owl:Class ;
+                            owl:unionOf ( [ rdf:type owl:Restriction ;
+                                            owl:onProperty owl:hasNextEvent ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass owl:Event
+                                          ]
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty owl:hasPreviousEvent ;
+                                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                            owl:onClass owl:Event
+                                          ]
+                                        )
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:hasTimePeriodBeforeNextEvent ;
+                            owl:someValuesFrom owl:TimePeriod
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:hasEventNumber ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:integer
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:isTheLastEvent ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:boolean
+                          ] .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#Eventuality
-:Eventuality rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#Eventuality
+owl:Eventuality rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#RecurrentEventSeries
-:RecurrentEventSeries rdf:type owl:Class ;
-                      rdfs:subClassOf [ owl:intersectionOf ( :Collection
-                                                             :Situation
-                                                           ) ;
-                                        rdf:type owl:Class
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasMemberEvent ;
-                                        owl:someValuesFrom :Event
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasTimePeriod ;
-                                        owl:someValuesFrom :TimePeriod
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasUnifyingFactor ;
-                                        owl:someValuesFrom :UnifyingFactor
-                                      ] .
+###  http://www.w3.org/2002/07/owl#RecurrentEventSeries
+owl:RecurrentEventSeries rdf:type owl:Class ;
+                         rdfs:subClassOf [ owl:intersectionOf ( owl:Collection
+                                                                owl:Situation
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty owl:hasMemberEvent ;
+                                           owl:someValuesFrom owl:Event
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty owl:hasTimePeriod ;
+                                           owl:someValuesFrom owl:TimePeriod
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty owl:hasUnifyingFactor ;
+                                           owl:someValuesFrom owl:UnifyingFactor
+                                         ] .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#Situation
-:Situation rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#Situation
+owl:Situation rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#TimePeriod
-:TimePeriod rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#TimePeriod
+owl:TimePeriod rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent#UnifyingFactor
-:UnifyingFactor rdf:type owl:Class ;
-                rdfs:subClassOf :Concept .
+###  http://www.w3.org/2002/07/owl#UnifyingFactor
+owl:UnifyingFactor rdf:type owl:Class ;
+                   rdfs:subClassOf owl:Concept .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
