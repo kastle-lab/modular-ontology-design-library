@@ -1,145 +1,108 @@
-<?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://archive.org/services/purl/domain/modular_ontology_design_library/event"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://archive.org/services/purl/domain/modular_ontology_design_library/event">
-    <Prefix name="" IRI="https://archive.org/services/purl/domain/modular_ontology_design_library/event"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="opla" IRI="http://ontologydesignpatterns.org/opla#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="opla:hasRelatedPattern"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="opla:hasRelatedPattern"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="#Event"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ParticipantRole"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SpatiotemporalExtent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSpatiotemporalExtent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#providesParticipantRole"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#subEventOf"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:hasRelatedPattern"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-    </Declaration>
-    <SubClassOf>
-        <Class abbreviatedIRI="owl:Thing"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasSpatiotemporalExtent"/>
-            <Class IRI="#SpatiotemporalExtent"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="owl:Thing"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#providesParticipantRole"/>
-            <Class IRI="#ParticipantRole"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="owl:Thing"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#subEventOf"/>
-            <Class IRI="#Event"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Event"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#providesParticipantRole"/>
-            <Class IRI="#ParticipantRole"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Event"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasSpatiotemporalExtent"/>
-            <Class IRI="#SpatiotemporalExtent"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#subEventOf"/>
-            <Class abbreviatedIRI="owl:Thing"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="#Event"/>
-    </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="#subEventOf"/>
-            <ObjectProperty IRI="#subEventOf"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="#subEventOf"/>
-    </SubObjectPropertyOf>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#Event</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#ParticipantRole</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-        <IRI>#ParticipantRole</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ofExternalType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#SpatiotemporalExtent</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-        <IRI>#SpatiotemporalExtent</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ofExternalType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#hasSpatiotemporalExtent</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#providesParticipantRole</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#subEventOf</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/event</Literal>
-    </AnnotationAssertion>
-</Ontology>
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/event> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/event> .
+
+<https://archive.org/services/purl/domain/modular_ontology_design_library/event> rdf:type owl:Ontology ;
+                                                                                  opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal ,
+                                                                                                         "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla#hasRelatedPattern
+opla:hasRelatedPattern rdf:type owl:AnnotationProperty .
 
 
+###  http://ontologydesignpatterns.org/opla#isNativeTo
+opla:isNativeTo rdf:type owl:AnnotationProperty .
 
-<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
 
+###  http://ontologydesignpatterns.org/opla#ofExternalType
+opla:ofExternalType rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/event#hasSpatiotemporalExtent
+:hasSpatiotemporalExtent rdf:type owl:ObjectProperty ;
+                         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/event"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/event#providesParticipantRole
+:providesParticipantRole rdf:type owl:ObjectProperty ;
+                         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/event"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/event#subEventOf
+:subEventOf rdf:type owl:ObjectProperty ;
+            owl:propertyChainAxiom ( :subEventOf
+                                     :subEventOf
+                                   ) ;
+            opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/event"^^rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasSpatiotemporalExtent ;
+                            owl:allValuesFrom :SpatiotemporalExtent
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :providesParticipantRole ;
+                            owl:allValuesFrom :ParticipantRole
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :subEventOf ;
+                            owl:allValuesFrom :Event
+                          ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/event#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :providesParticipantRole ;
+                         owl:someValuesFrom :ParticipantRole
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasSpatiotemporalExtent ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :SpatiotemporalExtent
+                       ] ;
+       opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/event"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/event#ParticipantRole
+:ParticipantRole rdf:type owl:Class ;
+                 opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/event"^^rdfs:Literal ;
+                 opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/event#SpatiotemporalExtent
+:SpatiotemporalExtent rdf:type owl:Class ;
+                      opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/event"^^rdfs:Literal ;
+                      opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :subEventOf ;
+  owl:someValuesFrom owl:Thing ;
+  rdfs:subClassOf :Event
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

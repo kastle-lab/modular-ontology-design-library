@@ -1,106 +1,82 @@
-<?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://archive.org/services/purl/domain/modular_ontology_design_library/bag"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://archive.org/services/purl/domain/modular_ontology_design_library/bag">
-    <Prefix name="" IRI="https://archive.org/services/purl/domain/modular_ontology_design_library/bag"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="opla" IRI="http://ontologydesignpatterns.org/opla#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="opla:hasRelatedPattern"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">http://ontologydesignpatterns.org/wiki/Submissions:Bag</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="#Bag"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BagItem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Collection"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#itemOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#po-member"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:hasRelatedPattern"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#Bag"/>
-        <Class IRI="#Collection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bag"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#itemOf"/>
-            <Class IRI="#BagItem"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#itemOf"/>
-            <Class IRI="#BagItem"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="#Bag"/>
-    </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#itemOf"/>
-        <ObjectProperty IRI="#po-member"/>
-    </SubObjectPropertyOf>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#Bag</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/bag</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-        <IRI>#Bag</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ofExternalType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#BagItem</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/bag</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#Collection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/bag</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-        <IRI>#Collection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ofExternalType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#itemOf</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/bag</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#po-member</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/partonomy</Literal>
-    </AnnotationAssertion>
-</Ontology>
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/bag> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/bag> .
+
+<https://archive.org/services/purl/domain/modular_ontology_design_library/bag> rdf:type owl:Ontology ;
+                                                                                owl:imports <http://knowwheregraph.com/> ;
+                                                                                opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Bag"^^rdfs:Literal .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla#hasRelatedPattern
+opla:hasRelatedPattern rdf:type owl:AnnotationProperty .
 
 
+###  http://ontologydesignpatterns.org/opla#isNativeTo
+opla:isNativeTo rdf:type owl:AnnotationProperty .
 
-<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
 
+###  http://ontologydesignpatterns.org/opla#ofExternalType
+opla:ofExternalType rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#itemOf
+:itemOf rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :po-member ;
+        opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#po-member
+:po-member rdf:type owl:ObjectProperty ;
+           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/partonomy"^^rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#Bag
+:Bag rdf:type owl:Class ;
+     rdfs:subClassOf :Collection ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :itemOf ;
+                       owl:allValuesFrom :BagItem
+                     ] ;
+     opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal ;
+     opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#BagItem
+:BagItem rdf:type owl:Class ;
+         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#Collection
+:Collection rdf:type owl:Class ;
+            opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal ;
+            opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :itemOf ;
+  owl:someValuesFrom :BagItem ;
+  rdfs:subClassOf :Bag
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

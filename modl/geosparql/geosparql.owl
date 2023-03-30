@@ -1,157 +1,115 @@
-<?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql">
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="geo" IRI="https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html"/>
-    <Prefix name="ogc" IRI="https://www.w3.org/2015/spatial/wiki/Main_Page"/>
-    <Declaration>
-        <Class IRI="#?"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#?
-"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ogc:geomLiteral"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Feature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#FeatureCollection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Geometry"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#GeometryCollection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Simple_Features,_Egenhofer,_&amp;_RCC8_relations"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#dimensions &amp; resolutions"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#geo:hasSerialization"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#geo:hasSize"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#rdfs:member"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#rdfs:member
-"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#rdfs:member
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix geo: <https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html> .
+@prefix ogc: <https://www.w3.org/2015/spatial/wiki/Main_Page> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
 
-"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#geo:hasMetricSize"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Feature"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#FeatureCollection"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Geometry"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#GeometryCollection"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection"/>
-    </SubClassOf>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#dimensions &amp; resolutions"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Geometry"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#geo:hasSerialization"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Geometry"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#geo:hasSize"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#rdfs:member"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#FeatureCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#rdfs:member"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#GeometryCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#rdfs:member"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#dimensions &amp; resolutions"/>
-        <Class IRI="#?"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#geo:hasSerialization"/>
-        <Class IRI="#ogc:geomLiteral"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#geo:hasSize"/>
-        <Class IRI="#?"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#rdfs:member"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Geometry"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#rdfs:member"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Feature"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#rdfs:member"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject"/>
-    </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="#geo:hasMetricSize"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#geo:hasMetricSize"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
-    </DataPropertyRange>
-</Ontology>
+<https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla-sd#entityPosition
+<http://ontologydesignpatterns.org/opla-sd#entityPosition> rdf:type owl:AnnotationProperty .
 
 
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionX
+<http://ontologydesignpatterns.org/opla-sd#entityPositionX> rdf:type owl:AnnotationProperty .
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
+###  http://ontologydesignpatterns.org/opla-sd#entityPositionY
+<http://ontologydesignpatterns.org/opla-sd#entityPositionY> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#Simple_Features,_Egenhofer,_&_RCC8_relations
+<https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#Simple_Features,_Egenhofer,_&_RCC8_relations> rdf:type owl:ObjectProperty .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#dimensions&resolutions
+<https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#dimensions&resolutions> rdf:type owl:ObjectProperty ;
+                                                                                                            rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#Geometry> ;
+                                                                                                            rdfs:range <https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#?> .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#geo:hasSerialization
+:geo:hasSerialization rdf:type owl:ObjectProperty ;
+                      rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#Geometry> ;
+                      rdfs:range :ogc:geomLiteral .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#geo:hasSize
+:geo:hasSize rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject> ;
+             rdfs:range <https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#?> .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#rdfs:member
+:rdfs:member rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#FeatureCollection> ,
+                         <http://www.w3.org/2003/01/geo/wgs84_pos#GeometryCollection> ,
+                         <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection> ;
+             rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#Feature> ,
+                        <http://www.w3.org/2003/01/geo/wgs84_pos#Geometry> ,
+                        <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#geo:hasMetricSize
+:geo:hasMetricSize rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject> ;
+                   rdfs:range xsd:double .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Feature
+<http://www.w3.org/2003/01/geo/wgs84_pos#Feature> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject> .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#FeatureCollection
+<http://www.w3.org/2003/01/geo/wgs84_pos#FeatureCollection> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection> .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Geometry
+<http://www.w3.org/2003/01/geo/wgs84_pos#Geometry> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject> .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#GeometryCollection
+<http://www.w3.org/2003/01/geo/wgs84_pos#GeometryCollection> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection> .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObject> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialObjectCollection> rdf:type owl:Class .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#?
+<https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#?> rdf:type owl:Class .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql#ogc:geomLiteral
+:ogc:geomLiteral rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

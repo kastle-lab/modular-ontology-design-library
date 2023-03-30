@@ -1,157 +1,122 @@
-<?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance">
-    <Prefix name="" IRI="https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="opla" IRI="http://ontologydesignpatterns.org/opla#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="#Agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EntityWithProvenance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ProvenanceActivity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#attributedTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#generatedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#performedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#used"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wasDerivedFrom"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#EntityWithProvenance"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#attributedTo"/>
-            <Class IRI="#Agent"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EntityWithProvenance"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#generatedBy"/>
-            <Class IRI="#ProvenanceActivity"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ProvenanceActivity"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#performedBy"/>
-            <Class IRI="#Agent"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ProvenanceActivity"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#used"/>
-            <Class IRI="#EntityWithProvenance"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#attributedTo"/>
-            <Class IRI="#Agent"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="#EntityWithProvenance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#generatedBy"/>
-            <Class IRI="#ProvenanceActivity"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="#EntityWithProvenance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performedBy"/>
-            <Class IRI="#Agent"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="#ProvenanceActivity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#used"/>
-            <Class IRI="#EntityWithProvenance"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="#ProvenanceActivity"/>
-    </SubClassOf>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#Agent</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-        <IRI>#Agent</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ofExternalType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#EntityWithProvenance</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#ProvenanceActivity</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:ofExternalType"/>
-        <IRI>#ProvenanceActivity</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ofExternalType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#attributedTo</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#generatedBy</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#performedBy</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#used</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="opla:isNativeTo"/>
-        <IRI>#wasDerivedFrom</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://archive.org/services/purl/domain/modular_ontology_design_library/provenance</Literal>
-    </AnnotationAssertion>
-</Ontology>
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/provenance> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/provenance> .
+
+<https://archive.org/services/purl/domain/modular_ontology_design_library/provenance> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla#isNativeTo
+opla:isNativeTo rdf:type owl:AnnotationProperty .
 
 
+###  http://ontologydesignpatterns.org/opla#ofExternalType
+opla:ofExternalType rdf:type owl:AnnotationProperty .
 
-<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
 
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#attributedTo
+:attributedTo rdf:type owl:ObjectProperty ;
+              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#generatedBy
+:generatedBy rdf:type owl:ObjectProperty ;
+             opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#performedBy
+:performedBy rdf:type owl:ObjectProperty ;
+             opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#used
+:used rdf:type owl:ObjectProperty ;
+      opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#wasDerivedFrom
+:wasDerivedFrom rdf:type owl:ObjectProperty ;
+                opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#Agent
+:Agent rdf:type owl:Class ;
+       opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal ;
+       opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#EntityWithProvenance
+:EntityWithProvenance rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty :attributedTo ;
+                                        owl:allValuesFrom :Agent
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :generatedBy ;
+                                        owl:allValuesFrom :ProvenanceActivity
+                                      ] ;
+                      opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/provenance#ProvenanceActivity
+:ProvenanceActivity rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :performedBy ;
+                                      owl:allValuesFrom :Agent
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :used ;
+                                      owl:allValuesFrom :EntityWithProvenance
+                                    ] ;
+                    opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal ;
+                    opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :attributedTo ;
+  owl:someValuesFrom :Agent ;
+  rdfs:subClassOf :EntityWithProvenance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :generatedBy ;
+  owl:someValuesFrom :ProvenanceActivity ;
+  rdfs:subClassOf :EntityWithProvenance
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :performedBy ;
+  owl:someValuesFrom :Agent ;
+  rdfs:subClassOf :ProvenanceActivity
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :used ;
+  owl:someValuesFrom :EntityWithProvenance ;
+  rdfs:subClassOf :ProvenanceActivity
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

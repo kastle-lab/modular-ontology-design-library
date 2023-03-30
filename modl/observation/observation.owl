@@ -12,117 +12,117 @@
 #    Object Properties
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#hasFeatureOfInterest
-:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
-                      rdfs:domain :Observation ;
-                      rdfs:range :FeatureOfInterest .
+###  http://www.w3.org/2002/07/owl#hasFeatureOfInterest
+owl:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
+                         rdfs:domain owl:Observation ;
+                         rdfs:range owl:FeatureOfInterest .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#hasPhenomenonTime
-:hasPhenomenonTime rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Observation ;
-                   rdfs:range :TemporalEntity .
+###  http://www.w3.org/2002/07/owl#hasPhenomenonTime
+owl:hasPhenomenonTime rdf:type owl:ObjectProperty ;
+                      rdfs:domain owl:Observation ;
+                      rdfs:range owl:TemporalEntity .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#hasResult
-:hasResult rdf:type owl:ObjectProperty ;
-           rdfs:domain :Observation ;
-           rdfs:range :Result .
+###  http://www.w3.org/2002/07/owl#hasResult
+owl:hasResult rdf:type owl:ObjectProperty ;
+              rdfs:domain owl:Observation ;
+              rdfs:range owl:Result .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#hasResultTime
-:hasResultTime rdf:type owl:ObjectProperty ;
-               rdfs:domain :Observation ;
-               rdfs:range :TemporalEntity .
+###  http://www.w3.org/2002/07/owl#hasResultTime
+owl:hasResultTime rdf:type owl:ObjectProperty ;
+                  rdfs:domain owl:Observation ;
+                  rdfs:range owl:TemporalEntity .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#hasSimpleResult
-:hasSimpleResult rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Observation .
+###  http://www.w3.org/2002/07/owl#hasSimpleResult
+owl:hasSimpleResult rdf:type owl:ObjectProperty ;
+                    rdfs:domain owl:Observation .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#observedProperty
-:observedProperty rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Observation ;
-                  rdfs:range :ObservableProperty .
+###  http://www.w3.org/2002/07/owl#observedProperty
+owl:observedProperty rdf:type owl:ObjectProperty ;
+                     rdfs:domain owl:Observation ;
+                     rdfs:range owl:ObservableProperty .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#hasSimpleResult
-:hasSimpleResult rdf:type owl:DatatypeProperty .
+###  http://www.w3.org/2002/07/owl#hasSimpleResult
+owl:hasSimpleResult rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#EntityWithProvenance
-:EntityWithProvenance rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#EntityWithProvenance
+owl:EntityWithProvenance rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#FeatureOfInterest
-:FeatureOfInterest rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#FeatureOfInterest
+owl:FeatureOfInterest rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#ObservableProperty
-:ObservableProperty rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#ObservableProperty
+owl:ObservableProperty rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#Observation
-:Observation rdf:type owl:Class ;
-             rdfs:subClassOf :EntityWithProvenance ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasFeatureOfInterest ;
-                               owl:allValuesFrom :FeatureOfInterest
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasResult ;
-                               owl:allValuesFrom :Result
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :observedProperty ;
-                               owl:allValuesFrom :ObservableProperty
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasResult ;
-                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :Result
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasFeatureOfInterest ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :FeatureOfInterest
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasPhenomenonTime ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :TemporalEntity
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasResultTime ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :TemporalEntity
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :observedProperty ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :ObservableProperty
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasSimpleResult ;
-                               owl:minCardinality "1"^^xsd:nonNegativeInteger
-                             ] .
+###  http://www.w3.org/2002/07/owl#Observation
+owl:Observation rdf:type owl:Class ;
+                rdfs:subClassOf owl:EntityWithProvenance ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:hasFeatureOfInterest ;
+                                  owl:allValuesFrom owl:FeatureOfInterest
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:hasResult ;
+                                  owl:allValuesFrom owl:Result
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:observedProperty ;
+                                  owl:allValuesFrom owl:ObservableProperty
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:hasResult ;
+                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass owl:Result
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:hasSimpleResult ;
+                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:hasFeatureOfInterest ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass owl:FeatureOfInterest
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:hasPhenomenonTime ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass owl:TemporalEntity
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:hasResultTime ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass owl:TemporalEntity
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty owl:observedProperty ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass owl:ObservableProperty
+                                ] .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#Result
-:Result rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#Result
+owl:Result rdf:type owl:Class .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/observation#TemporalEntity
-:TemporalEntity rdf:type owl:Class .
+###  http://www.w3.org/2002/07/owl#TemporalEntity
+owl:TemporalEntity rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
