@@ -5,9 +5,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @base <https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#> .
 
-<https://daselab.cs.ksu.edu/patterns/DataTransformationPattern> rdf:type owl:Ontology .
+<https://daselab.cs.ksu.edu/patterns/DataTransformationPattern> rdf:type owl:Ontology ;
+                                                                  opla-core:hasPatternName "Data Transformation Pattern" .
 
 #################################################################
 #    Annotation properties

@@ -4,9 +4,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @base <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#> .
 
-<http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11> rdf:type owl:Ontology .
+<http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11> rdf:type owl:Ontology ;
+                                                                            opla-core:hasPatternName "Description Situation Pattern".
 
 #################################################################
 #    Object Properties
