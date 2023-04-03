@@ -4,9 +4,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @base <http://daselab.org/WinstonPartWhole#> .
 
-<http://daselab.org/ContextualizedWinstonPartWhole> rdf:type owl:Ontology .
+<http://daselab.org/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
+                                                      opla-core:hasPatternName "Winston Part Whole Pattern" .
 
 #################################################################
 #    Object Properties
