@@ -1,27 +1,14 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/list> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
-@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/list> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
 
-<<<<<<< Updated upstream
-<https://archive.org/services/purl/domain/modular_ontology_design_library/list> rdf:type owl:Ontology ;
-                                                                                  opla-core:hasPatternName "Sequence Pattern" ;
-                                                                                  opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
-=======
-<<<<<<< HEAD
 <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> rdf:type owl:Ontology ;
                                                                                  opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
-=======
-<https://archive.org/services/purl/domain/modular_ontology_design_library/list> rdf:type owl:Ontology ;
-                                                                                  opla-core:hasPatternName "Sequence Pattern" ;
-                                                                                  opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
->>>>>>> e0ffbd4e002d9c0087dc5d1483d7886a07fef6ae
->>>>>>> Stashed changes
 
 #################################################################
 #    Annotation properties
@@ -39,26 +26,26 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasNext
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#hasNext
 :hasNext rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :hasSuccessor ;
-         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/list"^^rdfs:Literal .
+         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/list#hasSuccessor
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#hasSuccessor
 :hasSuccessor rdf:type owl:ObjectProperty ,
                        owl:IrreflexiveProperty ;
               owl:propertyChainAxiom ( :hasNext
                                        :hasSuccessor
                                      ) ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/list"^^rdfs:Literal .
+              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/list#FirstItem
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#FirstItem
 :FirstItem rdf:type owl:Class ;
            rdfs:subClassOf :ListItem ,
                            [ owl:intersectionOf ( :ListItem
@@ -72,10 +59,10 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/list"^^rdfs:Literal .
+           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/list#LastItem
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#LastItem
 :LastItem rdf:type owl:Class ;
           rdfs:subClassOf :ListItem ,
                           [ owl:intersectionOf ( :ListItem
@@ -88,10 +75,10 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                                ) ;
                             rdf:type owl:Class
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/list"^^rdfs:Literal .
+          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/list#ListItem
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#ListItem
 :ListItem rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :hasNext ;
@@ -102,7 +89,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                            ] ;
                             owl:allValuesFrom :ListItem
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/list"^^rdfs:Literal .
+          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
 #################################################################
