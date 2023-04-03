@@ -14,8 +14,8 @@
 #    Annotation properties
 #################################################################
 
-###  http://ontologydesignpatterns.org/opla#generatlizationOfPattern
-opla:generatlizationOfPattern rdf:type owl:AnnotationProperty .
+###  http://ontologydesignpatterns.org/opla#generalizationOfPattern
+opla:generalizationOfPattern rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
@@ -47,8 +47,8 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#FirstItem
 :FirstItem rdf:type owl:Class ;
-           rdfs:subClassOf :ListItem ,
-                           [ owl:intersectionOf ( :ListItem
+           rdfs:subClassOf :SequenceItem ,
+                           [ owl:intersectionOf ( :SequenceItem
                                                   [ rdf:type owl:Class ;
                                                     owl:complementOf [ rdf:type owl:Restriction ;
                                                                        owl:onProperty [ owl:inverseOf :hasNext
@@ -64,8 +64,8 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#LastItem
 :LastItem rdf:type owl:Class ;
-          rdfs:subClassOf :ListItem ,
-                          [ owl:intersectionOf ( :ListItem
+          rdfs:subClassOf :SequenceItem ,
+                          [ owl:intersectionOf ( :SequenceItem
                                                  [ rdf:type owl:Class ;
                                                    owl:complementOf [ rdf:type owl:Restriction ;
                                                                       owl:onProperty :hasNext ;
@@ -78,16 +78,16 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#ListItem
-:ListItem rdf:type owl:Class ;
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#SequenceItem
+:SequenceItem rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :hasNext ;
-                            owl:allValuesFrom :ListItem
+                            owl:allValuesFrom :SequenceItem
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty [ owl:inverseOf :hasNext
                                            ] ;
-                            owl:allValuesFrom :ListItem
+                            owl:allValuesFrom :SequenceItem
                           ] ;
           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
@@ -96,18 +96,18 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 #    General axioms
 #################################################################
 
-[ owl:intersectionOf ( :ListItem
+[ owl:intersectionOf ( :SequenceItem
                        [ rdf:type owl:Class ;
                          owl:complementOf :FirstItem
                        ]
                      ) ;
   rdf:type owl:Class ;
-  rdfs:subClassOf [ owl:intersectionOf ( :ListItem
+  rdfs:subClassOf [ owl:intersectionOf ( :SequenceItem
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty [ owl:inverseOf :hasNext
                                                           ] ;
                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           owl:onClass :ListItem
+                                           owl:onClass :SequenceItem
                                          ]
                                        ) ;
                     rdf:type owl:Class
@@ -115,17 +115,17 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 ] .
 
 
-[ owl:intersectionOf ( :ListItem
+[ owl:intersectionOf ( :SequenceItem
                        [ rdf:type owl:Class ;
                          owl:complementOf :LastItem
                        ]
                      ) ;
   rdf:type owl:Class ;
-  rdfs:subClassOf [ owl:intersectionOf ( :ListItem
+  rdfs:subClassOf [ owl:intersectionOf ( :SequenceItem
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty :hasNext ;
                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           owl:onClass :ListItem
+                                           owl:onClass :SequenceItem
                                          ]
                                        ) ;
                     rdf:type owl:Class
