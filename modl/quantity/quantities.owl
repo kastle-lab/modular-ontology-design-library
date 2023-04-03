@@ -8,8 +8,17 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/quantities> .
 
+<<<<<<< Updated upstream:modl/quantity/quantities.owl
 <https://archive.org/services/purl/domain/modular_ontology_design_library/quantities> rdf:type owl:Ontology ;
                                                                                         opla-core:hasPatternName "Quantities Pattern" .
+=======
+<<<<<<< HEAD:modl/quantity/quantity.owl
+<https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:Ontology .
+=======
+<https://archive.org/services/purl/domain/modular_ontology_design_library/quantities> rdf:type owl:Ontology ;
+                                                                                        opla-core:hasPatternName "Quantities Pattern" .
+>>>>>>> e0ffbd4e002d9c0087dc5d1483d7886a07fef6ae:modl/quantity/quantities.owl
+>>>>>>> Stashed changes:modl/quantity/quantity.owl
 
 #################################################################
 #    Annotation properties

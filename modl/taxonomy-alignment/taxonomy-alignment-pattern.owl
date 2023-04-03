@@ -7,8 +7,17 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#> .
 
+<<<<<<< Updated upstream:modl/taxonomy-alignment/taxonomy-alignment-pattern.owl
 <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10> rdf:type owl:Ontology ;
                                                                             opla-core:hasPatternName "Taxonomy Alignment Pattern " .
+=======
+<<<<<<< HEAD:modl/taxonomy-alignment/taxonomy-alignment.owl
+<https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment> rdf:type owl:Ontology .
+=======
+<http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10> rdf:type owl:Ontology ;
+                                                                            opla-core:hasPatternName "Taxonomy Alignment Pattern " .
+>>>>>>> e0ffbd4e002d9c0087dc5d1483d7886a07fef6ae:modl/taxonomy-alignment/taxonomy-alignment-pattern.owl
+>>>>>>> Stashed changes:modl/taxonomy-alignment/taxonomy-alignment.owl
 
 #################################################################
 #    Object Properties
