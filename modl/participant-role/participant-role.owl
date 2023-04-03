@@ -8,7 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> .
 
-<https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> rdf:type owl:Ontology 
+<https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> rdf:type owl:Ontology ;
                                                                                             opla-core:hasPatternName "Participant Role Pattern" ;
                                                                                             opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
 
