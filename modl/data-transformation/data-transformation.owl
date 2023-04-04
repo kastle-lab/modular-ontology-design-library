@@ -1,4 +1,4 @@
-@prefix : <https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,9 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
-@base <https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#> .
 
-<https://daselab.cs.ksu.edu/patterns/DataTransformationPattern> rdf:type owl:Ontology ;
+<https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern> rdf:type owl:Ontology ;
                                                                   opla-core:hasPatternName "Data Transformation Pattern" .
 
 #################################################################
@@ -31,47 +31,47 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#executedIn
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#executedIn
 :executedIn rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#hasDataType
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#hasDataType
 :hasDataType rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#hasPayload
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#hasPayload
 :hasPayload rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#implements
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#implements
 :implements rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#occursIn
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#occursIn
 :occursIn rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#performsInputRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#performsInputRole
 :performsInputRole rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#performsOutputRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#performsOutputRole
 :performsOutputRole rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#performsParameterRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#performsParameterRole
 :performsParameterRole rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#providesInputDataRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#providesInputDataRole
 :providesInputDataRole rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#providesOutputDataRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#providesOutputDataRole
 :providesOutputDataRole rdf:type owl:ObjectProperty .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#providesParameterRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#providesParameterRole
 :providesParameterRole rdf:type owl:ObjectProperty .
 
 
@@ -79,7 +79,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#Algorithm
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#Algorithm
 :Algorithm rdf:type owl:Class ;
            opla-sd:entityPosition [ opla-sd:entityPositionX "19.949172891330534"^^xsd:double ;
                                     opla-sd:entityPositionY "560.4969248288852"^^xsd:double ;
@@ -87,7 +87,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                   ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#ComputationalEnvironment
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#ComputationalEnvironment
 :ComputationalEnvironment rdf:type owl:Class ;
                           opla-sd:entityPosition [ opla-sd:entityPositionX "100.23442734681602"^^xsd:double ;
                                                    opla-sd:entityPositionY "560.0395163249185"^^xsd:double ;
@@ -95,7 +95,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                                  ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#DataTransformation
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#DataTransformation
 :DataTransformation rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :executedIn ;
@@ -152,7 +152,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                            ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#DataType
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#DataType
 :DataType rdf:type owl:Class ;
           opla-sd:entityPosition [ opla-sd:entityPositionX "750.3741753499639"^^xsd:double ;
                                    opla-sd:entityPositionY "279.54823750903404"^^xsd:double ;
@@ -160,7 +160,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                  ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#EntityWithProvenance
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#EntityWithProvenance
 :EntityWithProvenance rdf:type owl:Class ;
                       opla-sd:entityPosition [ opla-sd:entityPositionX "560.3339695739631"^^xsd:double ;
                                                opla-sd:entityPositionY "449.6643719563557"^^xsd:double ;
@@ -168,7 +168,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                              ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#InputDataRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#InputDataRole
 :InputDataRole rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty [ owl:inverseOf :performsInputRole
@@ -181,7 +181,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                       ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#OutputDataRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#OutputDataRole
 :OutputDataRole rdf:type owl:Class ;
                 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                   owl:onProperty [ owl:inverseOf :performsOutputRole
@@ -194,7 +194,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                        ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#ParameterRole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#ParameterRole
 :ParameterRole rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty [ owl:inverseOf :performsParameterRole
@@ -207,7 +207,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                       ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#Payload
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#Payload
 :Payload rdf:type owl:Class ;
          opla-sd:entityPosition [ opla-sd:entityPositionX "759.6831958806702"^^xsd:double ;
                                   opla-sd:entityPositionY "329.612956677929"^^xsd:double ;
@@ -215,7 +215,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                 ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#SpatiotemporalExtent
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#SpatiotemporalExtent
 :SpatiotemporalExtent rdf:type owl:Class ;
                       opla-sd:entityPosition [ opla-sd:entityPositionX "350.3404954525808"^^xsd:double ;
                                                opla-sd:entityPositionY "570.0324421165986"^^xsd:double ;
@@ -223,7 +223,7 @@ opla-sd:entityPositionY rdf:type owl:AnnotationProperty .
                                              ] .
 
 
-###  https://daselab.cs.ksu.edu/patterns/DataTransformationPattern#aData
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#aData
 :aData rdf:type owl:Class ;
        rdfs:subClassOf :EntityWithProvenance ,
                        [ rdf:type owl:Restriction ;
