@@ -1,15 +1,13 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/quantities> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
-@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/quantities> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> .
 
-<https://archive.org/services/purl/domain/modular_ontology_design_library/quantities> rdf:type owl:Ontology ;
-                                                                                        opla-core:hasPatternName "Quantities Pattern" .
+<https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:Ontology .
 
 #################################################################
 #    Annotation properties
@@ -27,28 +25,28 @@ opla:ofExternalType rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityKind
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#hasQuantityKind
 :hasQuantityKind rdf:type owl:ObjectProperty ;
-                 opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal .
+                 opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasQuantityValue
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#hasQuantityValue
 :hasQuantityValue rdf:type owl:ObjectProperty ;
-                  opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal .
+                  opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasUnit
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#hasUnit
 :hasUnit rdf:type owl:ObjectProperty ;
-         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal .
+         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#hasNumericValue
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#hasNumericValue
 :hasNumericValue rdf:type owl:DatatypeProperty ;
-                 opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal .
+                 opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal .
 
 
 #################################################################
@@ -74,25 +72,25 @@ owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
                           ] .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Quantity
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#Quantity
 :Quantity rdf:type owl:Class ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal .
+          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityKind
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#QuantityKind
 :QuantityKind rdf:type owl:Class ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal ;
+              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal ;
               opla:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#QuantityValue
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#QuantityValue
 :QuantityValue rdf:type owl:Class ;
-               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal .
+               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal .
 
 
-###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantities#Unit
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/quantity#Unit
 :Unit rdf:type owl:Class ;
-      opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantities"^^rdfs:Literal ;
+      opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/quantity"^^rdfs:Literal ;
       opla:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 

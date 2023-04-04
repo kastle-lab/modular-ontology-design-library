@@ -1,49 +1,46 @@
-@prefix : <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#> .
 
-<http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10> rdf:type owl:Ontology ;
-                                                                            opla-core:hasPatternName "Taxonomy Alignment Pattern " .
+<https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#definedAs
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#definedAs
 :definedAs rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#describedAs
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#describedAs
 :describedAs rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#hasMappingRelation
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#hasMappingRelation
 :hasMappingRelation rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#hasMember
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#hasMember
 :hasMember rdf:type owl:ObjectProperty ;
            owl:inverseOf :isMemberOf .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#isMemberOf
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#isMemberOf
 :isMemberOf rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#mapsOnto
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#mapsOnto
 :mapsOnto rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#organizedBy
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#organizedBy
 :organizedBy rdf:type owl:ObjectProperty .
 
-
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#semanticRelation
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#semanticRelation
 :semanticRelation rdf:type owl:ObjectProperty .
 
 
@@ -51,22 +48,22 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#mappingMeasure
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#mappingMeasure
 :mappingMeasure rdf:type owl:DatatypeProperty ;
                 rdfs:range rdfs:Literal .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#measurementUnit
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#measurementUnit
 :measurementUnit rdf:type owl:DatatypeProperty ;
                  rdfs:range rdfs:Literal .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#synonym
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#synonym
 :synonym rdf:type owl:DatatypeProperty ;
          rdfs:range rdfs:Literal .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#vernacularName
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#vernacularName
 :vernacularName rdf:type owl:DatatypeProperty ;
                 rdfs:range rdfs:Literal .
 
@@ -75,7 +72,7 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#Concept
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#Concept
 :Concept rdf:type owl:Class ;
          rdfs:subClassOf [ owl:intersectionOf ( :EntityWithProvenance
                                                 :EntityWithTemporalScope
@@ -96,7 +93,7 @@
                          ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#ConceptCollection
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#ConceptCollection
 :ConceptCollection rdf:type owl:Class ;
                    rdfs:subClassOf :Concept ,
                                    [ rdf:type owl:Restriction ;
@@ -118,12 +115,12 @@
                                    ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#Definition
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#Definition
 :Definition rdf:type owl:Class ;
             rdfs:subClassOf :Description .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#Description
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#Description
 :Description rdf:type owl:Class ;
              rdfs:subClassOf [ owl:intersectionOf ( :EntityWithProvenance
                                                     :EntityWithTemporalScope
@@ -132,15 +129,15 @@
                              ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#EntityWithProvenance
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#EntityWithProvenance
 :EntityWithProvenance rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#EntityWithTemporalScope
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#EntityWithTemporalScope
 :EntityWithTemporalScope rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#MappingRelation
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#MappingRelation
 :MappingRelation rdf:type owl:Class ;
                  rdfs:subClassOf [ owl:intersectionOf ( :EntityWithProvenance
                                                         :EntityWithTemporalScope
@@ -162,7 +159,7 @@
                                  ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-10#OrganizationScheme
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#OrganizationScheme
 :OrganizationScheme rdf:type owl:Class .
 
 
