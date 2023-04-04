@@ -8,3 +8,4 @@
 *.toc
 *.lof
 Documentation/main.pdf
+.DS_Store
