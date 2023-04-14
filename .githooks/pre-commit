@@ -49,7 +49,7 @@ if [[ -n "$OWL_FILES" ]]; then
 	# Check if the os is Windows
 	# Because Python for Windows is added weirdly on PATH
 	# if it is, use the `python` command
-	if [[ "$OSTYPE" == "msys" && $(python --version) != "Python3"* ]] ; then
+	if [[ "$OSTYPE" == "msys" && $(python --version) != "Python 3"* ]] ; then
 		echo "Python not found cannot initiate pre-commit"
 		exit 1
 	
