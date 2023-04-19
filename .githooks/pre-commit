@@ -12,31 +12,19 @@ get_pattern_files() {
 }
 
 get_documentation_generator() {
-	# Uncomment these two lines below if the entire 
-	# documentation-generator repository is going to be cloned 
-	# ---
-	# Clone the documentation-generator
-	# and find it
-	# git clone --depth=1 --branch=master $DOC_GENERATOR_REPO documentation-generator
-	# SCRIPT_PATH=$(find -type f -name "documentation-generator.py")
-
-	# Uncomment the line below if the entire 
-	# documentation-generator repository is going to be cloned 
-	# ---
-	# Move the script into the modl directory
-	# If somehow the documentation-generator.py already exists
-	# inside of modl, it'll use the `yes` to basically force copy it
-	# yes | cp $SCRIPT_PATH modl/documentation-generator.py
-
-	# Comment this line below if the entire documentation-generator repository is going to be cloned
-	# Otherwise this will only grab the documentation-generator.py script
-	# ---
 	# wget the script itself
-	wget "https://raw.githubusercontent.com/$DOC_GENERATOR_REPO/master/documentation-generator/documentation-generator.py"
+	python -m wget "https://raw.githubusercontent.com/$DOC_GENERATOR_REPO/master/documentation-generator/documentation-generator.py"
 }
 
 install_dependencies() {
-	python -m pip install rdflib
+	python -m pip install rdflib wget
+}
+
+cleanup_and_exit() {
+	# rm -rf documentation-generator # Uncomment if the entire repo is being cloned
+	rm documentation-generator.py
+
+	exit 1
 }
 
 # This will act as our filter to check if any of the owl files
@@ -44,14 +32,16 @@ install_dependencies() {
 OWL_FILES=$(get_pattern_files .owl)
 
 if [[ -n "$OWL_FILES" ]]; then
-	cd $SCRIPT_PATH
+	cd modl
 
 	# Check if the os is Windows
 	# Because Python for Windows is added weirdly on PATH
 	# if it is, use the `python` command
-	if [[ "$OSTYPE" == "msys" && $(python --version) != "Python 3"* ]] ; then
-		echo "Python not found cannot initiate pre-commit"
-		exit 1
+	if [[ "$OSTYPE" == "msys" ]] ; then
+		if [[ $(python --version) != "Python 3"* ]] ; then
+			echo "Python not found cannot initiate pre-commit"
+			exit 1
+		fi
 	
 	# If it's not, use python3
 	elif [[ $(python3 --version) != "Python 3"* ]] ; then
@@ -64,13 +54,12 @@ if [[ -n "$OWL_FILES" ]]; then
 	get_documentation_generator
 
 	# Go into the directory and execute the script
-	cd modl
-	python documentation-generator.py ./ $OUTPUT_DIR
+	python documentation-generator.py ./ $OUTPUT_DIR && echo "Successfully created documentations" || cleanup_and_exit
 
-	# Go out and cleanup
-	cd ..
 	# rm -rf documentation-generator # Uncomment if the entire repo is being cloned
-	rm modl/documentation-generator.py
+	rm documentation-generator.py
+	
+	cd ..
 
 else 
 	echo "No changes done to owl file found, skipping pre-commit"
@@ -78,7 +67,7 @@ else
 fi
 
 # Add the new files to the commit
-git add **/*.*
+git add $OWL_FILES
 
 # Exit with code 0 which will continue the commit
 exit 0
