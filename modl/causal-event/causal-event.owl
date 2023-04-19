@@ -262,9 +262,9 @@ opla-core:Pattern rdf:type owl:Class .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/causalevent
-<https://archive.org/services/purl/domain/modular_ontology_design_library/causalevent> rdf:type owl:NamedIndividual ,
+<https://archive.org/services/purl/domain/modular_ontology_design_library/causalevent> rdf:type owl:NamedIndividual ;
                                                                                         opla-core:hasPatternName "Causal Event Pattern" ;
-                                                                                        opla-core:Pattern ;
+                                                                                        opla-core:Pattern "" ;
                                                                                         rdfs:label "Causal Event" .
 
 

@@ -3,10 +3,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#> .
 
-<https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment> rdf:type owl:Ontology .
+<https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment> rdf:type owl:Ontology ;
+                                                                                             opla-core:hasPatternName "Taxonomy Alignment Pattern" .
 
 #################################################################
 #    Object Properties

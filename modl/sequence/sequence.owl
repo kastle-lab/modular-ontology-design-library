@@ -4,10 +4,12 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> rdf:type owl:Ontology ;
+                                                                                 opla-core:hasPatternName "Sequence Pattern" ;
                                                                                  opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 #################################################################

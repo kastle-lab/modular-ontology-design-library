@@ -34,7 +34,7 @@ opla:ofExternalType rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#hasTemporalExtent
 :hasTemporalExtent rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal . 
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#isPerformedBy
