@@ -1,32 +1,32 @@
-@prefix : <http://daselab.org/WinstonPartWhole#> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
-@base <http://daselab.org/WinstonPartWhole#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#> .
 
-<http://daselab.org/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
+<https://archive.org/services/purl/domain/modular_ontology_design_library/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
                                                       opla-core:hasPatternName "Winston Part Whole Pattern" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://daselab.org/WinstonPartWhole#hasWhole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#hasWhole
 :hasWhole rdf:type owl:ObjectProperty .
 
 
-###  http://daselab.org/WinstonPartWhole#isPartOf
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#isPartOf
 :isPartOf rdf:type owl:ObjectProperty .
 
 
-###  http://daselab.org/WinstonPartWhole#part-of
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#part-of
 :part-of rdf:type owl:ObjectProperty .
 
 
-###  http://daselab.org/WinstonPartWhole#po-component
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-component
 :po-component rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :part-of ;
               rdf:type owl:AsymmetricProperty ;
@@ -35,7 +35,7 @@
                                      ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-feature
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-feature
 :po-feature rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :part-of ;
             rdf:type owl:AsymmetricProperty ;
@@ -44,7 +44,7 @@
                                    ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-member
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-member
 :po-member rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :part-of ;
            rdf:type owl:AsymmetricProperty ;
@@ -53,7 +53,7 @@
                                   ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-place
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-place
 :po-place rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :part-of ;
           rdf:type owl:AsymmetricProperty ;
@@ -62,7 +62,7 @@
                                  ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-portion
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-portion
 :po-portion rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :part-of ;
             rdf:type owl:AsymmetricProperty ;
@@ -71,7 +71,7 @@
                                    ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-stuff
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-stuff
 :po-stuff rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :part-of ;
           rdf:type owl:AsymmetricProperty ;
@@ -80,7 +80,7 @@
                                  ) .
 
 
-###  http://daselab.org/WinstonPartWhole#spatially-located-in
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#spatially-located-in
 :spatially-located-in rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdf:type owl:ReflexiveProperty ;
@@ -129,46 +129,46 @@
 #    Classes
 #################################################################
 
-###  http://daselab.org/WinstonPartWhole#PO-Component-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Component-Type
 :PO-Component-Type rdf:type owl:Class ;
                    rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Feature-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Feature-Type
 :PO-Feature-Type rdf:type owl:Class ;
                  rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Member-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Member-Type
 :PO-Member-Type rdf:type owl:Class ;
                 rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Part-Of-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Part-Of-Type
 :PO-Part-Of-Type rdf:type owl:Class ;
                  rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Place-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Place-Type
 :PO-Place-Type rdf:type owl:Class ;
                rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Portion-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Portion-Type
 :PO-Portion-Type rdf:type owl:Class ;
                  rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Stuff-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Stuff-Type
 :PO-Stuff-Type rdf:type owl:Class ;
                rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#RelationInstance
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#RelationInstance
 :RelationInstance rdf:type owl:Class .
 
 
-###  http://daselab.org/WinstonPartWhole#Spatially-Located-In-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#Spatially-Located-In-Type
 :Spatially-Located-In-Type rdf:type owl:Class ;
                            rdfs:subClassOf :RelationInstance .
 
