@@ -4,7 +4,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @base <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#> .
 
 <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11> rdf:type owl:Ontology ;
