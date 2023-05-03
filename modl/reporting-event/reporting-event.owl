@@ -12,7 +12,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/reporting-event> rdf:type owl:Ontology ;
                                                                                             opla-core:hasPatternName "Reporting Event Pattern" ;
-                                                                                          <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                          opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Reporting Event" ;
                                                                                           opla-core:hasEntanglement "Reporting Event Entanglement" ;
                                                                                           opla-cp:hasCompetencyQuestion "CQ#1" ;

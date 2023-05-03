@@ -12,7 +12,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql> rdf:type owl:Ontology ;
                                                                                      opla-core:hasPatternName "Spatial Object Pattern" ;
-                                                                                      <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                      opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                       opla-core:hasShortcutFor "Spatial Object" ;
                                                                                       opla-core:hasEntanglement "Spatial Object Entanglement" ;
                                                                                       opla-cp:hasCompetencyQuestion "CQ#1" ;

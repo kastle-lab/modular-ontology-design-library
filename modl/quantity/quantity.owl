@@ -12,7 +12,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:Ontology ;
                                                                                     opla-core:hasPatternName "Quaintity Pattern" ;
-                                                                                    <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                    opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                     opla-core:hasShortcutFor "Quantity" ;
                                                                                     opla-core:hasEntanglement "Quantity Entanglement" ;
                                                                                     opla-cp:hasCompetencyQuestion "CQ#1" ;

@@ -38,7 +38,7 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                                                             "Which regions affected by wildfires are expected to experience heavy rain (flood risk)" ,
                                                             "Which residents are still evacuated from the same region where the second hurricane hit?" ,
                                                             "where to deliver Covid-19 supplies?" ;
-                              opla:hasRelatedPattern "https://gengchenmai.github.io/papers/2021-WOP-KWG-Causal.pdf"^^rdfs:Literal .
+                              opla:hasRelatedPattern "https://gengchenmai.github.io/papers/2021-WOP-KWG-Causal.pdf"^^rdfs:Literal ;
                               opla-core:hasShortcutFor  "" ;
                               opla-core:hasEntanglement "Causal Event Entanglement" ;
                               opla-sd:hasSchemaDiagramFileName "causal-event.jpg" ;

@@ -12,7 +12,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> rdf:type owl:Ontology ;
                                                                                 opla-core:hasPatternName "Tree Pattern" ;
-                                                                                <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Tree" ;
                                                                                 opla-core:hasEntanglement "Tree Entanglement" ;
                                                                                 opla-cp:hasCompetencyQuestion "CQ#1" ;

@@ -12,8 +12,8 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> rdf:type owl:Ontology ;
                                                                                 opla-core:hasPatternName "Sequence Pattern" ;
-                                                                                opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
-                                                                                <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                opla:generalizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
+                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Sequence" ;
                                                                                 opla-core:hasEntanglement "Sequence Entanglement" ;
                                                                                 opla-cp:hasCompetencyQuestion "CQ#1" ;

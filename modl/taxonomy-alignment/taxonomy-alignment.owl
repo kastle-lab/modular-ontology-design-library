@@ -12,7 +12,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment> rdf:type owl:Ontology ;
                                                                                              opla-core:hasPatternName "Taxonomy Alignment Pattern" ;
-                                                                                            <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                            opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "Taxonomy Alignment" ;
                                                                                             opla-core:hasEntanglement "Taxonomy Alignment Entanglement" ;
                                                                                             opla-cp:hasCompetencyQuestion "CQ#1" ;

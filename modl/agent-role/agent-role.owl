@@ -16,7 +16,9 @@
                                                                                       opla-core:hasPatternName "Agent Role Pattern" ;
                                                                                       opla-core:hasShortcutFor "Agent Role" ;
                                                                                       opla-core:hasEntanglement "Agent Role Entanglement" ;
-                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:hasCompetencyQuestion "When was Cogan Shimizu a student at Wright State University?",
+                                                                                      "Who was the lead actor for the movie, Sharknado?",
+                                                                                      "Who was on the World Cup winning team in 2017?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "agent-role.jpg" ;

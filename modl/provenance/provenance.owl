@@ -11,8 +11,8 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/provenance> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/provenance> rdf:type owl:Ontology ;
-                                                                                        opla-core:hasPatternName "Provenance Pattern" .
-                                                                                        <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                        opla-core:hasPatternName "Provenance Pattern" ;
+                                                                                        opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                         opla-core:hasShortcutFor "Provenance" ;
                                                                                         opla-core:hasEntanglement "Provenance Entanglement" ;
                                                                                         opla-cp:hasCompetencyQuestion "CQ#1" ;
