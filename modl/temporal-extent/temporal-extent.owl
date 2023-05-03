@@ -11,9 +11,17 @@
 @base <http://www.w3.org/2002/07/owl#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent> rdf:type owl:Ontology ;
-                                                                                           opla-core:hasPatternName "Temporal Extent Pattern" ;
-                                                                                           opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
-
+                                                                                          opla-core:hasPatternName "Temporal Extent Pattern" ;
+                                                                                          opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ;
+                                                                                          opla-core:hasShortcutFor "Temporal Extent" ;
+                                                                                          opla-core:hasEntanglement "Temporal Extent Entanglement" ;
+                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "temportal-extent.jpg" ;
+                                                                                          opla-sd:hasConnections "" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

@@ -12,6 +12,7 @@
 @base <http://www.semanticweb.org/owl/owlapi/turtle#> .
 
 <http://knowwheregraph.com/> rdf:type owl:Ontology ;
+                              opla-core:hasPatternName "Causal Event Pattern" ;
                               opla-cp:addressesScenario """Direct Relief
 Monsoon after diptheria outbreak""" ,
                                                         """Thomas Fire
@@ -36,7 +37,14 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                                                             "Which region affected by the current hurricane just suffers from another natural disaster?" ,
                                                             "Which regions affected by wildfires are expected to experience heavy rain (flood risk)" ,
                                                             "Which residents are still evacuated from the same region where the second hurricane hit?" ,
-                                                            "where to deliver Covid-19 supplies?" .
+                                                            "where to deliver Covid-19 supplies?" ;
+                              opla:hasRelatedPattern "https://gengchenmai.github.io/papers/2021-WOP-KWG-Causal.pdf"^^rdfs:Literal .
+                              opla-core:hasShortcutFor  "" ;
+                              opla-core:hasEntanglement "Causal Event Entanglement" ;
+                              opla-sd:hasSchemaDiagramFileName "causal-event.jpg" ;
+                              opla-sd:hasConnections "" ;
+                              opla-sd:hasShortcutDiagramFileName "" ;
+                              opla-sd:hasExampleDiagramFileName "" .
 
 #################################################################
 #    Annotation properties

@@ -13,8 +13,15 @@
 <https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent> rdf:type owl:Ontology ;
                                                                                                  opla-core:hasPatternName "Spatiotemporal Extent Pattern" ;
                                                                                                  opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ,
-                                                                                                                        "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal .
-
+                                                                                                                        "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal ;
+                                                                                                opla-core:hasShortcutFor "SpatioTemporal Extent" ;
+                                                                                                opla-core:hasEntanglement "SpatioTemporal Extent Entanglement" ;
+                                                                                                opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                                opla-cp:addressesScenario "AS#1" ;
+                                                                                                opla-sd:hasSchemaDiagramFileName "spatiotemporal-extent.jpg" ;
+                                                                                                opla-sd:hasConnections "" ;
+                                                                                                opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                                opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

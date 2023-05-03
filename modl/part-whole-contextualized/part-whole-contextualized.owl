@@ -10,8 +10,18 @@
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @base <http://daselab.org/WinstonPartWhole#> .
 
-<http://daselab.org/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
-                                                      opla-core:hasPatternName "Winston Part Whole Pattern" .
+<https://archive.org/services/purl/domain/modular_ontology_design_library/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
+                                                      opla-core:hasPatternName "Winston Part Whole Pattern" ;
+                                                      opla-core:hasShortcutFor "Winston Part Whole" ;
+                                                      opla-core:hasEntanglement "Winston Part Whole hasEntanglement" ;
+                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                      opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                      opla-sd:hasSchemaDiagramFileName "part-whole-contextualized.jpg" ;
+                                                      opla-sd:hasConnections "" ;
+                                                      opla-sd:hasShortcutDiagramFileName "" ;
+                                                      opla-sd:hasExampleDiagramFileName "" .
+
 
 #################################################################
 #    Object Properties

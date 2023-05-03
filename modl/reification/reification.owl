@@ -11,8 +11,17 @@
 @base <http://www.w3.org/2002/07/owl#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/reification> rdf:type owl:Ontology ;
-                                                                                        opla-core:hasPatternName "Reification Pattern" .
-
+                                                                                        opla-core:hasPatternName "Reification Pattern" ;
+                                                                                          <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                          opla-core:hasShortcutFor "Agent Role" ;
+                                                                                          opla-core:hasEntanglement "Agent Role Entanglement" ;
+                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "reification.jpg" ;
+                                                                                          opla-sd:hasConnections "" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

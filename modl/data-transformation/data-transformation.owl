@@ -11,8 +11,17 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern> rdf:type owl:Ontology ;
-                                                                  opla-core:hasPatternName "Data Transformation Pattern" .
-
+                                                                  opla-core:hasPatternName "Data Transformation Pattern" ;
+                                                                  opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DataTransformationPattern"^^rdfs:Literal ;
+                                                                  opla-core:hasShortcutFor "Data Transformation" ;
+                                                                  opla-core:hasEntanglement "Data Transformation Entanglement" ;
+                                                                  opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                  opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                  opla-sd:hasSchemaDiagramFileName "data-transformation.jpg" ;
+                                                                  opla-sd:hasConnections "" ;
+                                                                  opla-sd:hasShortcutDiagramFileName "" ;
+                                                                  opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

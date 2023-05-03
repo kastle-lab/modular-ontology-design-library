@@ -13,7 +13,17 @@
 <https://archive.org/services/purl/domain/modular_ontology_design_library/event> rdf:type owl:Ontology ;
                                                                                   opla-core:hasPatternName "Event Pattern" ;
                                                                                   opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal ,
-                                                                                                         "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal .
+                                                                                                         "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal ;
+                                                                                  opla-core:hasPatternName "Event Pattern" ;
+                                                                                  opla-core:hasShortcutFor "Event" ;
+                                                                                  opla-core:hasEntanglement "Event Entanglement" ;
+                                                                                  opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                  opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                  opla-sd:hasSchemaDiagramFileName "event.jpg" ;
+                                                                                  opla-sd:hasConnections "" ;
+                                                                                  opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                  opla-sd:hasExampleDiagramFileName "" .
 
 #################################################################
 #    Annotation properties

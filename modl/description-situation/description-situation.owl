@@ -11,8 +11,17 @@
 @base <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#> .
 
 <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11> rdf:type owl:Ontology ;
-                                                                            opla-core:hasPatternName "Description Situation Pattern".
-
+                                                                            opla-core:hasPatternName "Description Situation Pattern" ;
+                                                                            opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation"^^rdfs:Literal ;
+                                                                            opla-core:hasShortcutFor "Description Situation" ;
+                                                                            opla-core:hasEntanglement "Description Situation Entanglement" ;
+                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                            opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                            opla-sd:hasSchemaDiagramFileName "description-situation.jpg" ;
+                                                                            opla-sd:hasConnections "" ;
+                                                                            opla-sd:hasShortcutDiagramFileName "" ;
+                                                                            opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Object Properties
 #################################################################

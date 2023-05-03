@@ -12,7 +12,16 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/PartWhole> rdf:type owl:Ontology ;
                                                                                       opla-core:hasPatternName "Part Whole Pattern".
-
+                                                                                      <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                      opla-core:hasShortcutFor "Part Whole" ;
+                                                                                      opla-core:hasEntanglement "Part Whole Entanglement" ;
+                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "part-whole.jpg" ;
+                                                                                      opla-sd:hasConnections "" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Object Properties
 #################################################################

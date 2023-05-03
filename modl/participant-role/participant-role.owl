@@ -12,8 +12,17 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> rdf:type owl:Ontology ;
                                                                                             opla-core:hasPatternName "Participant Role Pattern" ;
-                                                                                            opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
-
+                                                                                            opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
+                                                                                            <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                            opla-core:hasShortcutFor "Participant Role" ;
+                                                                                            opla-core:hasEntanglement "Participant RoleEntanglement" ;
+                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                            opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                            opla-sd:hasSchemaDiagramFileName "participant-role.jpg" ;
+                                                                                            opla-sd:hasConnections "" ;
+                                                                                            opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                            opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

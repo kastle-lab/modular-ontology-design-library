@@ -11,8 +11,17 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:Ontology ;
-                                                                                    opla-core:hasPatternName "Quaintity Pattern" .
-
+                                                                                    opla-core:hasPatternName "Quaintity Pattern" ;
+                                                                                    <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                    opla-core:hasShortcutFor "Quantity" ;
+                                                                                    opla-core:hasEntanglement "Quantity Entanglement" ;
+                                                                                    opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                    opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                    opla-sd:hasSchemaDiagramFileName "quantity.jpg" ;
+                                                                                    opla-sd:hasConnections "" ;
+                                                                                    opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                    opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

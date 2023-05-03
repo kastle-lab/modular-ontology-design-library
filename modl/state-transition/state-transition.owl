@@ -11,8 +11,17 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition> rdf:type owl:Ontology ;
-                                                                                              opla-core:hasPatternName "State Transition Pattern" .
-
+                                                                                            opla-core:hasPatternName "State Transition Pattern" ;
+                                                                                            <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                            opla-core:hasShortcutFor "State Transition" ;
+                                                                                            opla-core:hasEntanglement "State Transition Entanglement" ;
+                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                            opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                            opla-sd:hasSchemaDiagramFileName "state-transition.jpg" ;
+                                                                                            opla-sd:hasConnections "" ;
+                                                                                            opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                            opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

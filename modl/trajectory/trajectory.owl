@@ -11,7 +11,17 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> rdf:type owl:Ontology ;
-                                                                                        opla-core:hasPatternName "Trajectory Pattern" .
+                                                                                      opla-core:hasPatternName "Trajectory Pattern" ;
+                                                                                      <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                      opla-core:hasShortcutFor "Trajectory" ;
+                                                                                      opla-core:hasEntanglement "Trajectory Entanglement" ;
+                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "trajectory.jpg" ;
+                                                                                      opla-sd:hasConnections "" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "" .
 
 #################################################################
 #    Annotation properties

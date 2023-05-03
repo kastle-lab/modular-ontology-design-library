@@ -11,7 +11,17 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping> rdf:type owl:Ontology ;
-                                                                                            opla-core:hasPatternName "Explicit Typing Pattern".
+                                                                                          opla-core:hasPatternName "Explicit Typing Pattern" ;                                                                                                                                                                                  
+                                                                                          <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                          opla-core:hasShortcutFor "Explicit Typing" ;
+                                                                                          opla-core:hasEntanglement "Explicit Typing Entanglement" ;
+                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "explicit-typing.jpg" ;
+                                                                                          opla-sd:hasConnections "" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "" .
 
 #################################################################
 #    Annotation properties

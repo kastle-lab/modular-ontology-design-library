@@ -12,7 +12,18 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/namestub> rdf:type owl:Ontology ;
                                                                                       opla-core:hasPatternName "Name Stub Pattern" ;
-                                                                                      opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/stub"^^rdfs:Literal .
+                                                                                      opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/stub"^^rdfs:Literal ;
+                                                                                      <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                      opla-core:hasPatternName "Agent Role Pattern" ;
+                                                                                      opla-core:hasShortcutFor "Agent Role" ;
+                                                                                      opla-core:hasEntanglement "Agent Role Entanglement" ;
+                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "name-stub.jpg" ;
+                                                                                      opla-sd:hasConnections "" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "" .
 
 #################################################################
 #    Annotation properties

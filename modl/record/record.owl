@@ -9,6 +9,16 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/record> rdf:type owl:Ontology ;
                                                                                     opla-core:hasPatternName "Record Pattern" .
+                                                                                    <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                    opla-core:hasShortcutFor "Record" ;
+                                                                                    opla-core:hasEntanglement "Record Entanglement" ;
+                                                                                    opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                    opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                    opla-sd:hasSchemaDiagramFileName "record.jpg" ;
+                                                                                    opla-sd:hasConnections "" ;
+                                                                                    opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                    opla-sd:hasExampleDiagramFileName "" .
 
 #################################################################
 #    Object Properties

@@ -12,7 +12,16 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/provenance> rdf:type owl:Ontology ;
                                                                                         opla-core:hasPatternName "Provenance Pattern" .
-
+                                                                                        <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                        opla-core:hasShortcutFor "Provenance" ;
+                                                                                        opla-core:hasEntanglement "Provenance Entanglement" ;
+                                                                                        opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                        opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                        opla-sd:hasSchemaDiagramFileName "provenance.jpg" ;
+                                                                                        opla-sd:hasConnections "" ;
+                                                                                        opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                        opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

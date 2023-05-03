@@ -11,7 +11,17 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/taxonomyalignment> rdf:type owl:Ontology ;
-                                                                                             opla-core:hasPatternName "Taxonomy Alignment Pattern" .
+                                                                                             opla-core:hasPatternName "Taxonomy Alignment Pattern" ;
+                                                                                            <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                            opla-core:hasShortcutFor "Taxonomy Alignment" ;
+                                                                                            opla-core:hasEntanglement "Taxonomy Alignment Entanglement" ;
+                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                            opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                            opla-sd:hasSchemaDiagramFileName "taxonomy-alignment.jpg" ;
+                                                                                            opla-sd:hasConnections "" ;
+                                                                                            opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                            opla-sd:hasExampleDiagramFileName "" .
 
 #################################################################
 #    Object Properties

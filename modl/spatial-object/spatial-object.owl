@@ -11,8 +11,16 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql> rdf:type owl:Ontology ;
-                                                                                     opla-core:hasPatternName "Spatial Object Pattern" .
-
+                                                                                     opla-core:hasPatternName "Spatial Object Pattern" ;
+                                                                                      <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                      opla-core:hasShortcutFor "Spatial Object" ;
+                                                                                      opla-core:hasEntanglement "Spatial Object Entanglement" ;
+                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:addressesScenario "AS#1" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "spatial-object.jpg" ;
+                                                                                      opla-sd:hasConnections "" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Object Properties
 #################################################################

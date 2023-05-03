@@ -11,9 +11,17 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> rdf:type owl:Ontology ;
-                                                                                 opla-core:hasPatternName "Sequence Pattern" ;
-                                                                                 opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
-
+                                                                                opla-core:hasPatternName "Sequence Pattern" ;
+                                                                                opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
+                                                                                <!-- opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal . -->
+                                                                                opla-core:hasShortcutFor "Sequence" ;
+                                                                                opla-core:hasEntanglement "Sequence Entanglement" ;
+                                                                                opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                opla-cp:addressesScenario "AS#1" ;
+                                                                                opla-sd:hasSchemaDiagramFileName "sequence.jpg" ;
+                                                                                opla-sd:hasConnections "" ;
+                                                                                opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Annotation properties
 #################################################################

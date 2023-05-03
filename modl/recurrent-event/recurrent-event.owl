@@ -11,8 +11,17 @@
 @base <http://www.w3.org/2002/07/owl#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent> rdf:type owl:Ontology ;
-                                                                                            opla-core:hasPatternName "Recurrent Event Pattern" .
-
+                                                                                          opla-core:hasPatternName "Recurrent Event Pattern" ;
+                                                                                          opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:RecurrentEventSeries"^^rdfs:Literal .
+                                                                                          opla-core:hasShortcutFor "Recurrent Event" ;
+                                                                                          opla-core:hasEntanglement "Recurrent Event Entanglement" ;
+                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "recurrent-event.jpg" ;
+                                                                                          opla-sd:hasConnections "" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "" .
 #################################################################
 #    Object Properties
 #################################################################
