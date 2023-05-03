@@ -12,7 +12,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/observation> rdf:type owl:Ontology ;
                                                                                         opla-core:hasPatternName "Observation Pattern" .
-                                                                                        opla:hasRelatedPattern "https://www.w3.org/TR/vocab-ssn/"^^rdfs:Literal .
+                                                                                        opla:hasRelatedPattern "https://www.w3.org/TR/vocab-ssn/"^^rdfs:Literal ;
                                                                                         opla-core:hasShortcutFor "SOSA Pattern" ;
                                                                                         opla-core:hasEntanglement "Observation Entanglement" ;
                                                                                         opla-cp:hasCompetencyQuestion "CQ#1" ;
