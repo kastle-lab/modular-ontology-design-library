@@ -20,7 +20,7 @@
                                                                                                                               "Show the trajectories which cross national parks.",
                                                                                                                               "Show the trajectories of birds which are less than one year old." ;
                                                                                                 opla-cp:addressesScenario "AS#1" ;
-                                                                                                opla-sd:hasSchemaDiagramFileName "spatiotemporal-extent.jpg" ;
+                                                                                                opla-sd:hasSchemaDiagramFileName "spatiotemporal-extent-pattern.pdf" ;
                                                                                                 opla-sd:hasConnections "" ;
                                                                                                 opla-sd:hasShortcutDiagramFileName "" ;
                                                                                                 opla-sd:hasExampleDiagramFileName "" .

@@ -18,7 +18,7 @@
                                                                             opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                             opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                            opla-sd:hasSchemaDiagramFileName "description-situation.jpg" ;
+                                                                            opla-sd:hasSchemaDiagramFileName "description-situation-pattern.pdf" ;
                                                                             opla-sd:hasConnections "" ;
                                                                             opla-sd:hasShortcutDiagramFileName "" ;
                                                                             opla-sd:hasExampleDiagramFileName "description-situation-example.pdf" .

@@ -21,7 +21,7 @@
                                                                                                                           "Who were the passengers on the cruise?" ;
                                                                                             opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                            opla-sd:hasSchemaDiagramFileName "participant-role.jpg" ;
+                                                                                            opla-sd:hasSchemaDiagramFileName "participant-role-pattern.pdf" ;
                                                                                             opla-sd:hasConnections "" ;
                                                                                             opla-sd:hasShortcutDiagramFileName "" ;
                                                                                             opla-sd:hasExampleDiagramFileName "" .

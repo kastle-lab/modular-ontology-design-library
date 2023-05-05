@@ -19,8 +19,9 @@
                                                                                 opla-cp:hasCompetencyQuestion "What is the first element of the list?", 
                                                                                                               "What is the last element of the list?",
                                                                                                               "Is x a predecessor of y?" ;
-                                                                                opla-cp:addressesScenario "AS#1" ;
-                                                                                opla-sd:hasSchemaDiagramFileName "sequence.jpg" ;
+                                                                                opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                opla-sd:hasSchemaDiagramFileName "sequence-pattern.pdf" ;
                                                                                 opla-sd:hasConnections "" ;
                                                                                 opla-sd:hasShortcutDiagramFileName "" ;
                                                                                 opla-sd:hasExampleDiagramFileName "" .

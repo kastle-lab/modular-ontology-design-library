@@ -19,7 +19,7 @@
                                                                                                                       "Where can this information be validated/obtained?" ;
                                                                                         opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                        opla-sd:hasSchemaDiagramFileName "identifier.jpg" ;
+                                                                                        opla-sd:hasSchemaDiagramFileName "identifier-pattern.pdf" ;
                                                                                         opla-sd:hasConnections "" ;
                                                                                         opla-sd:hasShortcutDiagramFileName "" ;
                                                                                         opla-sd:hasExampleDiagramFileName "" .

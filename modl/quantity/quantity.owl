@@ -20,7 +20,7 @@
                                                                                                                   "How long ago was the Mezazoic Era?" ;
                                                                                     opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                    opla-sd:hasSchemaDiagramFileName "quantity.jpg" ;
+                                                                                    opla-sd:hasSchemaDiagramFileName "quantity-pattern.pdf" ;
                                                                                     opla-sd:hasConnections "" ;
                                                                                     opla-sd:hasShortcutDiagramFileName "" ;
                                                                                     opla-sd:hasExampleDiagramFileName "" .

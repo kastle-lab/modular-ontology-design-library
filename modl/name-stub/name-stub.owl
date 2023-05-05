@@ -20,7 +20,7 @@
                                                                                       opla-cp:hasCompetencyQuestion "What is the name of the lecturer?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                      opla-sd:hasSchemaDiagramFileName "name-stub.jpg" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "name-stub-pattern.pdf" ;
                                                                                       opla-sd:hasConnections "" ;
                                                                                       opla-sd:hasShortcutDiagramFileName "" ;
                                                                                       opla-sd:hasExampleDiagramFileName "" .

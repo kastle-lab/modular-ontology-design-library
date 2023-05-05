@@ -41,7 +41,7 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                               opla:hasRelatedPattern "https://gengchenmai.github.io/papers/2021-WOP-KWG-Causal.pdf"^^rdfs:Literal ;
                               opla-core:hasShortcutFor  "" ;
                               opla-core:hasEntanglement "Causal Event Entanglement" ;
-                              opla-sd:hasSchemaDiagramFileName "causal-event.jpg" ;
+                              opla-sd:hasSchemaDiagramFileName "causal-event-pattern.pdf" ;
                               opla-sd:hasConnections "" ;
                               opla-sd:hasShortcutDiagramFileName "" ;
                               opla-sd:hasExampleDiagramFileName "causal-event-example.pdf" .

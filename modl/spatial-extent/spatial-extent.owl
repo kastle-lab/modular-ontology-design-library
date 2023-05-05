@@ -19,7 +19,7 @@
                                                                                                                         "What path did the moose take to Canada?",
                                                                                                                         "Where is the largest prairie in the United States?" ;
                                                                                           opla-cp:addressesScenario "AS#1" ;
-                                                                                          opla-sd:hasSchemaDiagramFileName "spatial-extent.jpg" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "spatial-extent-pattern.pdf" ;
                                                                                           opla-sd:hasConnections "" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "" ;
                                                                                           opla-sd:hasExampleDiagramFileName "" .

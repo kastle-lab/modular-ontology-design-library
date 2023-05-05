@@ -19,7 +19,7 @@
                                                                                                               "What is the title of Alfred Tennyson?" ;
                                                                                 opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                opla-sd:hasSchemaDiagramFileName "stub.jpg" ;
+                                                                                opla-sd:hasSchemaDiagramFileName "stub-pattern.pdf" ;
                                                                                 opla-sd:hasConnections "" ;
                                                                                 opla-sd:hasShortcutDiagramFileName "" ;
                                                                                 opla-sd:hasExampleDiagramFileName "" .

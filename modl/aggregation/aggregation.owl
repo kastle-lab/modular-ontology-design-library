@@ -21,7 +21,7 @@
                                                                                                               "What are the items contained in this bag?" ;
                                                                                 opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                opla-sd:hasSchemaDiagramFileName "aggregation.jpg" ;
+                                                                                opla-sd:hasSchemaDiagramFileName "aggregation-pattern.pdf" ;
                                                                                 opla-sd:hasConnections "" ;
                                                                                 opla-sd:hasShortcutDiAgentagramFileName "" ;
                                                                                 opla-sd:hasExampleDiagramFileName "aggregation-example.pdf" .

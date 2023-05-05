@@ -19,7 +19,7 @@
                                                                                                                         "What era was the Ice Age?" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                          opla-sd:hasSchemaDiagramFileName "temportal-extent.jpg" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "temportal-extent-pattern.pdf" ;
                                                                                           opla-sd:hasConnections "" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "" ;
                                                                                           opla-sd:hasExampleDiagramFileName "" .

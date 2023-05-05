@@ -19,7 +19,7 @@
                                                                                                                         "Which type of apparatus is that?" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                          opla-sd:hasSchemaDiagramFileName "explicit-typing.jpg" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "explicit-typing-pattern.pdf" ;
                                                                                           opla-sd:hasConnections "" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "" ;
                                                                                           opla-sd:hasExampleDiagramFileName "explicit-typing-example.pdf" .

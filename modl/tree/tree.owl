@@ -26,7 +26,7 @@
                                                                                                               "Given two nodes, x and y, determine the earliest ancestor of x which are not an ancestor of y." ;
                                                                                 opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                opla-sd:hasSchemaDiagramFileName "tree.jpg" ;
+                                                                                opla-sd:hasSchemaDiagramFileName "tree-pattern.pdf" ;
                                                                                 opla-sd:hasConnections "" ;
                                                                                 opla-sd:hasShortcutDiagramFileName "" ;
                                                                                 opla-sd:hasExampleDiagramFileName "" .

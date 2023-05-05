@@ -19,7 +19,7 @@
                                                                                                                     "What was the cruise's final stop?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                      opla-sd:hasSchemaDiagramFileName "trajectory.jpg" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "trajectory-pattern.pdf" ;
                                                                                       opla-sd:hasConnections "" ;
                                                                                       opla-sd:hasShortcutDiagramFileName "" ;
                                                                                       opla-sd:hasExampleDiagramFileName "" .

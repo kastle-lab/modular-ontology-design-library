@@ -21,7 +21,7 @@
                                                                                       "Who was on the World Cup winning team in 2017?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                      opla-sd:hasSchemaDiagramFileName "agent-role.jpg" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "agent-role-pattern.pdf" ;
                                                                                       opla-sd:hasConnections "" ;
                                                                                       opla-sd:hasShortcutDiagramFileName "" ;
                                                                                       opla-sd:hasExampleDiagramFileName "agent-role-example.pdf" .

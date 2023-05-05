@@ -20,7 +20,7 @@
                                                                                                                     "Is he part of the family?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                      opla-sd:hasSchemaDiagramFileName "part-whole.jpg" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "part-whole-pattern.pdf" ;
                                                                                       opla-sd:hasConnections "" ;
                                                                                       opla-sd:hasShortcutDiagramFileName "" ;
                                                                                       opla-sd:hasExampleDiagramFileName "" ;

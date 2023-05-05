@@ -20,7 +20,7 @@
                                                                                                                         "What is the unit of measurement used to weigh the elephant?" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                          opla-sd:hasSchemaDiagramFileName "reification.jpg" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "reification-pattern.pdf" ;
                                                                                           opla-sd:hasConnections "" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "" ;
                                                                                           opla-sd:hasExampleDiagramFileName "" .

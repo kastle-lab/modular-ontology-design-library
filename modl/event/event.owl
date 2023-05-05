@@ -21,7 +21,7 @@
                                                                                                                 "Who were involved in the 1990 World Chess Championship Match?" ;
                                                                                   opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                  opla-sd:hasSchemaDiagramFileName "event.jpg" ;
+                                                                                  opla-sd:hasSchemaDiagramFileName "event-pattern.pdf" ;
                                                                                   opla-sd:hasConnections "" ;
                                                                                   opla-sd:hasShortcutDiagramFileName "" ;
                                                                                   opla-sd:hasExampleDiagramFileName "event-example.pdf" .

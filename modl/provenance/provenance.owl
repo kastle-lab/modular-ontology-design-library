@@ -21,7 +21,7 @@
                                                                                                                       "Who provided this research result?" ;
                                                                                         opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                        opla-sd:hasSchemaDiagramFileName "provenance.jpg" ;
+                                                                                        opla-sd:hasSchemaDiagramFileName "provenance-pattern.pdf" ;
                                                                                         opla-sd:hasConnections "" ;
                                                                                         opla-sd:hasShortcutDiagramFileName "" ;
                                                                                         opla-sd:hasExampleDiagramFileName "" .
