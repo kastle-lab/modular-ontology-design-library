@@ -15,15 +15,19 @@
                                                                                           opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Agent Role" ;
                                                                                           opla-core:hasEntanglement "Agent Role Entanglement" ;
+                                                                                          opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
                                                                                           opla-cp:hasCompetencyQuestion "What was the street named during the Great Depression",
                                                                                                                         "From what years was Al Gore Vice President?",
                                                                                                                         "What is the unit of measurement used to weigh the elephant?" ;
-                                                                                          opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "reification-pattern.pdf" ;
-                                                                                          opla-sd:hasConnections "" ;
-                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                          opla-sd:hasExampleDiagramFileName "" .
+                                                                                          opla-sd:hasShortcutDiagramFileName "reification-shortcuts.pdf" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "reification-example.pdf" ;
+                                                                                          opla-sd:hasConnections """Thing reifiedProperty1 ReifiedProperty
+ReifiedProperty reifiedProperty2 Thing
+ReifiedProperty hasContext Context""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

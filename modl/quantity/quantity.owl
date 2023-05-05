@@ -15,15 +15,20 @@
                                                                                     opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                     opla-core:hasShortcutFor "Quantity" ;
                                                                                     opla-core:hasEntanglement "Quantity Entanglement" ;
+                                                                                    opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
                                                                                     opla-cp:hasCompetencyQuestion "How much does an elephant weigh in kilograms?",
                                                                                                                   "How long is Jupiter from the Sun, at its farthest, in furlongs?",
                                                                                                                   "How long ago was the Mezazoic Era?" ;
-                                                                                    opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
                                                                                     opla-sd:hasSchemaDiagramFileName "quantity-pattern.pdf" ;
-                                                                                    opla-sd:hasConnections "" ;
-                                                                                    opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                    opla-sd:hasExampleDiagramFileName "" .
+                                                                                    opla-sd:hasShortcutDiagramFileName "quantity-shortcuts.pdf" ;
+                                                                                    opla-sd:hasExampleDiagramFileName "quantity-example.pdf" ;
+                                                                                    opla-sd:hasConnections """Quantity hasQuantityKind QuantityKind
+Quantity hasQuantityValue QuantityValue
+QuantityValue hasUnit Unit 
+QuantityValue hasNumericValue xsd:double""" ;
+                                                                                    dc:contributor "" ;
+                                                                                    dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

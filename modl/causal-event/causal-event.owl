@@ -42,9 +42,12 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                               opla-core:hasShortcutFor  "" ;
                               opla-core:hasEntanglement "Causal Event Entanglement" ;
                               opla-sd:hasSchemaDiagramFileName "causal-event-pattern.pdf" ;
-                              opla-sd:hasConnections "" ;
-                              opla-sd:hasShortcutDiagramFileName "" ;
-                              opla-sd:hasExampleDiagramFileName "causal-event-example.pdf" .
+                              opla-sd:hasShortcutDiagramFileName "causal-event-shortcuts.pdf" ;
+                              opla-sd:hasExampleDiagramFileName "causal-event-example.pdf" ;
+                              opla-sd:hasConnections """
+""" ;
+                              dc:contributor "" ;
+                              dc:creator "" .
 
 #################################################################
 #    Annotation properties

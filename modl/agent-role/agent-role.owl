@@ -16,15 +16,21 @@
                                                                                       opla-core:hasPatternName "Agent Role Pattern" ;
                                                                                       opla-core:hasShortcutFor "Agent Role" ;
                                                                                       opla-core:hasEntanglement "Agent Role Entanglement" ;
+                                                                                      opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
                                                                                       opla-cp:hasCompetencyQuestion "When was Cogan Shimizu a student at Wright State University?",
                                                                                       "Who was the lead actor for the movie, Sharknado?",
                                                                                       "Who was on the World Cup winning team in 2017?" ;
-                                                                                      opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "agent-role-pattern.pdf" ;
-                                                                                      opla-sd:hasConnections "" ;
-                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                      opla-sd:hasExampleDiagramFileName "agent-role-example.pdf" .
+                                                                                      opla-sd:hasShortcutDiagramFileName "agent-role-shortcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "agent-role-example.pdf" ;
+                                                                                      opla-sd:hasConnections """Agent performsAgentRole AgentRole
+Thing providesAgentRole AgentRole
+AgentRole hasTemporalExtent TemporalExtent
+""" ;
+                                                                                      dc:contributor "" ;
+                                                                                      dc:creator "" .
+
 #################################################################
 #    Annotation properties
 #################################################################

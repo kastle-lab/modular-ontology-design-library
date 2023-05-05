@@ -13,17 +13,31 @@
 <https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent> rdf:type owl:Ontology ;
                                                                                                  opla-core:hasPatternName "Spatiotemporal Extent Pattern" ;
                                                                                                  opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ,
-                                                                                                                        "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal ;
+                                                                                                                        "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal ,
+                                                                                                                        "http://ontologydesignpatterns.org/wiki/Submissions:SpatioTemporalExtent"^^rdfs:Literal ;
                                                                                                 opla-core:hasShortcutFor "SpatioTemporal Extent" ;
                                                                                                 opla-core:hasEntanglement "SpatioTemporal Extent Entanglement" ;
+                                                                                                opla-cp:addressesScenario """World Chess Championship
+The World Chess Championship Match 1990 was held in two parts: New York (October 8 to November 7) and Lyons - France (November 26 to December 30)""" ;
                                                                                                 opla-cp:hasCompetencyQuestion "Show which birds stop at x and y.",
                                                                                                                               "Show the trajectories which cross national parks.",
                                                                                                                               "Show the trajectories of birds which are less than one year old." ;
-                                                                                                opla-cp:addressesScenario "AS#1" ;
                                                                                                 opla-sd:hasSchemaDiagramFileName "spatiotemporal-extent-pattern.pdf" ;
-                                                                                                opla-sd:hasConnections "" ;
-                                                                                                opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                                opla-sd:hasExampleDiagramFileName "" .
+                                                                                                opla-sd:hasShortcutDiagramFileName "spatiotemporal-extent-shortcuts.pdf" ;
+                                                                                                opla-sd:hasExampleDiagramFileName "spatiotemporal-extent-example.pdf" ;
+                                                                                                opla-sd:hasConnections """Thing hasSpatiotemporalExtent SpatiotemporalExtent
+SpatiotemporalExtent hasTrajectory Trajectory
+Trajectory hasSegment Segment
+Trajectory hasFix Fix
+Segment startsFrom Fix 
+Segment endsAt Fix
+Fix nextFix Fix 
+Fix atPlace Place
+Fix atTime Time 
+StartingFix subclass Fix 
+EndingFix subclass Fix""" ;
+                                                                                                dc:contributor "" ;
+                                                                                                dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

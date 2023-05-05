@@ -15,13 +15,29 @@
                                                                   opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DataTransformationPattern"^^rdfs:Literal ;
                                                                   opla-core:hasShortcutFor "Data Transformation" ;
                                                                   opla-core:hasEntanglement "Data Transformation Entanglement" ;
-                                                                  opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                   opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                  opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                   opla-sd:hasSchemaDiagramFileName "data-transformation-pattern.pdf" ;
-                                                                  opla-sd:hasConnections "" ;
-                                                                  opla-sd:hasShortcutDiagramFileName "" ;
-                                                                  opla-sd:hasExampleDiagramFileName "data-transformation-example.pdf" .
+                                                                  opla-sd:hasShortcutDiagramFileName "data-transformation-shortcuts.pdf" ;
+                                                                  opla-sd:hasExampleDiagramFileName "data-transformation-example.pdf" ;
+                                                                  opla-sd:hasConnections """DataTransformation subclass Algorithm
+DataTransformation occursInCE ComputationalEnvironment
+DataTransformation occursDuringSTE SpatiotemporalExtent
+DataTransformation providesInputRole InputRole 
+DataTransformation providesOutputRole OutputRole 
+DataTransformation providesParameterRole ParameterRole
+Data subclass EntityWithProvenance
+Data participatesInDataTransformation DataTransformation
+Data performsInputRole InputRole
+Data performsOutputRole OutputRole
+Data performsParameterRole ParameterRole
+Data hasPayload Payload
+Data hasDataType DataType 
+
+""" ;
+                                                                  dc:contributor "" ;
+                                                                  dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

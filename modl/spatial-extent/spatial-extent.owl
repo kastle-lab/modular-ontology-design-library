@@ -12,17 +12,30 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent> rdf:type owl:Ontology ;
                                                                                           opla-core:hasPatternName "Spatial Extent Pattern" ;
-                                                                                          opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ;
-                                                                                          opla-core:hasShortcutFor "Agent Role" ;
-                                                                                          opla-core:hasEntanglement "Agent Role Entanglement" ;
+                                                                                          opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal,
+                                                                                                                "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal ,
+                                                                                                                "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
+                                                                                                                "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal ;
+                                                                                          opla-core:hasShortcutFor "Spatial Extent" ;
+                                                                                          opla-core:hasEntanglement "Spatial Extent Entanglement" ;
+                                                                                          opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
                                                                                           opla-cp:hasCompetencyQuestion "Where was the Battle of Manassas?",
                                                                                                                         "What path did the moose take to Canada?",
                                                                                                                         "Where is the largest prairie in the United States?" ;
-                                                                                          opla-cp:addressesScenario "AS#1" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "spatial-extent-pattern.pdf" ;
-                                                                                          opla-sd:hasConnections "" ;
-                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                          opla-sd:hasExampleDiagramFileName "" .
+                                                                                          opla-sd:hasShortcutDiagramFileName "spatial-extent-shortcuts.pdf" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "spatial-extent-example.pdf" ;
+                                                                                          opla-sd:hasConnections """SpatialExtent contains Interior
+Interior isDefinedBy PIS-Sequence
+PIS-Sequence hasFirst PIS-SequenceElement
+PIS-Sequence hasLast PIS-SequenceElement
+PIS-SequenceElement hasNext PIS-SequenceElement
+PIS-SequenceElement constitudtedBy PointInSpace
+PointInSpace hasReferenceSystem ReferenceSystem
+PointInSpace hasValue Value""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator .
 #################################################################
 #    Annotation properties
 #################################################################

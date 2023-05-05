@@ -15,6 +15,8 @@
                                                                                 opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Tree" ;
                                                                                 opla-core:hasEntanglement "Tree Entanglement" ;
+                                                                                opla-cp:addressesScenario """Phylogenetic Tree
+Organization of organisms into species groupings based on shared traits.""" ;
                                                                                 opla-cp:hasCompetencyQuestion "Determine the root.",
                                                                                                               "Determine all ancestors of a given node.",
                                                                                                               "Determine all leaves.",
@@ -24,12 +26,20 @@
                                                                                                               "Given two nodes, determine all common ancestors.",
                                                                                                               "Given two nodes, determine the latest common ancestor.",
                                                                                                               "Given two nodes, x and y, determine the earliest ancestor of x which are not an ancestor of y." ;
-                                                                                opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "tree-pattern.pdf" ;
-                                                                                opla-sd:hasConnections "" ;
-                                                                                opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                opla-sd:hasExampleDiagramFileName "" .
+                                                                                opla-sd:hasShortcutDiagramFileName "tree-shortcuts.pdf" ;
+                                                                                opla-sd:hasExampleDiagramFileName "tree-example.pdf" ;
+                                                                                opla-sd:hasConnections """LeafNode subclass TreeNode
+RootNode subclass TreeNode
+TreeNode hasOutDegree xsd:positiveInteger
+TreeNode hasChild TreeNode
+TreeNode hasParent TreeNode
+TreeNode hasDescendant TreeNode
+TreeNode hasAncestor TreeNode
+TreeNode hasSibling TreeNode""" ;
+
+                                                                                dc:contributor "" ;
+                                                                                dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

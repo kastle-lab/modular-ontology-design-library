@@ -16,15 +16,18 @@
                                                                                 opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Bag"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Bag" ;
                                                                                 opla-core:hasEntanglement "Bag Entanglement" ;
+                                                                                opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
                                                                                 opla-cp:hasCompetencyQuestion "What bag is this item an element of?",
                                                                                                               "What resource does this item refer to?", 
                                                                                                               "What are the items contained in this bag?" ;
-                                                                                opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "aggregation-pattern.pdf" ;
-                                                                                opla-sd:hasConnections "" ;
-                                                                                opla-sd:hasShortcutDiAgentagramFileName "" ;
-                                                                                opla-sd:hasExampleDiagramFileName "aggregation-example.pdf" .
+                                                                                opla-sd:hasShortcutDiagramFileName "aggregation-shortcuts.pdf" ;
+                                                                                opla-sd:hasExampleDiagramFileName "aggregation-example.pdf" ;
+                                                                                opla-sd:hasConnections """BagItem itemOf Bag 
+Bag subclass Collection""" ;
+                                                                                dc:contributor "" ;
+                                                                                dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

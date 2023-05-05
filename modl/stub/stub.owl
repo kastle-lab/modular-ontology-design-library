@@ -12,17 +12,14 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/stub> rdf:type owl:Ontology ;
                                                                                 opla-core:hasPatternName "Stub Pattern" ;
-                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
-                                                                                opla-core:hasShortcutFor "Stub" ;
-                                                                                opla-core:hasEntanglement "Stub Entanglement" ;
-                                                                                opla-cp:hasCompetencyQuestion "Which street is that?",
-                                                                                                              "What is the title of Alfred Tennyson?" ;
                                                                                 opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                                opla-cp:hasCompetencyQuestion "Which street is that?",
+                                                                                                              "What is the title of Alfred Tennyson?" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "stub-pattern.pdf" ;
-                                                                                opla-sd:hasConnections "" ;
-                                                                                opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                opla-sd:hasExampleDiagramFileName "" .
+                                                                                opla-sd:hasConnections """Stub hasValue xsd:AnyValue""" ;
+                                                                                dc:contributor "" ;
+                                                                                dc:creator .
 
 #################################################################
 #    Annotation properties

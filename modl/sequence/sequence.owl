@@ -12,19 +12,25 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> rdf:type owl:Ontology ;
                                                                                 opla-core:hasPatternName "Sequence Pattern" ;
-                                                                                opla:generalizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
                                                                                 opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                opla:generalizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Sequence" ;
                                                                                 opla-core:hasEntanglement "Sequence Entanglement" ;
+                                                                                opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
                                                                                 opla-cp:hasCompetencyQuestion "What is the first element of the list?", 
                                                                                                               "What is the last element of the list?",
                                                                                                               "Is x a predecessor of y?" ;
-                                                                                opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "sequence-pattern.pdf" ;
-                                                                                opla-sd:hasConnections "" ;
-                                                                                opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                opla-sd:hasExampleDiagramFileName "" .
+                                                                                opla-sd:hasShortcutDiagramFileName "sequence-shortcuts.pdf" ;
+                                                                                opla-sd:hasExampleDiagramFileName "sequence-example.pdf" ;
+                                                                                opla-sd:hasConnections """FirstItem subclass ListItem
+LastItem subclass ListItem
+ListItem hasNext ListItem
+ListItem hasSuccessor ListItem""" ;
+                                                                                dc:contributor "" ;
+                                                                                dc:creator "" .
+
 #################################################################
 #    Annotation properties
 #################################################################

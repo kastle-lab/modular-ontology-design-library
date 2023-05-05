@@ -11,17 +11,19 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/reporting-event#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/reporting-event> rdf:type owl:Ontology ;
-                                                                                            opla-core:hasPatternName "Reporting Event Pattern" ;
+                                                                                          opla-core:hasPatternName "Reporting Event Pattern" ;
                                                                                           opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Reporting Event" ;
                                                                                           opla-core:hasEntanglement "Reporting Event Entanglement" ;
-                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "reporting-event-pattern.pdf" ;
-                                                                                          opla-sd:hasConnections "" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                          opla-sd:hasExampleDiagramFileName "" .
+                                                                                          opla-sd:hasExampleDiagramFileName "" ;
+                                                                                          opla-sd:hasConnections """""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

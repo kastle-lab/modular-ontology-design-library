@@ -14,17 +14,14 @@
                                                                                       opla-core:hasPatternName "Name Stub Pattern" ;
                                                                                       opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                       opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/stub"^^rdfs:Literal ;
-                                                                                      opla-core:hasPatternName "Agent Role Pattern" ;
-                                                                                      opla-core:hasShortcutFor "Agent Role" ;
-                                                                                      opla-core:hasEntanglement "Agent Role Entanglement" ;
-                                                                                      opla-cp:hasCompetencyQuestion "What is the name of the lecturer?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What is the name of the lecturer?" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "name-stub-pattern.pdf" ;
-                                                                                      opla-sd:hasConnections "" ;
-                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                      opla-sd:hasExampleDiagramFileName "" .
-
+                                                                                      opla-sd:hasExampleDiagramFileName "name-stub-example.pdf" ;
+                                                                                      opla-sd:hasConnections """NameStub nameAsString xsd:string""" ;
+                                                                                      dc:contributor "" ;
+                                                                                      dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

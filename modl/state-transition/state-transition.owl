@@ -15,13 +15,15 @@
                                                                                             opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "State Transition" ;
                                                                                             opla-core:hasEntanglement "State Transition Entanglement" ;
-                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                                             opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "state-transition-pattern.pdf" ;
-                                                                                            opla-sd:hasConnections "" ;
                                                                                             opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                            opla-sd:hasExampleDiagramFileName "" .
+                                                                                            opla-sd:hasExampleDiagramFileName "" ;
+                                                                                            opla-sd:hasConnections "" ;
+                                                                                            dc:contributor "" ;
+                                                                                            dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

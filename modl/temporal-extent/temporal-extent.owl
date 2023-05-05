@@ -15,14 +15,22 @@
                                                                                           opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Temporal Extent" ;
                                                                                           opla-core:hasEntanglement "Temporal Extent Entanglement" ;
-                                                                                          opla-cp:hasCompetencyQuestion "Which dates did World War II span?",
-                                                                                                                        "What era was the Ice Age?" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                                                          opla-sd:hasSchemaDiagramFileName "temportal-extent-pattern.pdf" ;
-                                                                                          opla-sd:hasConnections "" ;
-                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                          opla-sd:hasExampleDiagramFileName "" .
+                                                                                          opla-cp:hasCompetencyQuestion "Which dates did World War II span?",
+                                                                                                                        "What era was the Ice Age?" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "temporal-extent-pattern.pdf" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "temporal-extent-shortcuts.pdf" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "temporal-extent-example.pdf"
+                                                                                          opla-sd:hasConnections """TemporalExtent contains ComplexTemporalExtent
+TimeInterval subclass ComplexTemporalExtent
+PointInTime subclass ComplexTemporalExtent
+TimeInterval startsFrom PointInTime
+TimeInterval endsAt PointInTime
+PointInTime hasValue Value
+PointInTime hasReferenceSystem ReferenceSystem""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

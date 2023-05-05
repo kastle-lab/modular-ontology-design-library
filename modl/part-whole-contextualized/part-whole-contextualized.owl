@@ -13,14 +13,16 @@
 <https://archive.org/services/purl/domain/modular_ontology_design_library/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
                                                       opla-core:hasPatternName "Winston Part Whole Pattern" ;
                                                       opla-core:hasShortcutFor "Winston Part Whole" ;
-                                                      opla-core:hasEntanglement "Winston Part Whole hasEntanglement" ;
-                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                      opla-core:hasEntanglement "Winston Part Whole Entanglement" ;
                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                       opla-sd:hasSchemaDiagramFileName "part-whole-contextualized-pattern.pdf" ;
-                                                      opla-sd:hasConnections "" ;
-                                                      opla-sd:hasShortcutDiagramFileName "" ;
-                                                      opla-sd:hasExampleDiagramFileName "" .
+                                                      opla-sd:hasShortcutDiagramFileName "part-whole-contextualized-shorcuts.pdf" ;
+                                                      opla-sd:hasExampleDiagramFileName "part-whole-contextualized-example.pdf" ;                                                      
+                                                      opla-sd:hasConnections """""" ;
+                                                      dc:contributor "" ;
+                                                      dc:creator "" .
 
 
 #################################################################

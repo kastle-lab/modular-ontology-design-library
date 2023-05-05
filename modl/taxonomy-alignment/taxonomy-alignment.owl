@@ -15,13 +15,15 @@
                                                                                             opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "Taxonomy Alignment" ;
                                                                                             opla-core:hasEntanglement "Taxonomy Alignment Entanglement" ;
-                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                                             opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+Use Case Description""" ;                                                                                            
+                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "taxonomy-alignment-pattern.pdf" ;
-                                                                                            opla-sd:hasConnections "" ;
-                                                                                            opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                            opla-sd:hasExampleDiagramFileName "" .
+                                                                                            opla-sd:hasShortcutDiagramFileName "taxonomy-alignment-shorcuts.pdf" ;
+                                                                                            opla-sd:hasExampleDiagramFileName "taxonomy-alignment-example.pdf" ;
+                                                                                            opla-sd:hasConnections """""" ;
+                                                                                            dc:contributor "" ;
+                                                                                            dc:creator "" .
 
 #################################################################
 #    Object Properties

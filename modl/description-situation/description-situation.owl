@@ -15,13 +15,17 @@
                                                                             opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation"^^rdfs:Literal ;
                                                                             opla-core:hasShortcutFor "Description Situation" ;
                                                                             opla-core:hasEntanglement "Description Situation Entanglement" ;
-                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
                                                                             opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                            opla-cp:hasCompetencyQuestion "What situations satisfy a certain description?" , 
+                                                                                                          "What descriptions can be (partly) satisfied by that situation?" , 
+                                                                                                          "What situations (partly) satisfying a certain description can emerge out of this dataset?" ;
                                                                             opla-sd:hasSchemaDiagramFileName "description-situation-pattern.pdf" ;
+                                                                            opla-sd:hasShortcutDiagramFileName "description-situation-shortcuts.pdf" ;
+                                                                            opla-sd:hasExampleDiagramFileName "description-situation-example.pdf" ;
                                                                             opla-sd:hasConnections "" ;
-                                                                            opla-sd:hasShortcutDiagramFileName "" ;
-                                                                            opla-sd:hasExampleDiagramFileName "description-situation-example.pdf" .
+                                                                            dc:contributor "" ;
+                                                                            dc:creator "" .
 #################################################################
 #    Object Properties
 #################################################################

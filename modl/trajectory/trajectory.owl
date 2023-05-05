@@ -12,17 +12,25 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> rdf:type owl:Ontology ;
                                                                                       opla-core:hasPatternName "Trajectory Pattern" ;
-                                                                                      opla:hasRelatedPattern ""^^rdfs:Literal ;                                                                                      
+                                                                                      opla:hasRelatedPattern "https://iccl.inf.tu-dresden.de/web/Inproceedings3121/en"^^rdfs:Literal ;                                                                                      
                                                                                       opla-core:hasShortcutFor "Trajectory" ;
                                                                                       opla-core:hasEntanglement "Trajectory Entanglement" ;
-                                                                                      opla-cp:hasCompetencyQuestion "What is the first step of the procedure?",
-                                                                                                                    "What was the cruise's final stop?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What is the first step of the procedure?",
+                                                                                                                    "What was the cruise's final stop?" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "trajectory-pattern.pdf" ;
-                                                                                      opla-sd:hasConnections "" ;
-                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                      opla-sd:hasExampleDiagramFileName "" .
+                                                                                      opla-sd:hasShortcutDiagramFileName "trajectory-shortcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "trajectory-example.pdf" ;
+                                                                                      opla-sd:hasConnections """Trajectory hasSegment Segment
+Trajectory hasFix Fix
+Segment startsFrom Fix 
+Segment endsAt Fix
+Fix nextFix Fix 
+StartingFix subclass Fix 
+EndingFix subclass Fix""" ;
+                                                                                      dc:contributor "" ;
+                                                                                      dc:creator "" .
 
 #################################################################
 #    Annotation properties

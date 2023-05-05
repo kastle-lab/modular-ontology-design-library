@@ -13,15 +13,33 @@
 <https://archive.org/services/purl/domain/modular_ontology_design_library/observation> rdf:type owl:Ontology ;
                                                                                         opla-core:hasPatternName "Observation Pattern" ;
                                                                                         opla:hasRelatedPattern "https://www.w3.org/TR/vocab-ssn/"^^rdfs:Literal ;
-                                                                                        opla-core:hasShortcutFor "SOSA Pattern" ;
+                                                                                        opla-core:hasShortcutFor "SOSA Ontology" ;
                                                                                         opla-core:hasEntanglement "Observation Entanglement" ;
-                                                                                        opla-cp:hasCompetencyQuestion "CQ#1" ;
-                                                                                        opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                                        opla-cp:addressesScenario """Earthquake Magnitude
+The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.""" ;
+                                                                                        opla-cp:hasCompetencyQuestion "The difference between the outside temperature and the inside temperature." ,
+                                                                                                                      "The temperature inside apartment #134." ,
+                                                                                                                      "Relative humidity as averaged over 15min at COPR." ;
                                                                                         opla-sd:hasSchemaDiagramFileName "observation-pattern.pdf" ;
-                                                                                        opla-sd:hasConnections "" ;
-                                                                                        opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                        opla-sd:hasExampleDiagramFileName "" .
+                                                                                        opla-sd:hasShortcutDiagramFileName "observation-shortcuts.pdf" ;
+                                                                                        opla-sd:hasExampleDiagramFileName "observation-example.pdf" ;
+                                                                                        opla-sd:hasConnections """Observation subclass EntityWithProvenance
+Observation observedProperty ObservableProperty
+Observation hasFeatureOfInterest FeatureOfInterest
+Observation hasResult Result
+Observation hasPhenomenonTime TemporalEntity
+Observation hasResultTime TemporalEntity
+Observation hasSimpleResult rdfs:Literal""" ;
+                                                                                        dc:contributor "Rob Atkinson",
+                                                                                                        "Raúl García-Castro",
+                                                                                                        "Joshua Lieberman",
+                                                                                                        "Claus Stadler" ;
+                                                                                        dc:creator "Armin Haller",
+                                                                                        "Krzysztof Janowicz",
+                                                                                        "Simon Cox",
+                                                                                        "Danh Le Phuoc",
+                                                                                        "Kerry Taylor",
+                                                                                        "Maxime Lefrançois" .
 #################################################################
 #    Object Properties
 #################################################################

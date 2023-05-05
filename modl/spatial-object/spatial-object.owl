@@ -15,12 +15,15 @@
                                                                                       opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                       opla-core:hasShortcutFor "Spatial Object" ;
                                                                                       opla-core:hasEntanglement "Spatial Object Entanglement" ;
+                                                                                      opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
                                                                                       opla-cp:hasCompetencyQuestion "CQ#1" ;
-                                                                                      opla-cp:addressesScenario "AS#1" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "spatial-object-pattern.pdf" ;
-                                                                                      opla-sd:hasConnections "" ;
-                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                      opla-sd:hasExampleDiagramFileName "" .
+                                                                                      opla-sd:hasShortcutDiagramFileName "spatial-object-shortcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "spatial-object-example.pdf" ;
+                                                                                      opla-sd:hasConnections """""" ;
+                                                                                      dc:contributor "" ;
+                                                                                      dc:creator "" .
 #################################################################
 #    Object Properties
 #################################################################

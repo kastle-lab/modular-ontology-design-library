@@ -15,14 +15,18 @@
                                                                                         opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/reification"^^rdfs:Literal ;
                                                                                         opla-core:hasShortcutFor "Identifier" ;
                                                                                         opla-core:hasEntanglement "Identifier Entanglement" ;
-                                                                                        opla-cp:hasCompetencyQuestion "The merchant is assigned what identifier in this historical database?",
-                                                                                                                      "Where can this information be validated/obtained?" ;
                                                                                         opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                                        opla-cp:hasCompetencyQuestion "The merchant is assigned what identifier in this historical database?",
+                                                                                                                      "Where can this information be validated/obtained?" ;
                                                                                         opla-sd:hasSchemaDiagramFileName "identifier-pattern.pdf" ;
-                                                                                        opla-sd:hasConnections "" ;
-                                                                                        opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                        opla-sd:hasExampleDiagramFileName "" .
+                                                                                        opla-sd:hasShortcutDiagramFileName "identifier-shortcuts.pdf" ;
+                                                                                        opla-sd:hasExampleDiagramFileName "identifier-example.pdf" ;
+                                                                                        opla-sd:hasConnections """Thing hasIdentifier Identifier
+Identifier identifierAsText xsd:string
+Identifier hasIdentifierType Type""" ;
+                                                                                        dc:contributor "" ;
+                                                                                        dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

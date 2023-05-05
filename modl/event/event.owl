@@ -17,15 +17,18 @@
                                                                                   opla-core:hasPatternName "Event Pattern" ;
                                                                                   opla-core:hasShortcutFor "Event" ;
                                                                                   opla-core:hasEntanglement "Event Entanglement" ;
-                                                                                  opla-cp:hasCompetencyQuestion "Where and when did the 1990 World Chess Championship Match take place?",
-                                                                                                                "Who were involved in the 1990 World Chess Championship Match?" ;
                                                                                   opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
+                                                                                  opla-cp:hasCompetencyQuestion "Where and when did the 1990 World Chess Championship Match take place?",
+                                                                                                                "Who were involved in the 1990 World Chess Championship Match?" ;
                                                                                   opla-sd:hasSchemaDiagramFileName "event-pattern.pdf" ;
-                                                                                  opla-sd:hasConnections "" ;
-                                                                                  opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                  opla-sd:hasExampleDiagramFileName "event-example.pdf" .
-
+                                                                                  opla-sd:hasShortcutDiagramFileName "event-shortcuts.pdf" ;
+                                                                                  opla-sd:hasExampleDiagramFileName "event-example.pdf" ;
+                                                                                  opla-sd:hasConnections """Event subEventOf Event 
+Event providesParticipantRole ParticipantRole existential
+Event hasSpatiotemporalExtent SpatiotemporalExtent""" ;
+                                                                                  dc:contributor "" ;
+                                                                                  dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################
