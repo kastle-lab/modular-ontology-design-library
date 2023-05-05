@@ -15,7 +15,8 @@
                                                                                       opla:hasRelatedPattern ""^^rdfs:Literal ;                                                                                      
                                                                                       opla-core:hasShortcutFor "Trajectory" ;
                                                                                       opla-core:hasEntanglement "Trajectory Entanglement" ;
-                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What is the first step of the procedure?",
+                                                                                                                    "What was the cruise's final stop?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "trajectory.jpg" ;

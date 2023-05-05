@@ -15,7 +15,8 @@
                                                                                 opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Stub" ;
                                                                                 opla-core:hasEntanglement "Stub Entanglement" ;
-                                                                                opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                opla-cp:hasCompetencyQuestion "Which street is that?",
+                                                                                                              "What is the title of Alfred Tennyson?" ;
                                                                                 opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "stub.jpg" ;

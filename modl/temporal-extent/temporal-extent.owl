@@ -15,7 +15,8 @@
                                                                                           opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Temporal Extent" ;
                                                                                           opla-core:hasEntanglement "Temporal Extent Entanglement" ;
-                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:hasCompetencyQuestion "Which dates did World War II span?",
+                                                                                                                        "What era was the Ice Age?" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "temportal-extent.jpg" ;

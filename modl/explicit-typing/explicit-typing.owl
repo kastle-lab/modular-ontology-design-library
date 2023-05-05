@@ -15,13 +15,14 @@
                                                                                           opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Explicit Typing" ;
                                                                                           opla-core:hasEntanglement "Explicit Typing Entanglement" ;
-                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:hasCompetencyQuestion "What is the type of Event", 
+                                                                                                                        "Which type of apparatus is that?" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "explicit-typing.jpg" ;
                                                                                           opla-sd:hasConnections "" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                          opla-sd:hasExampleDiagramFileName "" .
+                                                                                          opla-sd:hasExampleDiagramFileName "explicit-typing-example.pdf" .
 
 #################################################################
 #    Annotation properties

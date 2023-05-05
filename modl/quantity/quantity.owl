@@ -11,11 +11,13 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:Ontology ;
-                                                                                    opla-core:hasPatternName "Quaintity Pattern" ;
+                                                                                    opla-core:hasPatternName "Quantity Pattern" ;
                                                                                     opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                     opla-core:hasShortcutFor "Quantity" ;
                                                                                     opla-core:hasEntanglement "Quantity Entanglement" ;
-                                                                                    opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                    opla-cp:hasCompetencyQuestion "How much does an elephant weigh in kilograms?",
+                                                                                                                  "How long is Jupiter from the Sun, at its farthest, in furlongs?",
+                                                                                                                  "How long ago was the Mezazoic Era?" ;
                                                                                     opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                     opla-sd:hasSchemaDiagramFileName "quantity.jpg" ;

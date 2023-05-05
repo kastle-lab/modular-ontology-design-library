@@ -15,7 +15,15 @@
                                                                                 opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Tree" ;
                                                                                 opla-core:hasEntanglement "Tree Entanglement" ;
-                                                                                opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                opla-cp:hasCompetencyQuestion "Determine the root.",
+                                                                                                              "Determine all ancestors of a given node.",
+                                                                                                              "Determine all leaves.",
+                                                                                                              "Determine all descendants of a given node.",
+                                                                                                              "Determine all descendants of a given node which are leaves.",
+                                                                                                              "Given two nodes, determine whether one is a descendant of the other.",
+                                                                                                              "Given two nodes, determine all common ancestors.",
+                                                                                                              "Given two nodes, determine the latest common ancestor.",
+                                                                                                              "Given two nodes, x and y, determine the earliest ancestor of x which are not an ancestor of y." ;
                                                                                 opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "tree.jpg" ;

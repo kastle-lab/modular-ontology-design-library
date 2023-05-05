@@ -15,7 +15,9 @@
                                                                                           opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Agent Role" ;
                                                                                           opla-core:hasEntanglement "Agent Role Entanglement" ;
-                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:hasCompetencyQuestion "Where was the Battle of Manassas?",
+                                                                                                                        "What path did the moose take to Canada?",
+                                                                                                                        "Where is the largest prairie in the United States?" ;
                                                                                           opla-cp:addressesScenario "AS#1" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "spatial-extent.jpg" ;
                                                                                           opla-sd:hasConnections "" ;

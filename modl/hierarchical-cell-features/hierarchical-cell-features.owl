@@ -20,8 +20,8 @@
                                                              opla-core:hasShortcutFor "spatiallyRelated spatialRelations hasGeometry$^-$" ;
                                                              opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
-                                                             opla-cp:hasCompetencyQuestion "cq1" ,
-                                                                                           "cq2" ;
+                                                             opla-cp:hasCompetencyQuestion "What S2 cells are under a smoke plume, that have a certain crop type?",
+                                                                                           "What crop types are under a particular smoke plume?" ;
                                                              opla-sd:hasConnections """Cell isAdjacentTo Cell
 Cell contains Cell
 Cell spatialRelations Geometry
@@ -34,6 +34,7 @@ Attribute hasValue Quantity existential
 Attribute subclass Provenance""" ;
                                                              opla-sd:hasSchemaDiagramFileName "cell-relations-pattern.pdf" ;
                                                              opla-sd:hasShortcutDiagramFileName "cell-relations-shortcuts.pdf" ;
+                                                             opla-sd:hasExampleDiagramFileName "cell-relations-example.pdf" ;
                                                              dc:contributor "Alicia Scheill" ,
                                                                             "Dalia Varanka" ,
                                                                             "Dean Rehberger" ,

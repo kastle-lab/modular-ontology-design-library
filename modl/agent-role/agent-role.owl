@@ -24,7 +24,7 @@ Use Case Description""" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "agent-role.jpg" ;
                                                                                       opla-sd:hasConnections "" ;
                                                                                       opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                      opla-sd:hasExampleDiagramFileName "" .
+                                                                                      opla-sd:hasExampleDiagramFileName "agent-role-example.pdf" .
 #################################################################
 #    Annotation properties
 #################################################################

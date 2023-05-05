@@ -16,7 +16,9 @@
                                                                                             opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "Participant Role" ;
                                                                                             opla-core:hasEntanglement "Participant RoleEntanglement" ;
-                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                            opla-cp:hasCompetencyQuestion "Who were the participants in this event?",
+                                                                                                                          "Which students attended the lecture?",
+                                                                                                                          "Who were the passengers on the cruise?" ;
                                                                                             opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "participant-role.jpg" ;

@@ -14,7 +14,10 @@
                                                                                       opla-core:hasPatternName "Part Whole Pattern" ;
                                                                                       opla-core:hasShortcutFor "Part Whole" ;
                                                                                       opla-core:hasEntanglement "Part Whole Entanglement" ;
-                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:hasCompetencyQuestion "Is the Everglades part of Florida?",
+                                                                                                                    "Is the plane in the Warehouse?",
+                                                                                                                    "What are all engine components?",
+                                                                                                                    "Is he part of the family?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "part-whole.jpg" ;

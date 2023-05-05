@@ -16,13 +16,15 @@
                                                                                 opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Bag"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Bag" ;
                                                                                 opla-core:hasEntanglement "Bag Entanglement" ;
-                                                                                opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                opla-cp:hasCompetencyQuestion "What bag is this item an element of?",
+                                                                                                              "What resource does this item refer to?", ;
+                                                                                                              "What are the items contained in this bag?"
                                                                                 opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "aggregation.jpg" ;
                                                                                 opla-sd:hasConnections "" ;
                                                                                 opla-sd:hasShortcutDiAgentagramFileName "" ;
-                                                                                opla-sd:hasExampleDiagramFileName "" .
+                                                                                opla-sd:hasExampleDiagramFileName "aggregation-example.pdf" .
 #################################################################
 #    Annotation properties
 #################################################################

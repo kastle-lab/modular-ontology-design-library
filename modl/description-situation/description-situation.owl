@@ -21,7 +21,7 @@ Use Case Description""" ;
                                                                             opla-sd:hasSchemaDiagramFileName "description-situation.jpg" ;
                                                                             opla-sd:hasConnections "" ;
                                                                             opla-sd:hasShortcutDiagramFileName "" ;
-                                                                            opla-sd:hasExampleDiagramFileName "" .
+                                                                            opla-sd:hasExampleDiagramFileName "description-situation-example.pdf" .
 #################################################################
 #    Object Properties
 #################################################################

@@ -15,7 +15,9 @@
                                                                                           opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Agent Role" ;
                                                                                           opla-core:hasEntanglement "Agent Role Entanglement" ;
-                                                                                          opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                          opla-cp:hasCompetencyQuestion "What was the street named during the Great Depression",
+                                                                                                                        "From what years was Al Gore Vice President?",
+                                                                                                                        "What is the unit of measurement used to weigh the elephant?" ;
                                                                                           opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "reification.jpg" ;

@@ -15,7 +15,10 @@
                                                                                         opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                         opla-core:hasShortcutFor "Provenance" ;
                                                                                         opla-core:hasEntanglement "Provenance Entanglement" ;
-                                                                                        opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                        opla-cp:hasCompetencyQuestion "Who are the contributors to this Wikidata page?",
+                                                                                                                      "From which database is this entry taken?",
+                                                                                                                      "Which method was used to generate this chart and from which spreadsheet did teh data originate?",
+                                                                                                                      "Who provided this research result?" ;
                                                                                         opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                         opla-sd:hasSchemaDiagramFileName "provenance.jpg" ;

@@ -17,7 +17,7 @@
                                                                                       opla-core:hasPatternName "Agent Role Pattern" ;
                                                                                       opla-core:hasShortcutFor "Agent Role" ;
                                                                                       opla-core:hasEntanglement "Agent Role Entanglement" ;
-                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What is the name of the lecturer?" ;
                                                                                       opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "name-stub.jpg" ;

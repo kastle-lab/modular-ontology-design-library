@@ -17,13 +17,14 @@
                                                                                   opla-core:hasPatternName "Event Pattern" ;
                                                                                   opla-core:hasShortcutFor "Event" ;
                                                                                   opla-core:hasEntanglement "Event Entanglement" ;
-                                                                                  opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                  opla-cp:hasCompetencyQuestion "Where and when did the 1990 World Chess Championship Match take place?",
+                                                                                                                "Who were involved in the 1990 World Chess Championship Match?" ;
                                                                                   opla-cp:addressesScenario """Use Case
 Use Case Description""" ;
                                                                                   opla-sd:hasSchemaDiagramFileName "event.jpg" ;
                                                                                   opla-sd:hasConnections "" ;
                                                                                   opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                  opla-sd:hasExampleDiagramFileName "" .
+                                                                                  opla-sd:hasExampleDiagramFileName "event-example.pdf" .
 
 #################################################################
 #    Annotation properties

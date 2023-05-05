@@ -16,7 +16,9 @@
                                                                                                                         "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal ;
                                                                                                 opla-core:hasShortcutFor "SpatioTemporal Extent" ;
                                                                                                 opla-core:hasEntanglement "SpatioTemporal Extent Entanglement" ;
-                                                                                                opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                                opla-cp:hasCompetencyQuestion "Show which birds stop at x and y.",
+                                                                                                                              "Show the trajectories which cross national parks.",
+                                                                                                                              "Show the trajectories of birds which are less than one year old." ;
                                                                                                 opla-cp:addressesScenario "AS#1" ;
                                                                                                 opla-sd:hasSchemaDiagramFileName "spatiotemporal-extent.jpg" ;
                                                                                                 opla-sd:hasConnections "" ;
