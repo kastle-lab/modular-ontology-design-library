@@ -1,48 +1,31 @@
-@prefix : <http://daselab.org/WinstonPartWhole#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
-@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
-@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
-@base <http://daselab.org/WinstonPartWhole#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
-                                                      opla-core:hasPatternName "Winston Part Whole Pattern" ;
-                                                      opla-core:hasShortcutFor "Winston Part Whole" ;
-                                                      opla-core:hasEntanglement "Winston Part Whole Entanglement" ;
-                                                      opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
-                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
-                                                      opla-sd:hasSchemaDiagramFileName "part-whole-contextualized-pattern.pdf" ;
-                                                      opla-sd:hasShortcutDiagramFileName "part-whole-contextualized-shorcuts.pdf" ;
-                                                      opla-sd:hasExampleDiagramFileName "part-whole-contextualized-example.pdf" ;                                                      
-                                                      opla-sd:hasConnections """""" ;
-                                                      dc:contributor "" ;
-                                                      dc:creator "" .
-
+                                                      opla-core:hasPatternName "Winston Part Whole Pattern" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://daselab.org/WinstonPartWhole#hasWhole
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#hasWhole
 :hasWhole rdf:type owl:ObjectProperty .
 
 
-###  http://daselab.org/WinstonPartWhole#isPartOf
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#isPartOf
 :isPartOf rdf:type owl:ObjectProperty .
 
 
-###  http://daselab.org/WinstonPartWhole#part-of
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#part-of
 :part-of rdf:type owl:ObjectProperty .
 
 
-###  http://daselab.org/WinstonPartWhole#po-component
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-component
 :po-component rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :part-of ;
               rdf:type owl:AsymmetricProperty ;
@@ -51,7 +34,7 @@ Use Case Description""" ;
                                      ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-feature
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-feature
 :po-feature rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :part-of ;
             rdf:type owl:AsymmetricProperty ;
@@ -60,7 +43,7 @@ Use Case Description""" ;
                                    ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-member
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-member
 :po-member rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :part-of ;
            rdf:type owl:AsymmetricProperty ;
@@ -69,7 +52,7 @@ Use Case Description""" ;
                                   ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-place
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-place
 :po-place rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :part-of ;
           rdf:type owl:AsymmetricProperty ;
@@ -78,7 +61,7 @@ Use Case Description""" ;
                                  ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-portion
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-portion
 :po-portion rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :part-of ;
             rdf:type owl:AsymmetricProperty ;
@@ -87,7 +70,7 @@ Use Case Description""" ;
                                    ) .
 
 
-###  http://daselab.org/WinstonPartWhole#po-stuff
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#po-stuff
 :po-stuff rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :part-of ;
           rdf:type owl:AsymmetricProperty ;
@@ -96,7 +79,7 @@ Use Case Description""" ;
                                  ) .
 
 
-###  http://daselab.org/WinstonPartWhole#spatially-located-in
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#spatially-located-in
 :spatially-located-in rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdf:type owl:ReflexiveProperty ;
@@ -145,46 +128,46 @@ Use Case Description""" ;
 #    Classes
 #################################################################
 
-###  http://daselab.org/WinstonPartWhole#PO-Component-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Component-Type
 :PO-Component-Type rdf:type owl:Class ;
                    rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Feature-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Feature-Type
 :PO-Feature-Type rdf:type owl:Class ;
                  rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Member-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Member-Type
 :PO-Member-Type rdf:type owl:Class ;
                 rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Part-Of-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Part-Of-Type
 :PO-Part-Of-Type rdf:type owl:Class ;
                  rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Place-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Place-Type
 :PO-Place-Type rdf:type owl:Class ;
                rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Portion-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Portion-Type
 :PO-Portion-Type rdf:type owl:Class ;
                  rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#PO-Stuff-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#PO-Stuff-Type
 :PO-Stuff-Type rdf:type owl:Class ;
                rdfs:subClassOf :RelationInstance .
 
 
-###  http://daselab.org/WinstonPartWhole#RelationInstance
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#RelationInstance
 :RelationInstance rdf:type owl:Class .
 
 
-###  http://daselab.org/WinstonPartWhole#Spatially-Located-In-Type
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#Spatially-Located-In-Type
 :Spatially-Located-In-Type rdf:type owl:Class ;
                            rdfs:subClassOf :RelationInstance .
 
