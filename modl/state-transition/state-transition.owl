@@ -22,7 +22,7 @@ Use Case Description""" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "state-transition-pattern.pdf" ;
                                                                                             opla-sd:hasShortcutDiagramFileName "" ;
                                                                                             opla-sd:hasExampleDiagramFileName "" ;
-                                                                                            opla-sd:hasConnections "" ;
+                                                                                            opla-sd:hasConnections """""" ;
                                                                                             dc:contributor "" ;
                                                                                             dc:creator "" .
 #################################################################

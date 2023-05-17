@@ -34,9 +34,7 @@ Data performsInputRole InputRole
 Data performsOutputRole OutputRole
 Data performsParameterRole ParameterRole
 Data hasPayload Payload
-Data hasDataType DataType 
-
-""" ;
+Data hasDataType DataType""" ;
                                                                   dc:contributor "" ;
                                                                   dc:creator "" .
 #################################################################

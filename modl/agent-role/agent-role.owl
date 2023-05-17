@@ -27,8 +27,7 @@ Use Case Description""" ;
                                                                                       opla-sd:hasExampleDiagramFileName "agent-role-example.pdf" ;
                                                                                       opla-sd:hasConnections """Agent performsAgentRole AgentRole
 Thing providesAgentRole AgentRole
-AgentRole hasTemporalExtent TemporalExtent
-""" ;
+AgentRole hasTemporalExtent TemporalExtent""" ;
                                                                                       dc:contributor "" ;
                                                                                       dc:creator "" .
 

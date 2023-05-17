@@ -21,7 +21,7 @@ Use Case Description""" ;
                                                                                     opla-sd:hasSchemaDiagramFileName "record-pattern.pdf" ;
                                                                                     opla-sd:hasShortcutDiagramFileName "" ;
                                                                                     opla-sd:hasExampleDiagramFileName "" ;
-                                                                                    opla-sd:hasConnections "" ;
+                                                                                    opla-sd:hasConnections """""" ;
                                                                                     dc:contributor "" ;
                                                                                     dc:creator "" .
 

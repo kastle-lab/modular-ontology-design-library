@@ -24,7 +24,7 @@ Use Case Description""" ;
                                                                             opla-sd:hasSchemaDiagramFileName "description-situation-pattern.pdf" ;
                                                                             opla-sd:hasShortcutDiagramFileName "description-situation-shortcuts.pdf" ;
                                                                             opla-sd:hasExampleDiagramFileName "description-situation-example.pdf" ;
-                                                                            opla-sd:hasConnections "" ;
+                                                                            opla-sd:hasConnections """""" ;
                                                                             dc:contributor "" ;
                                                                             dc:creator "" .
 #################################################################

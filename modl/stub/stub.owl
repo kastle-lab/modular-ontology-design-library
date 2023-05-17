@@ -20,7 +20,7 @@ Use Case Description""" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "stub-pattern.pdf" ;
                                                                                 opla-sd:hasConnections """Stub hasValue xsd:AnyValue""" ;
                                                                                 dc:contributor "" ;
-                                                                                dc:creator .
+                                                                                dc:creator "" .
 
 #################################################################
 #    Annotation properties

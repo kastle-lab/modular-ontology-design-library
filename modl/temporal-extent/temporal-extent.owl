@@ -22,7 +22,7 @@ Use Case Description""" ;
                                                                                                                         "What era was the Ice Age?" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "temporal-extent-pattern.pdf" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "temporal-extent-shortcuts.pdf" ;
-                                                                                          opla-sd:hasExampleDiagramFileName "temporal-extent-example.pdf"
+                                                                                          opla-sd:hasExampleDiagramFileName "temporal-extent-example.pdf" ;
                                                                                           opla-sd:hasConnections """TemporalExtent contains ComplexTemporalExtent
 TimeInterval subclass ComplexTemporalExtent
 PointInTime subclass ComplexTemporalExtent
