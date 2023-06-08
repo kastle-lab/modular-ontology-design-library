@@ -16,8 +16,7 @@
                                                                             opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation"^^rdfs:Literal ;
                                                                             opla-core:hasShortcutFor "Description Situation" ;
                                                                             opla-core:hasEntanglement "Description Situation Entanglement" ;
-                                                                            opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                            opla-cp:addressesScenario """Event Planning and Management""" ;
                                                                             opla-cp:hasCompetencyQuestion "What situations satisfy a certain description?" , 
                                                                                                           "What descriptions can be (partly) satisfied by that situation?" , 
                                                                                                           "What situations (partly) satisfying a certain description can emerge out of this dataset?" ;
