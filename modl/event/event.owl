@@ -18,8 +18,7 @@
                                                                                   opla-core:hasPatternName "Event Pattern" ;
                                                                                   opla-core:hasShortcutFor "Event" ;
                                                                                   opla-core:hasEntanglement "Event Entanglement" ;
-                                                                                  opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                                  opla-cp:addressesScenario """Sports Event Management""" ;
                                                                                   opla-cp:hasCompetencyQuestion "Where and when did the 1990 World Chess Championship Match take place?",
                                                                                                                 "Who were involved in the 1990 World Chess Championship Match?" ;
                                                                                   opla-sd:hasSchemaDiagramFileName "event-pattern.pdf" ;
