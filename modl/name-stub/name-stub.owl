@@ -15,8 +15,7 @@
                                                                                       opla-core:hasPatternName "Name Stub Pattern" ;
                                                                                       opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                       opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/stub"^^rdfs:Literal ;
-                                                                                      opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                                      opla-cp:addressesScenario """Extract name-stubs from a given string""" ;
                                                                                       opla-cp:hasCompetencyQuestion "What is the name of the lecturer?" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "name-stub-pattern.pdf" ;
                                                                                       opla-sd:hasExampleDiagramFileName "name-stub-example.pdf" ;
