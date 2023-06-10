@@ -13,8 +13,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping> rdf:type owl:Ontology ;
                                                                                           opla-core:hasPatternName "Explicit Typing Pattern" ;                                                                                                                                                                                  
-                                                                                          opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                                          opla-cp:addressesScenario """Assigning types to products""" ;
                                                                                           opla-cp:hasCompetencyQuestion "What is the type of Event", 
                                                                                                                         "Which type of apparatus is that?" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "explicit-typing-pattern.pdf" ;
