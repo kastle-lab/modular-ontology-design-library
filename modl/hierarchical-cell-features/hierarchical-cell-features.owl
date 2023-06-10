@@ -18,8 +18,7 @@
 <http://stko-roy.geog.ucsb.edu/lod/patterns/cell-relations> rdf:type owl:Ontology ;
                                                              opla-core:hasPatternName "Cell Relations Pattern" ;
                                                              opla-core:hasShortcutFor "spatiallyRelated spatialRelations hasGeometry$^-$" ;
-                                                             opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                             opla-cp:addressesScenario """hierarchical relationships between geometric shapes""" ;
                                                              opla-cp:hasCompetencyQuestion "What S2 cells are under a smoke plume, that have a certain crop type?",
                                                                                            "What crop types are under a particular smoke plume?" ;
                                                              opla-sd:hasConnections """Cell isAdjacentTo Cell
