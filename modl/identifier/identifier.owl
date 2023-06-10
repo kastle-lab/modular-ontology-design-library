@@ -16,8 +16,7 @@
                                                                                         opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/reification"^^rdfs:Literal ;
                                                                                         opla-core:hasShortcutFor "Identifier" ;
                                                                                         opla-core:hasEntanglement "Identifier Entanglement" ;
-                                                                                        opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                                        opla-cp:addressesScenario """A merchant being assigned an identifier in a database such as ID number""" ;
                                                                                         opla-cp:hasCompetencyQuestion "The merchant is assigned what identifier in this historical database?",
                                                                                                                       "Where can this information be validated/obtained?" ;
                                                                                         opla-sd:hasSchemaDiagramFileName "identifier-pattern.pdf" ;
