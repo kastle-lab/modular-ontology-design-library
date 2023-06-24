@@ -16,8 +16,7 @@
                                                                                       opla:hasRelatedPattern "https://iccl.inf.tu-dresden.de/web/Inproceedings3121/en"^^rdfs:Literal ;                                                                                      
                                                                                       opla-core:hasShortcutFor "Trajectory" ;
                                                                                       opla-core:hasEntanglement "Trajectory Entanglement" ;
-                                                                                      opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                                      opla-cp:addressesScenario """A transportation management system adopts a modular ontology design based on the Trajectory pattern to monitor and analyze the movement of shipping containers along shipping routes, tracking their positions, arrival times, and departure times at various ports to optimize logistics operations, streamline supply chain processes, and improve overall efficiency.""" ;
                                                                                       opla-cp:hasCompetencyQuestion "What is the first step of the procedure?",
                                                                                                                     "What was the cruise's final stop?" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "trajectory-pattern.pdf" ;
