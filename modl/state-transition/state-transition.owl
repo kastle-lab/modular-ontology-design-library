@@ -16,13 +16,22 @@
                                                                                             opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "State Transition" ;
                                                                                             opla-core:hasEntanglement "State Transition Entanglement" ;
-                                                                                            opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
-                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                            opla-cp:addressesScenario """
+A task management application employs a modular ontology design based on the State Transition pattern to efficiently track and manage the different states and transitions of tasks, providing users with an organized and streamlined workflow.""" ;
+                                                                                            opla-cp:hasCompetencyQuestion "Can you provide examples of how the task management application can utilize the state transition information to generate task reports, automate task assignments, or monitor overall project progress?",
+
+"How does the modular ontology design ensure data consistency, accuracy, and access control for the recorded state transition information?" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "state-transition-pattern.pdf" ;
                                                                                             opla-sd:hasShortcutDiagramFileName "" ;
                                                                                             opla-sd:hasExampleDiagramFileName "" ;
-                                                                                            opla-sd:hasConnections """""" ;
+                                                                                            opla-sd:hasConnections """Thing hasState State
+State hasNextState
+State hasDescriptor Descriptor
+Process hasState State
+StateTransition startsFrom/endsAt State
+Action Triggers StateTransition
+Process hasAction Action
+Action actsOn State""" ;
                                                                                             dc:contributor "" ;
                                                                                             dc:creator "" .
 #################################################################
