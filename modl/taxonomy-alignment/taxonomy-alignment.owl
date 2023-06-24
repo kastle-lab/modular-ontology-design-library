@@ -16,13 +16,22 @@
                                                                                             opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "Taxonomy Alignment" ;
                                                                                             opla-core:hasEntanglement "Taxonomy Alignment Entanglement" ;
-                                                                                            opla-cp:addressesScenario """Use Case
-Use Case Description""" ;                                                                                            
-                                                                                            opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                            opla-cp:addressesScenario """
+A recipe website implements a modular ontology design based on the Taxonomy Alignment pattern to accurately categorize and organize recipes according to different culinary styles, ingredients, and dietary preferences, ensuring easy navigation for users and enabling them to discover relevant recipes based on their preferences.""" ;                                                                                            
+                                                                                            opla-cp:hasCompetencyQuestion "How does the recipe website use the Taxonomy Alignment pattern to categorize recipes based on different culinary styles and ingredients?",
+
+"Can you explain how the taxonomy alignment information helps users easily find recipes that match their dietary preferences?",
+
+"How does the modular ontology handle the addition of new culinary styles or ingredients to ensure the continuous categorization of recipes?" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "taxonomy-alignment-pattern.pdf" ;
                                                                                             opla-sd:hasShortcutDiagramFileName "taxonomy-alignment-shorcuts.pdf" ;
                                                                                             opla-sd:hasExampleDiagramFileName "taxonomy-alignment-example.pdf" ;
-                                                                                            opla-sd:hasConnections """""" ;
+                                                                                            opla-sd:hasConnections """ConceptConnection organizedBy OrganizationScheme
+ConceptCollection hasMember Concept
+Concept describedAs Description
+Concept definedAs Definition
+Concept hasMappingRelation MappingRelation
+MappingRelation mapsOnto Concept""" ;
                                                                                             dc:contributor "" ;
                                                                                             dc:creator "" .
 
