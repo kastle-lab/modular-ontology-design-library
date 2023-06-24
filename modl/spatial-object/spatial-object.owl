@@ -16,13 +16,18 @@
                                                                                       opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                       opla-core:hasShortcutFor "Spatial Object" ;
                                                                                       opla-core:hasEntanglement "Spatial Object Entanglement" ;
-                                                                                      opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
-                                                                                      opla-cp:hasCompetencyQuestion "CQ#1" ;
+                                                                                      opla-cp:addressesScenario """A mobile navigation application utilizes a modular ontology design based on the Spatial Object pattern to efficiently manage and display various geographic features, such as points of interest, landmarks, and routes, providing users with accurate and user-friendly navigation guidance.""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What information is associated with spatial objects in the modular ontology, such as coordinates and names?",
+
+"How does the application use the spatial object data to provide accurate navigation guidance to users?",
+
+"How is the spatial object information integrated with other navigation-related data in the application, such as traffic updates or user preferences?" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "spatial-object-pattern.pdf" ;
                                                                                       opla-sd:hasShortcutDiagramFileName "spatial-object-shortcuts.pdf" ;
                                                                                       opla-sd:hasExampleDiagramFileName "spatial-object-example.pdf" ;
-                                                                                      opla-sd:hasConnections """""" ;
+                                                                                      opla-sd:hasConnections """SpatialObject spatial-relations
+Feature hasGeometry Geometry
+Geometry hasSerialization rdfs:Literal""" ;
                                                                                       dc:contributor "" ;
                                                                                       dc:creator "" .
 #################################################################
