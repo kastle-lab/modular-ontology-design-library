@@ -19,8 +19,8 @@
                                                                                                                 "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Spatial Extent" ;
                                                                                           opla-core:hasEntanglement "Spatial Extent Entanglement" ;
-                                                                                          opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+                                                                                          opla-cp:addressesScenario """
+A wildlife conservation organization adopts a modular ontology design based on the Spatial Extent pattern to effectively manage and monitor the habitat ranges of various endangered species in a protected area""" ;
                                                                                           opla-cp:hasCompetencyQuestion "Where was the Battle of Manassas?",
                                                                                                                         "What path did the moose take to Canada?",
                                                                                                                         "Where is the largest prairie in the United States?" ;
