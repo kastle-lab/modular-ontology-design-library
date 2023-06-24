@@ -11,7 +11,7 @@
 opla-core:hasShortcutFor "Part Whole Contextualized" ;
                                                                                       opla-core:hasEntanglement "Part Whole Contextualized Entanglement" ;
                                                                                       opla:hasRelatedPattern "" ;
-                                                                                      opla-cp:addressesScenario """A hypothetical company utilizes a modular ontology design based on the Part-Whole Contextualized pattern to streamline the production of their flagship product by effectively organizing and integrating various components, modules, assembly steps, and quality control criteria..""" ;
+                                                                                      opla-cp:addressesScenario """A hypothetical company utilizes a modular ontology design based on the Part-Whole Contextualized pattern to streamline the production of their flagship product by effectively organizing and integrating various components, modules, assembly steps, and quality control criteria?.""" ;
                                                                                       opla-cp:hasCompetencyQuestion "What are the main modules and sub-modules within the ontology design?",
 
 "How do the hardware components and software modules relate to each other in the ontology?",
