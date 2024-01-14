@@ -9,18 +9,18 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix kwg-ont: <http://stko-roy.geog.ucsb.edu/lod/ontology/> .
 @prefix kwg-pat: <http://stko-roy.geog.ucsb.edu/lod/patterns#> .
-@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
-@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/hierarchicalcellfeatures> .
 
 <http://stko-roy.geog.ucsb.edu/lod/patterns/cell-relations> rdf:type owl:Ontology ;
                                                              opla-core:hasPatternName "Cell Relations Pattern" ;
                                                              opla-core:hasShortcutFor "spatiallyRelated spatialRelations hasGeometry$^-$" ;
-                                                             opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
-                                                             opla-cp:hasCompetencyQuestion "cq1" ,
-                                                                                           "cq2" ;
+                                                             opla-cp:addressesScenario """hierarchical relationships between geometric shapes""" ;
+                                                             opla-cp:hasCompetencyQuestion "What S2 cells are under a smoke plume, that have a certain crop type?",
+                                                                                           "What crop types are under a particular smoke plume?" ;
                                                              opla-sd:hasConnections """Cell isAdjacentTo Cell
 Cell contains Cell
 Cell spatialRelations Geometry
@@ -33,6 +33,7 @@ Attribute hasValue Quantity existential
 Attribute subclass Provenance""" ;
                                                              opla-sd:hasSchemaDiagramFileName "cell-relations-pattern.pdf" ;
                                                              opla-sd:hasShortcutDiagramFileName "cell-relations-shortcuts.pdf" ;
+                                                             opla-sd:hasExampleDiagramFileName "cell-relations-example.pdf" ;
                                                              dc:contributor "Alicia Scheill" ,
                                                                             "Dalia Varanka" ,
                                                                             "Dean Rehberger" ,

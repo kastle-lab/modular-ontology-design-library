@@ -1,16 +1,41 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern> rdf:type owl:Ontology ;
-                                                                  opla-core:hasPatternName "Data Transformation Pattern" .
-
+                                                                  opla-core:hasPatternName "Data Transformation Pattern" ;
+                                                                  opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DataTransformationPattern"^^rdfs:Literal ;
+                                                                  opla-core:hasShortcutFor "Data Transformation" ;
+                                                                  opla-core:hasEntanglement "Data Transformation Entanglement" ;
+                                                                  opla-cp:addressesScenario """E-commerce Order Processing""" ;
+                                                                  opla-cp:hasCompetencyQuestion "What are the different data sources used for customer orders in our e-commerce platform?","How can we transform unstructured customer feedback comments into structured sentiment analysis data?","What transformation rules should be applied to convert a text document written in Markdown format into TXT format?" ;
+                                                                  opla-sd:hasSchemaDiagramFileName "data-transformation-pattern.pdf" ;
+                                                                  opla-sd:hasShortcutDiagramFileName "data-transformation-shortcuts.pdf" ;
+                                                                  opla-sd:hasExampleDiagramFileName "data-transformation-example.pdf" ;
+                                                                  opla-sd:hasConnections """DataTransformation subclass Algorithm
+DataTransformation occursInCE ComputationalEnvironment
+DataTransformation occursDuringSTE SpatiotemporalExtent
+DataTransformation providesInputRole InputRole 
+DataTransformation providesOutputRole OutputRole 
+DataTransformation providesParameterRole ParameterRole
+Data subclass EntityWithProvenance
+Data participatesInDataTransformation DataTransformation
+Data performsInputRole InputRole
+Data performsOutputRole OutputRole
+Data performsParameterRole ParameterRole
+Data hasPayload Payload
+Data hasDataType DataType""" ;
+                                                                  dc:contributor "" ;
+                                                                  dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

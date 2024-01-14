@@ -1,15 +1,49 @@
 @prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/recurrentevent> rdf:type owl:Ontology ;
-                                                                                            opla-core:hasPatternName "Recurrent Event Pattern" .
-
+                                                                                          opla-core:hasPatternName "Recurrent Event Pattern" ;
+                                                                                          opla:hasRelatedPattern  "http://ontologydesignpatterns.org/wiki/Submissions:Situation"^^rdfs:Literal ,
+                                                                                                                  "http://ontologydesignpatterns.org/wiki/Submissions:Sequence"^^rdfs:Literal ,
+                                                                                                                  "http://ontologydesignpatterns.org/wiki/Submissions:Classification"^^rdfs:Literal ,
+                                                                                                                  "http://ontologydesignpatterns.org/wiki/Submissions:CollectionEntity"^^rdfs:Literal ,
+                                                                                                                  "http://ontologydesignpatterns.org/wiki/Submissions:RecurrentEventSeries"^^rdfs:Literal ,
+                                                                                                                  "https://ceur-ws.org/Vol-2459/pattern1.pdf"^^rdfs:Literal ;
+                                                                                          opla-cp:addressesScenario """Umbria Jazz
+Umbria Jazz is a collection of events, which all take place in July and in the Italian region of Umbria, and has the musical genre jazz as a topic. Its events recur at regular time periods, i.e. annually.""" ;
+                                                                                          opla-cp:hasCompetencyQuestion "What are the events of a recurrent event series?" ,
+                                                                                                                        "Which is the time period elapsing between two events of a recurrent event series?" ,
+                                                                                                                        "When is the next event of a recurrent event series scheduled?" ,
+                                                                                                                        "What are the unifying criteria shared by all the events in a recurrent event series?" ,
+                                                                                                                        "Which is the (immediate) next event in a recurrent event series?" ,
+                                                                                                                        "Which is the (immediate) previous event in a recurrent event series?" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "recurrent-event-pattern.pdf" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "recurrent-event-shortcuts.pdf" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "recurrent-event-example.pdf" ;
+                                                                                          opla-sd:hasConnections """RecurrentEventSeries subclass Collection
+RecurrentEventSeries subclass Situation
+RecurrentEventSeries hasMemberEvent Event
+RecurrentEventSeries hasTimePeriod TimePeriod
+Event subclass Eventuality
+Event hasNextEvent Event
+Event hasPreviousEvent Event
+Event isTheLastEvent xsd:boolean
+Event hasEventNumber xsd:integer 
+Event hasTimePeriodBeforeNextEvent TimePeriod
+RecurrentEventSeries hasUnifyingFactor UnifyingFactor
+UnifyingFactor subclass Concept""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator "" .
 #################################################################
 #    Object Properties
 #################################################################
