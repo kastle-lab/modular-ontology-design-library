@@ -1,0 +1,145 @@
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> .
+
+<https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> rdf:type owl:Ontology ;
+                                                                                      opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
+                                                                                                              "http://ontologydesignpatterns.org/wiki/Submissions:AgentRole"^^rdfs:Literal ;
+                                                                                      opla-core:hasPatternName "Agent Role Pattern" ;
+                                                                                      opla-core:hasShortcutFor "Agent Role" ;
+                                                                                      opla-core:hasEntanglement "Agent Role Entanglement" ;
+                                                                                      opla-cp:addressesScenario """Use Case
+Use Case Description""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "When was Cogan Shimizu a student at Wright State University?",
+                                                                                      "Who was the lead actor for the movie, Sharknado?",
+                                                                                      "Who was on the World Cup winning team in 2017?" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "agent-role-pattern.pdf" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "agent-role-shortcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "agent-role-example.pdf" ;
+                                                                                      opla-sd:hasConnections """Agent performsAgentRole AgentRole
+Thing providesAgentRole AgentRole
+AgentRole hasTemporalExtent TemporalExtent""" ;
+                                                                                      dc:contributor "" ;
+                                                                                      dc:creator "" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla#hasRelatedPattern
+opla:hasRelatedPattern rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla#isNativeTo
+opla:isNativeTo rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla#ofExternalType
+opla:ofExternalType rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#hasTemporalExtent
+:hasTemporalExtent rdf:type owl:ObjectProperty ;
+                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal . 
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#isPerformedBy
+:isPerformedBy rdf:type owl:ObjectProperty ;
+               owl:inverseOf :performsAgentRole ;
+               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#isProvidedBy
+:isProvidedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :providesAgentRole ;
+              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#performsAgentRole
+:performsAgentRole rdf:type owl:ObjectProperty ;
+                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#providesAgentRole
+:providesAgentRole rdf:type owl:ObjectProperty ;
+                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasTemporalExtent ;
+                            owl:allValuesFrom :TemporalExtent
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :providesAgentRole ;
+                            owl:allValuesFrom :AgentRole
+                          ] .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent
+:Agent rdf:type owl:Class ;
+       opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
+       opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole
+:AgentRole rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :isPerformedBy ;
+                             owl:allValuesFrom :Agent
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasTemporalExtent ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :TemporalExtent
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isPerformedBy ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Agent
+                           ] ;
+           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+
+
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#TemporalExtent
+:TemporalExtent rdf:type owl:Class ;
+                opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
+                opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :hasTemporalExtent ;
+  owl:someValuesFrom :TemporalExtent ;
+  rdfs:subClassOf :AgentRole
+] .
+
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :isPerformedBy ;
+  owl:someValuesFrom :Agent ;
+  rdfs:subClassOf :AgentRole
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

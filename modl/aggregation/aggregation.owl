@@ -18,7 +18,7 @@
                                                                                 opla-core:hasShortcutFor "Bag" ;
                                                                                 opla-core:hasEntanglement "Bag Entanglement" ;
                                                                                 opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+A simple model for connecting many concepts to a single concept""" ;
                                                                                 opla-cp:hasCompetencyQuestion "What bag is this item an element of?",
                                                                                                               "What resource does this item refer to?", 
                                                                                                               "What are the items contained in this bag?" ;
