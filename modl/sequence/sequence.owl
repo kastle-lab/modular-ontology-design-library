@@ -1,16 +1,35 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> rdf:type owl:Ontology ;
-                                                                                 opla-core:hasPatternName "Sequence Pattern" ;
-                                                                                 opla:generatlizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+                                                                                opla-core:hasPatternName "Sequence Pattern" ;
+                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                opla:generalizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
+                                                                                opla-core:hasShortcutFor "Sequence" ;
+                                                                                opla-core:hasEntanglement "Sequence Entanglement" ;
+                                                                                opla-cp:addressesScenario """A music streaming platform utilizes a modular ontology design based on the Sequence pattern to curate personalized playlists for users based on their listening history, preferences, and sequencing rules, enhancing their music discovery experience""" ;
+                                                                                opla-cp:hasCompetencyQuestion "What is the first element of the list?", 
+                                                                                                              "What is the last element of the list?",
+                                                                                                              "Is x a predecessor of y?" ;
+                                                                                opla-sd:hasSchemaDiagramFileName "sequence-pattern.pdf" ;
+                                                                                opla-sd:hasShortcutDiagramFileName "sequence-shortcuts.pdf" ;
+                                                                                opla-sd:hasExampleDiagramFileName "sequence-example.pdf" ;
+                                                                                opla-sd:hasConnections """FirstItem subclass ListItem
+LastItem subclass ListItem
+ListItem hasNext ListItem
+ListItem hasSuccessor ListItem""" ;
+                                                                                dc:contributor "" ;
+                                                                                dc:creator "" .
 
 #################################################################
 #    Annotation properties

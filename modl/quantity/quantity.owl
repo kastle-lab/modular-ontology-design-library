@@ -1,16 +1,34 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:Ontology ;
-                                                                                    opla-core:hasPatternName "Quaintity Pattern" .
-
+                                                                                    opla-core:hasPatternName "Quantity Pattern" ;
+                                                                                    opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                    opla-core:hasShortcutFor "Quantity" ;
+                                                                                    opla-core:hasEntanglement "Quantity Entanglement" ;
+                                                                                    opla-cp:addressesScenario """A retail company utilizes a modular ontology design based on the Quantity pattern to efficiently manage and track inventory levels across multiple stores.""" ;
+                                                                                    opla-cp:hasCompetencyQuestion "How much does an elephant weigh in kilograms?",
+                                                                                                                  "How long is Jupiter from the Sun, at its farthest, in furlongs?",
+                                                                                                                  "How long ago was the Mezazoic Era?" ;
+                                                                                    opla-sd:hasSchemaDiagramFileName "quantity-pattern.pdf" ;
+                                                                                    opla-sd:hasShortcutDiagramFileName "quantity-shortcuts.pdf" ;
+                                                                                    opla-sd:hasExampleDiagramFileName "quantity-example.pdf" ;
+                                                                                    opla-sd:hasConnections """Quantity hasQuantityKind QuantityKind
+Quantity hasQuantityValue QuantityValue
+QuantityValue hasUnit Unit 
+QuantityValue hasNumericValue xsd:double""" ;
+                                                                                    dc:contributor "" ;
+                                                                                    dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

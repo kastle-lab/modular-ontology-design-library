@@ -1,16 +1,35 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/geosparql> rdf:type owl:Ontology ;
-                                                                                     opla-core:hasPatternName "Spatial Object Pattern" .
+                                                                                     opla-core:hasPatternName "Spatial Object Pattern" ;
+                                                                                      opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                      opla-core:hasShortcutFor "Spatial Object" ;
+                                                                                      opla-core:hasEntanglement "Spatial Object Entanglement" ;
+                                                                                      opla-cp:addressesScenario """A mobile navigation application utilizes a modular ontology design based on the Spatial Object pattern to efficiently manage and display various geographic features, such as points of interest, landmarks, and routes, providing users with accurate and user-friendly navigation guidance.""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What information is associated with spatial objects in the modular ontology, such as coordinates and names?",
 
+"How does the application use the spatial object data to provide accurate navigation guidance to users?",
+
+"How is the spatial object information integrated with other navigation-related data in the application, such as traffic updates or user preferences?" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "spatial-object-pattern.pdf" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "spatial-object-shortcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "spatial-object-example.pdf" ;
+                                                                                      opla-sd:hasConnections """SpatialObject spatial-relations
+Feature hasGeometry Geometry
+Geometry hasSerialization rdfs:Literal""" ;
+                                                                                      dc:contributor "" ;
+                                                                                      dc:creator "" .
 #################################################################
 #    Object Properties
 #################################################################

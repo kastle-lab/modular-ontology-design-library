@@ -1,15 +1,40 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/reporting-event#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/reporting-event#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/reporting-event> rdf:type owl:Ontology ;
-                                                                                            opla-core:hasPatternName "Reporting Event Pattern".
+                                                                                          opla-core:hasPatternName "Reporting Event Pattern" ;
+                                                                                          opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                          opla-core:hasShortcutFor "Reporting Event" ;
+                                                                                          opla-core:hasEntanglement "Reporting Event Entanglement" ;
+                                                                                          opla-cp:addressesScenario """A smart city initiative implements a modular ontology design based on the Reporting Event pattern to effectively manage and analyze various events occurring within the city.""" ;
+                                                                                          opla-cp:hasCompetencyQuestion "How does the modular ontology design using the Reporting Event pattern enhance the event management capabilities of the smart city initiative?",
 
+"What are the key attributes associated with different event types in the modular ontology, such as traffic incidents, environmental hazards, and community events?",
+
+"How can residents and city officials report events and contribute to the event management system within the smart city?",
+
+"How does the modular ontology design enable the analysis of event data to identify patterns, trends, and areas requiring attention?",
+
+"What benefits does the smart city initiative derive from implementing the modular ontology design for event reporting and analysis?" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "reporting-event-pattern.pdf" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "" ;
+                                                                                          opla-sd:hasConnections """ActualEventView isAbout ActualEvent
+ActualEventView hasContext ActualEventViewContext
+ReportingEvent hasAuthor EventReporter
+ReportingEvent isBasedOn Source""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

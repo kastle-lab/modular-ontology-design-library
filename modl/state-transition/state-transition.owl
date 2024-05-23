@@ -1,15 +1,39 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition> rdf:type owl:Ontology ;
-                                                                                              opla-core:hasPatternName "State Transition Pattern" .
+                                                                                            opla-core:hasPatternName "State Transition Pattern" ;
+                                                                                            opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                            opla-core:hasShortcutFor "State Transition" ;
+                                                                                            opla-core:hasEntanglement "State Transition Entanglement" ;
+                                                                                            opla-cp:addressesScenario """
+A task management application employs a modular ontology design based on the State Transition pattern to efficiently track and manage the different states and transitions of tasks, providing users with an organized and streamlined workflow.""" ;
+                                                                                            opla-cp:hasCompetencyQuestion "Can you provide examples of how the task management application can utilize the state transition information to generate task reports, automate task assignments, or monitor overall project progress?",
 
+"How does the modular ontology design ensure data consistency, accuracy, and access control for the recorded state transition information?" ;
+                                                                                            opla-sd:hasSchemaDiagramFileName "state-transition-pattern.pdf" ;
+                                                                                            opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                            opla-sd:hasExampleDiagramFileName "" ;
+                                                                                            opla-sd:hasConnections """Thing hasState State
+State hasNextState
+State hasDescriptor Descriptor
+Process hasState State
+StateTransition startsFrom/endsAt State
+Action Triggers StateTransition
+Process hasAction Action
+Action actsOn State""" ;
+                                                                                            dc:contributor "" ;
+                                                                                            dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

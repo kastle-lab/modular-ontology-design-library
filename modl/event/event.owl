@@ -1,18 +1,34 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/event> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/event> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/event> rdf:type owl:Ontology ;
                                                                                   opla-core:hasPatternName "Event Pattern" ;
                                                                                   opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal ,
-                                                                                                         "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal .
-
+                                                                                                         "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal ;
+                                                                                  opla-core:hasPatternName "Event Pattern" ;
+                                                                                  opla-core:hasShortcutFor "Event" ;
+                                                                                  opla-core:hasEntanglement "Event Entanglement" ;
+                                                                                  opla-cp:addressesScenario """Sports Event Management""" ;
+                                                                                  opla-cp:hasCompetencyQuestion "Where and when did the 1990 World Chess Championship Match take place?",
+                                                                                                                "Who were involved in the 1990 World Chess Championship Match?" ;
+                                                                                  opla-sd:hasSchemaDiagramFileName "event-pattern.pdf" ;
+                                                                                  opla-sd:hasShortcutDiagramFileName "event-shortcuts.pdf" ;
+                                                                                  opla-sd:hasExampleDiagramFileName "event-example.pdf" ;
+                                                                                  opla-sd:hasConnections """Event subEventOf Event 
+Event providesParticipantRole ParticipantRole existential
+Event hasSpatiotemporalExtent SpatiotemporalExtent""" ;
+                                                                                  dc:contributor "" ;
+                                                                                  dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

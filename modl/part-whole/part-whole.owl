@@ -1,14 +1,45 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/PartWhole#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/PartWhole#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/PartWhole> rdf:type owl:Ontology ;
-                                                                                      opla-core:hasPatternName "Part Whole Pattern".
+                                                                                      opla-core:hasPatternName "Part Whole Pattern" ;
+                                                                                      opla-core:hasShortcutFor "Part Whole" ;
+                                                                                      opla-core:hasEntanglement "Part Whole Entanglement" ;
+                                                                                      opla:hasRelatedPattern "https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1104_2"^^rdfs:Literal ;
+                                                                                      opla-cp:addressesScenario """Plane Parts
+Describing the individual components that are required to build a plane.""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "Is the Everglades part of Florida?",
+                                                                                                                    "Is the plane in the Warehouse?",
+                                                                                                                    "What are all engine components?",
+                                                                                                                    "Is he part of the family?" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "part-whole-pattern.pdf" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "part-whole-shorcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "part-whole-example.pdf" ;
+                                                                                      opla-sd:hasConnections """Thing part-of Thing
+Thing spatially-located-in Thing
+Thing isPartOf RelationInstance
+RelationInstance hasWhole Thing existential
+RelationInstance subclass PO-Component-Type
+RelationInstance subclass PO-Member-Type
+RelationInstance subclass PO-Portion-Type
+RelationInstance subclass PO-Stuff-Type
+RelationInstance subclass PO-Feature-Type
+RelationInstance subclass PO-Place-Type
+RelationInstance subclass PO-Part-Of-Type
+ReflexiveProperty subclass Spatially-Located-In-Type""" ;
+                                                                                      dc:contributr "" ;
+                                                                                      dc:creator "" .
+
 
 #################################################################
 #    Object Properties

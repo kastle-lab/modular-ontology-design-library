@@ -1,15 +1,46 @@
 @prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/observation> rdf:type owl:Ontology ;
-                                                                                        opla-core:hasPatternName "Observation Pattern" .
-
+                                                                                        opla-core:hasPatternName "Observation Pattern" ;
+                                                                                        opla:hasRelatedPattern "https://www.w3.org/TR/vocab-ssn/"^^rdfs:Literal ;
+                                                                                        opla-core:hasShortcutFor "SOSA Ontology" ;
+                                                                                        opla-core:hasEntanglement "Observation Entanglement" ;
+                                                                                        opla-cp:addressesScenario """Earthquake Magnitude
+The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.""" ;
+                                                                                        opla-cp:hasCompetencyQuestion "The difference between the outside temperature and the inside temperature." ,
+                                                                                                                      "The temperature inside apartment #134." ,
+                                                                                                                      "Relative humidity as averaged over 15min at COPR." ;
+                                                                                        opla-sd:hasSchemaDiagramFileName "observation-pattern.pdf" ;
+                                                                                        opla-sd:hasShortcutDiagramFileName "observation-shortcuts.pdf" ;
+                                                                                        opla-sd:hasExampleDiagramFileName "observation-example.pdf" ;
+                                                                                        opla-sd:hasConnections """Observation subclass EntityWithProvenance
+Observation observedProperty ObservableProperty
+Observation hasFeatureOfInterest FeatureOfInterest
+Observation hasResult Result
+Observation hasPhenomenonTime TemporalEntity
+Observation hasResultTime TemporalEntity
+Observation hasSimpleResult rdfs:Literal""" ;
+                                                                                        dc:contributor "Rob Atkinson",
+                                                                                                        "Raúl García-Castro",
+                                                                                                        "Joshua Lieberman",
+                                                                                                        "Claus Stadler" ;
+                                                                                        dc:creator "Armin Haller",
+                                                                                        "Krzysztof Janowicz",
+                                                                                        "Simon Cox",
+                                                                                        "Danh Le Phuoc",
+                                                                                        "Kerry Taylor",
+                                                                                        "Maxime Lefrançois" .
 #################################################################
 #    Object Properties
 #################################################################

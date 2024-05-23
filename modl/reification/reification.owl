@@ -1,16 +1,33 @@
 @prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/reification> rdf:type owl:Ontology ;
-                                                                                        opla-core:hasPatternName "Reification Pattern" .
-
+                                                                                        opla-core:hasPatternName "Reification Pattern" ;
+                                                                                          opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                          opla-core:hasShortcutFor "Agent Role" ;
+                                                                                          opla-core:hasEntanglement "Agent Role Entanglement" ;
+                                                                                          opla-cp:addressesScenario """A retail company adopts a modular ontology design based on the Reification pattern to enhance their customer feedback management system.""" ;
+                                                                                          opla-cp:hasCompetencyQuestion "What was the street named during the Great Depression",
+                                                                                                                        "From what years was Al Gore Vice President?",
+                                                                                                                        "What is the unit of measurement used to weigh the elephant?" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "reification-pattern.pdf" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "reification-shortcuts.pdf" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "reification-example.pdf" ;
+                                                                                          opla-sd:hasConnections """Thing reifiedProperty1 ReifiedProperty
+ReifiedProperty reifiedProperty2 Thing
+ReifiedProperty hasContext Context""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

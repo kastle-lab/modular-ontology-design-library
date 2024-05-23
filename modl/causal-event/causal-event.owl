@@ -1,16 +1,19 @@
 @prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix kwg-ont: <http://knowwheregraph.com/#> .
-@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
-@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @base <http://www.semanticweb.org/owl/owlapi/turtle#> .
 
 <http://knowwheregraph.com/> rdf:type owl:Ontology ;
+                              opla-core:hasPatternName "Causal Event Pattern" ;
                               opla-cp:addressesScenario """Direct Relief
 Monsoon after diptheria outbreak""" ,
                                                         """Thomas Fire
@@ -35,7 +38,16 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                                                             "Which region affected by the current hurricane just suffers from another natural disaster?" ,
                                                             "Which regions affected by wildfires are expected to experience heavy rain (flood risk)" ,
                                                             "Which residents are still evacuated from the same region where the second hurricane hit?" ,
-                                                            "where to deliver Covid-19 supplies?" .
+                                                            "where to deliver Covid-19 supplies?" ;
+                              opla:hasRelatedPattern "https://gengchenmai.github.io/papers/2021-WOP-KWG-Causal.pdf"^^rdfs:Literal ;
+                              opla-core:hasShortcutFor  "Casual Event" ;
+                              opla-core:hasEntanglement "Causal Event Entanglement" ;
+                              opla-sd:hasSchemaDiagramFileName "causal-event-pattern.pdf" ;
+                              opla-sd:hasShortcutDiagramFileName "causal-event-shortcuts.pdf" ;
+                              opla-sd:hasExampleDiagramFileName "causal-event-example.pdf" ;
+                              opla-sd:hasConnections """Event hasSTE SpatiotemporalExtent Event hasResultsInRelation ResultsInRelation Event ofType Event""" ;
+                              dc:contributor "" ;
+                              dc:creator "" .
 
 #################################################################
 #    Annotation properties

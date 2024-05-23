@@ -1,16 +1,46 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> rdf:type owl:Ontology ;
-                                                                                  opla-core:hasPatternName "Tree Pattern" .
+                                                                                opla-core:hasPatternName "Tree Pattern" ;
+                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                opla-core:hasShortcutFor "Tree" ;
+                                                                                opla-core:hasEntanglement "Tree Entanglement" ;
+                                                                                opla-cp:addressesScenario """Phylogenetic Tree
+Organization of organisms into species groupings based on shared traits.""" ;
+                                                                                opla-cp:hasCompetencyQuestion "Determine the root.",
+                                                                                                              "Determine all ancestors of a given node.",
+                                                                                                              "Determine all leaves.",
+                                                                                                              "Determine all descendants of a given node.",
+                                                                                                              "Determine all descendants of a given node which are leaves.",
+                                                                                                              "Given two nodes, determine whether one is a descendant of the other.",
+                                                                                                              "Given two nodes, determine all common ancestors.",
+                                                                                                              "Given two nodes, determine the latest common ancestor.",
+                                                                                                              "Given two nodes, x and y, determine the earliest ancestor of x which are not an ancestor of y." ;
+                                                                                opla-sd:hasSchemaDiagramFileName "tree-pattern.pdf" ;
+                                                                                opla-sd:hasShortcutDiagramFileName "tree-shortcuts.pdf" ;
+                                                                                opla-sd:hasExampleDiagramFileName "tree-example.pdf" ;
+                                                                                opla-sd:hasConnections """LeafNode subclass TreeNode
+RootNode subclass TreeNode
+TreeNode hasOutDegree xsd:positiveInteger
+TreeNode hasChild TreeNode
+TreeNode hasParent TreeNode
+TreeNode hasDescendant TreeNode
+TreeNode hasAncestor TreeNode
+TreeNode hasSibling TreeNode""" ;
 
+                                                                                dc:contributor "" ;
+                                                                                dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

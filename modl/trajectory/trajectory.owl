@@ -1,15 +1,36 @@
 @prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> rdf:type owl:Ontology ;
-                                                                                        opla-core:hasPatternName "Trajectory Pattern" .
+                                                                                      opla-core:hasPatternName "Trajectory Pattern" ;
+                                                                                      opla:hasRelatedPattern "https://iccl.inf.tu-dresden.de/web/Inproceedings3121/en"^^rdfs:Literal ;                                                                                      
+                                                                                      opla-core:hasShortcutFor "Trajectory" ;
+                                                                                      opla-core:hasEntanglement "Trajectory Entanglement" ;
+                                                                                      opla-cp:addressesScenario """A transportation management system adopts a modular ontology design based on the Trajectory pattern to monitor and analyze the movement of shipping containers along shipping routes, tracking their positions, arrival times, and departure times at various ports to optimize logistics operations, streamline supply chain processes, and improve overall efficiency.""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What is the first step of the procedure?",
+                                                                                                                    "What was the cruise's final stop?" ;
+                                                                                      opla-sd:hasSchemaDiagramFileName "trajectory-pattern.pdf" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "trajectory-shortcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "trajectory-example.pdf" ;
+                                                                                      opla-sd:hasConnections """Trajectory hasSegment Segment
+Trajectory hasFix Fix
+Segment startsFrom Fix 
+Segment endsAt Fix
+Fix nextFix Fix 
+StartingFix subclass Fix 
+EndingFix subclass Fix""" ;
+                                                                                      dc:contributor "" ;
+                                                                                      dc:creator "" .
 
 #################################################################
 #    Annotation properties

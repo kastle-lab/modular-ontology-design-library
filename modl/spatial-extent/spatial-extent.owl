@@ -1,17 +1,42 @@
 @prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.w3.org/2002/07/owl#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent> rdf:type owl:Ontology ;
                                                                                           opla-core:hasPatternName "Spatial Extent Pattern" ;
-                                                                                          opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
-
+                                                                                          opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal,
+                                                                                                                "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal ,
+                                                                                                                "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
+                                                                                                                "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal ;
+                                                                                          opla-core:hasShortcutFor "Spatial Extent" ;
+                                                                                          opla-core:hasEntanglement "Spatial Extent Entanglement" ;
+                                                                                          opla-cp:addressesScenario """
+A wildlife conservation organization adopts a modular ontology design based on the Spatial Extent pattern to effectively manage and monitor the habitat ranges of various endangered species in a protected area""" ;
+                                                                                          opla-cp:hasCompetencyQuestion "Where was the Battle of Manassas?",
+                                                                                                                        "What path did the moose take to Canada?",
+                                                                                                                        "Where is the largest prairie in the United States?" ;
+                                                                                          opla-sd:hasSchemaDiagramFileName "spatial-extent-pattern.pdf" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "spatial-extent-shortcuts.pdf" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "spatial-extent-example.pdf" ;
+                                                                                          opla-sd:hasConnections """SpatialExtent contains Interior
+Interior isDefinedBy PIS-Sequence
+PIS-Sequence hasFirst PIS-SequenceElement
+PIS-Sequence hasLast PIS-SequenceElement
+PIS-SequenceElement hasNext PIS-SequenceElement
+PIS-SequenceElement constitudtedBy PointInSpace
+PointInSpace hasReferenceSystem ReferenceSystem
+PointInSpace hasValue Value""" ;
+                                                                                          dc:contributor "" ;
+                                                                                          dc:creator "" .
 #################################################################
 #    Annotation properties
 #################################################################

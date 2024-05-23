@@ -1,4 +1,3 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,7 +7,29 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
-                                                      opla-core:hasPatternName "Winston Part Whole Pattern" .
+                                                      opla-core:hasPatternName "Winston Part Whole Pattern" ;
+opla-core:hasShortcutFor "Part Whole Contextualized" ;
+                                                                                      opla-core:hasEntanglement "Part Whole Contextualized Entanglement" ;
+                                                                                      opla:hasRelatedPattern "" ;
+                                                                                      opla-cp:addressesScenario """A hypothetical company utilizes a modular ontology design based on the Part-Whole Contextualized pattern to streamline the production of their flagship product by effectively organizing and integrating various components, modules, assembly steps, and quality control criteria?.""" ;
+                                                                                      opla-cp:hasCompetencyQuestion "What are the main modules and sub-modules within the ontology design?",
+
+"How do the hardware components and software modules relate to each other in the ontology?",
+
+"What are the specific assembly steps involved in the production process?",
+
+How is quality control ensured throughout the production cycle?";
+                                                                  
+                                                                                      opla-sd:hasSchemaDiagramFileName "part-whole-contextualized-pattern.pdf" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "" ;
+                                                                                      opla-sd:hasConnections """RelationInstance hasWhole Thing
+Thing partOf Thing
+Thing spatiallyLocatedIn Thing
+Thing isPartOf RelationInstance""" ;
+                                                                                      dc:contributr "" ;
+                                                                                      dc:creator "" .
+
 
 #################################################################
 #    Object Properties
