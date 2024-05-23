@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix : <http://knowwheregraph.com/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,7 +10,7 @@
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
-@base <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@base <http://knowwheregraph.com/>.
 
 <http://knowwheregraph.com/> rdf:type owl:Ontology ;
                               opla-core:hasPatternName "Causal Event Pattern" ;
@@ -46,7 +46,14 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                               opla-sd:hasSchemaDiagramFileName "causal-event-pattern.pdf" ;
                               opla-sd:hasShortcutDiagramFileName "causal-event-shortcut.pdf" ;
                               opla-sd:hasExampleDiagramFileName "causal-event-example.pdf" ;
-                              opla-sd:hasConnections """Event hasSTE SpatiotemporalExtent Event hasResultsInRelation ResultsInRelation Event ofType Event""" ;
+                              opla-sd:hasConnections """Event-Concrete hasSTE SpatiotemporalExtent Event-Concrete hasResultsInRelation ResultsInRelation Event-Concrete ofType Event-Abstract
+                              Event-Concrete affects Place Place hasSTE SpatiotemporalExtent SpatioTemporalExtent overlapsWith SpatioTemporalExtent
+                              StateOfAffairs pertainsTo SpatioTemporalExtent StateOfAffairs indicates Event-Concrete StateOfAffairs hasConstituent Observation
+                              Event hasResultsInRelation ResultsInRelation ResultsInRelation resultsIn StateOfAffairs
+                              ResultsInRelation accordingToWhom Provenance Event-Abstract hasPossiblyCausesRelation PossiblyCausesRelation
+                              PossiblyCausesRelation resultsIn Event-Abstract PossiblyCausesRelation Provenance Observation hasSTE SpatioTemporalExtent Observation hasObservationType ObservationType
+                              ObservationType pertainsTo Event-Abstract";
+                              
                               dc:contributor "" ;
                               dc:creator "" .
 
