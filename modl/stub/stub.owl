@@ -12,11 +12,17 @@
 @base <http://www.semanticweb.org/demon_munchies/ontologies/2019/3/untitled-ontology-17> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/stub> rdf:type owl:Ontology ;
-                                                                                opla-core:hasPatternName "Stub Pattern" ;
-                                                                                opla-cp:addressesScenario """A shopping app uses a modular ontology design based on the Stub pattern to smoothly handle and display placeholder data for product details, such as names, prices, and descriptions, while users browse and search for products, ensuring a seamless shopping experience and encouraging further exploration of the app's offerings.""" ;
+                                                                                opla:hasRelatedPattern  "" ;
+                                                                                opla-core:hasPatternName "Stub" ;
+                                                                                opla-core:hasShortcutFor "Stub Shortcut" ;
+                                                                                opla-core:hasEntanglement "Stub Entanglement" ;
+                                                                                opla-cp:addressesScenario """Use Case
+A shopping app uses a modular ontology design based on the Stub pattern to smoothly handle and display placeholder data for product details, such as names, prices, and descriptions, while users browse and search for products, ensuring a seamless shopping experience and encouraging further exploration of the app's offerings.""" ;
                                                                                 opla-cp:hasCompetencyQuestion "Which street is that?",
-                                                                                                              "What is the title of Alfred Tennyson?" ;
+"What is the title of Alfred Tennyson?" ;
                                                                                 opla-sd:hasSchemaDiagramFileName "stub-pattern.pdf" ;
+                                                                                opla-sd:hasShortcutDiagramFileName "stub-shortcut.pdf" ;
+                                                                                opla-sd:hasExampleDiagramFileName "stub-example.pdf" ;
                                                                                 opla-sd:hasConnections """Stub hasValue xsd:AnyValue""" ;
                                                                                 dc:contributor "" ;
                                                                                 dc:creator "" .
