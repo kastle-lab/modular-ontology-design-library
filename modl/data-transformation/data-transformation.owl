@@ -19,7 +19,7 @@
                                                                   opla-cp:addressesScenario """E-commerce Order Processing""" ;
                                                                   opla-cp:hasCompetencyQuestion "What are the different data sources used for customer orders in our e-commerce platform?","How can we transform unstructured customer feedback comments into structured sentiment analysis data?","What transformation rules should be applied to convert a text document written in Markdown format into TXT format?" ;
                                                                   opla-sd:hasSchemaDiagramFileName "data-transformation-pattern.pdf" ;
-                                                                  opla-sd:hasShortcutDiagramFileName "data-transformation-shortcuts.pdf" ;
+                                                                  opla-sd:hasShortcutDiagramFileName "data-transformation-shortcut.pdf" ;
                                                                   opla-sd:hasExampleDiagramFileName "data-transformation-example.pdf" ;
                                                                   opla-sd:hasConnections """DataTransformation subclass Algorithm
 DataTransformation occursInCE ComputationalEnvironment
