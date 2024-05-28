@@ -27,8 +27,14 @@ EntityWithProvenance attributedTo Agent
 EntityWithProvenance generatedBy ProvenanceActivity
 ProvenanceActivity used EntityWithProvenance
 ProvenanceActivity performedBy Agent""" ;
-                                                                                        dc:contributor "" ;
-                                                                                        dc:creator "" .
+                                                                                        dc:contributor "Khalid Belhajjame
+James Cheney
+David Corsar
+Daniel Garijo
+Stian Soiland-Reyes
+Stephan Zednik
+Jun Zhao" ;
+                                                                                        dc:creator "Cogan Shimizu, Quinn Hirt, Pascal Hitzler" .
 #################################################################
 #    Annotation properties
 #################################################################

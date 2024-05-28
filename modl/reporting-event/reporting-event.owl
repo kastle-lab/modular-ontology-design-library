@@ -16,7 +16,8 @@
                                                                                           opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Reporting Event" ;
                                                                                           opla-core:hasEntanglement "Reporting Event Entanglement" ;
-                                                                                          opla-cp:addressesScenario """A smart city initiative implements a modular ontology design based on the Reporting Event pattern to effectively manage and analyze various events occurring within the city.""" ;
+                                                                                          opla-cp:addressesScenario """ Use Case
+                                                                                          A smart city initiative implements a modular ontology design based on the Reporting Event pattern to effectively manage and analyze various events occurring within the city.""" ;
                                                                                           opla-cp:hasCompetencyQuestion "How does the modular ontology design using the Reporting Event pattern enhance the event management capabilities of the smart city initiative?",
 
 "What are the key attributes associated with different event types in the modular ontology, such as traffic incidents, environmental hazards, and community events?",
@@ -27,14 +28,14 @@
 
 "What benefits does the smart city initiative derive from implementing the modular ontology design for event reporting and analysis?" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "reporting-event-pattern.pdf" ;
-                                                                                          opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                          opla-sd:hasExampleDiagramFileName "" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "reporting-event-shortcut.pdf" ;
+                                                                                          opla-sd:hasExampleDiagramFileName "reporting-event-example.pdf" ;
                                                                                           opla-sd:hasConnections """ActualEventView isAbout ActualEvent
 ActualEventView hasContext ActualEventViewContext
 ReportingEvent hasAuthor EventReporter
 ReportingEvent isBasedOn Source""" ;
-                                                                                          dc:contributor "" ;
-                                                                                          dc:creator "" .
+                                                                                          dc:contributor "EwaKowalczuk" ;
+                                                                                          dc:creator "Cogan Shimizu" .
 #################################################################
 #    Annotation properties
 #################################################################
