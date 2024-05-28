@@ -54,7 +54,7 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                               PossiblyCausesRelation resultsIn Event-Abstract PossiblyCausesRelation Provenance Observation hasSTE SpatioTemporalExtent Observation hasObservationType ObservationType
                               ObservationType pertainsTo Event-Abstract";
                               
-                              dc:contributor "" ;
+                              dc:contributor "	Cogan Shimizu, Rui Zhu, Mark Schildhauer, Krzysztof Janowicz, Pascal Hitzler" ;
                               dc:creator "" .
 
 #################################################################

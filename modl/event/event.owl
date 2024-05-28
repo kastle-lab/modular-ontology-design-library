@@ -28,7 +28,7 @@
                                                                                   opla-sd:hasConnections """Event subEventOf Event 
 Event providesParticipantRole ParticipantRole existential
 Event hasSpatiotemporalExtent SpatiotemporalExtent""" ;
-                                                                                  dc:contributor "" ;
+                                                                                  dc:contributor "AdilaKrisnadhi" ;
                                                                                   dc:creator "" .
 #################################################################
 #    Annotation properties

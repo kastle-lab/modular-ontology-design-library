@@ -34,7 +34,7 @@ Data performsOutputRole OutputRole
 Data performsParameterRole ParameterRole
 Data hasPayload Payload
 Data hasDataType DataType""" ;
-                                                                  dc:contributor "" ;
+                                                                  dc:contributor "Cogan Shimizu, Ryan M. McGranaghan, Aaron Eberhart, Adam C. Kellerman" ;
                                                                   dc:creator "" .
 #################################################################
 #    Annotation properties

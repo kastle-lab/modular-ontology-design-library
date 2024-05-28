@@ -26,7 +26,7 @@
                                                                                           opla-sd:hasExampleDiagramFileName "explicit-typing-example.pdf" ;
                                                                                           opla-sd:hasConnections """Thing hasType Type""" ;
                                                                                           opla:hasRelatedPattern "";
-                                                                                          dc:contributor "" ;
+                                                                                          dc:contributor "Cogan Shimizu, Quinn Hirt, Pascal Hitzler" ;
                                                                                           dc:creator "" .
 
 #################################################################
