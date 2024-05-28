@@ -12,13 +12,20 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/explicittyping> rdf:type owl:Ontology ;
-                                                                                          opla-core:hasPatternName "Explicit Typing Pattern" ;                                                                                                                                                                                  
-                                                                                          opla-cp:addressesScenario """Assigning types to products""" ;
+                                                                                          opla-core:hasPatternName "Explicit Typing Pattern" ;
+                                                                                          opla-core:hasShortcutFor "Explicit Typing Shortcut" ;
+                                                                                          opla-core:hasEntanglement "Explicit Typing Entanglement" ;
+
+
+                                                                                          opla-cp:addressesScenario """ Use Case
+                                                                                          Assigning types to products""" ;
                                                                                           opla-cp:hasCompetencyQuestion "What is the type of Event", 
                                                                                                                         "Which type of apparatus is that?" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "explicit-typing-pattern.pdf" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "explicit-typing-shortcut.pdf" ;
                                                                                           opla-sd:hasExampleDiagramFileName "explicit-typing-example.pdf" ;
                                                                                           opla-sd:hasConnections """Thing hasType Type""" ;
+                                                                                          opla:hasRelatedPattern "";
                                                                                           dc:contributor "" ;
                                                                                           dc:creator "" .
 
