@@ -12,27 +12,33 @@
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/state-transition> rdf:type owl:Ontology ;
-                                                                                            opla-core:hasPatternName "State Transition Pattern" ;
-                                                                                            opla:hasRelatedPattern ""^^rdfs:Literal ;
-                                                                                            opla-core:hasShortcutFor "State Transition" ;
+                                                                                            opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/action"^^rdfs:Literal,
+                                                                                                                    "https://archive.org/services/purl/domain/modular_ontology_design_library/state"^^rdfs:Literal,
+                                                                                                                    "https://archive.org/services/purl/domain/modular_ontology_design_library/statetransition"^^rdfs:Literal,
+                                                                                                                    "https://archive.org/services/purl/domain/modular_ontology_design_library/descriptor"^^rdfs:Literal,
+                                                                                                                    "https://archive.org/services/purl/domain/modular_ontology_design_library/entitywithprovenance"^^rdfs:Literal ;
+                                                                                            opla-core:hasPatternName "State Transition" ;
+                                                                                            opla-core:hasShortcutFor "State Transition Shortcut" ;
                                                                                             opla-core:hasEntanglement "State Transition Entanglement" ;
-                                                                                            opla-cp:addressesScenario """
+                                                                                            opla-cp:addressesScenario """Use Case
 A task management application employs a modular ontology design based on the State Transition pattern to efficiently track and manage the different states and transitions of tasks, providing users with an organized and streamlined workflow.""" ;
                                                                                             opla-cp:hasCompetencyQuestion "Can you provide examples of how the task management application can utilize the state transition information to generate task reports, automate task assignments, or monitor overall project progress?",
-
 "How does the modular ontology design ensure data consistency, accuracy, and access control for the recorded state transition information?" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "state-transition-pattern.pdf" ;
-                                                                                            opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                            opla-sd:hasExampleDiagramFileName "" ;
+                                                                                            opla-sd:hasShortcutDiagramFileName "state-transition-shortcut.pdf" ;
+                                                                                            opla-sd:hasExampleDiagramFileName "state-transition-example.pdf" ;
                                                                                             opla-sd:hasConnections """Thing hasState State
-State hasNextState
+State hasNextState State
 State hasDescriptor Descriptor
 Process hasState State
+Process hasStateTransition StateTransition
 StateTransition startsFrom/endsAt State
 Action Triggers StateTransition
 Process hasAction Action
 Action actsOn State""" ;
-                                                                                            dc:contributor "" ;
+                                                                                            dc:contributor "Cogan Shimizu
+Leah McEwen
+Quinn Hirt" ;
                                                                                             dc:creator "" .
 #################################################################
 #    Annotation properties

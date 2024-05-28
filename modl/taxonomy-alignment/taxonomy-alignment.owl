@@ -37,7 +37,12 @@ Concept synonym rdfs:Literal
 Concept vernacularName rdfs:Literal
 Concept rdfs:label rdfs:Literal
 MappingRelation mappingMeasure rdfs:Literal""" ;
-                                                                                            dc:contributor "" ;
+                                                                                            dc:contributor "Shirly Stephen
+Cogan Shimizu
+Mark Schildhauer
+Rui Zhu
+Krzysztof Janowicz
+Pascal Hitzler" ;
                                                                                             dc:creator "" .
 
 #################################################################

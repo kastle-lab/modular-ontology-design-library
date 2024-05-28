@@ -12,7 +12,7 @@
 @base <http://www.semanticweb.org/demon_munchies/ontologies/2019/3/untitled-ontology-17> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/stub> rdf:type owl:Ontology ;
-                                                                                opla:hasRelatedPattern  "" ;
+                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                 opla-core:hasPatternName "Stub" ;
                                                                                 opla-core:hasShortcutFor "Stub Shortcut" ;
                                                                                 opla-core:hasEntanglement "Stub Entanglement" ;
@@ -24,7 +24,8 @@ A shopping app uses a modular ontology design based on the Stub pattern to smoot
                                                                                 opla-sd:hasShortcutDiagramFileName "stub-shortcut.pdf" ;
                                                                                 opla-sd:hasExampleDiagramFileName "stub-example.pdf" ;
                                                                                 opla-sd:hasConnections """Stub hasValue xsd:AnyValue""" ;
-                                                                                dc:contributor "" ;
+                                                                                dc:contributor "Adila Krisnadhi
+Pascal Hitzler" ;
                                                                                 dc:creator "" .
 
 #################################################################
