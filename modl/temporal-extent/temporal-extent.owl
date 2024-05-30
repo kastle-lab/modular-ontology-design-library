@@ -14,11 +14,11 @@
 <https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent> rdf:type owl:Ontology ;
                                                                                           opla-core:hasPatternName "Temporal Extent Pattern" ;
                                                                                           opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal ;
-                                                                                          opla-core:hasShortcutFor "Temporal Extent" ;
+                                                                                          opla-core:hasShortcutFor "TemporalExtent-shortcut" ;
                                                                                           opla-core:hasEntanglement "Temporal Extent Entanglement" ;
-                                                                                          opla-cp:addressesScenario """A social media platform employs a modular ontology design based on the Temporal Extent pattern to organize and display user-generated content, such as posts and comments, according to their creation timestamps, allowing users to view and engage with the most recent content first while maintaining a chronological order of the overall conversation.""" ;
+                                                                                          opla-cp:addressesScenario """Use Case A social media platform employs a modular ontology design based on the Temporal Extent pattern to organize and display user-generated content, such as posts and comments, according to their creation timestamps, allowing users to view and engage with the most recent content first while maintaining a chronological order of the overall conversation.""" ;
                                                                                           opla-cp:hasCompetencyQuestion "Which dates did World War II span?",
-                                                                                                                        "What era was the Ice Age?" ;
+                                                                                          "What era was the Ice Age?" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "temporal-extent-pattern.pdf" ;
                                                                                           opla-sd:hasShortcutDiagramFileName "temporal-extent-shortcuts.pdf" ;
                                                                                           opla-sd:hasExampleDiagramFileName "temporal-extent-example.pdf" ;
@@ -29,7 +29,7 @@ TimeInterval startsFrom PointInTime
 TimeInterval endsAt PointInTime
 PointInTime hasValue Value
 PointInTime hasReferenceSystem ReferenceSystem""" ;
-                                                                                          dc:contributor "" ;
+                                                                                          dc:contributor "Cogan Shimizu" ;
                                                                                           dc:creator "" .
 #################################################################
 #    Annotation properties

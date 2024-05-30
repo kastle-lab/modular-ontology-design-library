@@ -13,20 +13,20 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> rdf:type owl:Ontology ;
                                                                                 opla-core:hasPatternName "Tree Pattern" ;
-                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
-                                                                                opla-core:hasShortcutFor "Tree" ;
+                                                                                opla:hasRelatedPattern "https://people.cs.ksu.edu/~hitzler/pub2/2021-trees.pdf"^^rdfs:Literal ;
+                                                                                opla-core:hasShortcutFor "Tree-shortcut" ;
                                                                                 opla-core:hasEntanglement "Tree Entanglement" ;
-                                                                                opla-cp:addressesScenario """Phylogenetic Tree
+                                                                                opla-cp:addressesScenario """Use Case Phylogenetic Tree
 Organization of organisms into species groupings based on shared traits.""" ;
                                                                                 opla-cp:hasCompetencyQuestion "Determine the root.",
                                                                                                               "Determine all ancestors of a given node.",
-                                                                                                              "Determine all leaves.",
-                                                                                                              "Determine all descendants of a given node.",
-                                                                                                              "Determine all descendants of a given node which are leaves.",
-                                                                                                              "Given two nodes, determine whether one is a descendant of the other.",
-                                                                                                              "Given two nodes, determine all common ancestors.",
-                                                                                                              "Given two nodes, determine the latest common ancestor.",
-                                                                                                              "Given two nodes, x and y, determine the earliest ancestor of x which are not an ancestor of y." ;
+     "Determine all leaves.",
+     "Determine all descendants of a given node.",
+     "Determine all descendants of a given node which are leaves.",
+     "Given two nodes, determine whether one is a descendant of the other.",
+     "Given two nodes, determine all common ancestors.",
+     "Given two nodes, determine the latest common ancestor.",
+     "Given two nodes, x and y, determine the earliest ancestor of x which are not an ancestor of y." ;
                                                                                 opla-sd:hasSchemaDiagramFileName "tree-pattern.pdf" ;
                                                                                 opla-sd:hasShortcutDiagramFileName "tree-shortcuts.pdf" ;
                                                                                 opla-sd:hasExampleDiagramFileName "tree-example.pdf" ;
@@ -37,10 +37,11 @@ TreeNode hasChild TreeNode
 TreeNode hasParent TreeNode
 TreeNode hasDescendant TreeNode
 TreeNode hasAncestor TreeNode
-TreeNode hasSibling TreeNode""" ;
+TreeNode hasSibling TreeNode
+LeafNode subclass TreeNode""" ;
 
-                                                                                dc:contributor "" ;
-                                                                                dc:creator "" .
+                                                                                dc:contributor "Cogan Shimizu, " ;
+                                                                                dc:creator "Pascal Hitzler" .
 #################################################################
 #    Annotation properties
 #################################################################
