@@ -27,8 +27,12 @@ How is quality control ensured throughout the production cycle?";
 Thing partOf Thing
 Thing spatiallyLocatedIn Thing
 Thing isPartOf RelationInstance""" ;
-                                                                                      dc:contributr "" ;
-                                                                                      dc:creator "" .
+                                                                                      dc:contributor "Morton E. Winston",
+                                                                                      "Roger Chaffin",
+                                                                                      "Douglass Herrmann" ;
+                                                                                      dc:creator "Cogan Shimizu",
+                                                                                      "Pascal Hitzler",
+                                                                                      "Clare Paul" .
 
 
 #################################################################

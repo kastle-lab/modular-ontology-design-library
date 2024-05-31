@@ -37,8 +37,12 @@ RelationInstance subclass PO-Feature-Type
 RelationInstance subclass PO-Place-Type
 RelationInstance subclass PO-Part-Of-Type
 ReflexiveProperty subclass Spatially-Located-In-Type""" ;
-                                                                                      dc:contributr "" ;
-                                                                                      dc:creator "" .
+                                                                                      dc:contributor "Morton E. Winston",
+                                                                                      "Roger Chaffin",
+                                                                                      "Douglass Herrmann" ;
+                                                                                      dc:creator "Cogan Shimizu",
+                                                                                      "Pascal Hitzler",
+                                                                                      "Clare Paul" .
 
 
 #################################################################
