@@ -7,7 +7,8 @@
 @prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
-@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/record#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/record> rdf:type owl:Ontology ;

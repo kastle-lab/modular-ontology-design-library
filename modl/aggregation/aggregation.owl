@@ -29,8 +29,8 @@ A simple model for connecting many concepts to a single concept""" ;
                                                                                 opla-sd:hasExampleDiagramFileName "aggregation-example.pdf" ;
                                                                                 opla-sd:hasConnections """BagItem itemOf Bag 
 Bag subclass Collection""" ;
-                                                                                dc:contributor "Eva Blomqvist" ;
-                                                                                dc:creator "" .
+                                                                                dc:contributor "" ;
+                                                                                dc:creator "Eva Blomqvist" .
 #################################################################
 #    Annotation properties
 #################################################################

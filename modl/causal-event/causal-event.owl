@@ -14,8 +14,7 @@
 
 <http://knowwheregraph.com/> rdf:type owl:Ontology ;
                               opla-core:hasPatternName "Causal Event Pattern" ;
-                              opla-cp:addressesScenario """ Use Case                               
-                              
+                              opla-cp:addressesScenario """Use Case
                               Direct Relief Monsoon after diptheria outbreak""" ,
                                                         """Thomas Fire
 Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
@@ -40,21 +39,35 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                                                             "Which regions affected by wildfires are expected to experience heavy rain (flood risk)" ,
                                                             "Which residents are still evacuated from the same region where the second hurricane hit?" ,
                                                             "where to deliver Covid-19 supplies?" ;
-                              opla:hasRelatedPattern "https://gengchenmai.github.io/papers/2021-WOP-KWG-Causal.pdf"^^rdfs:Literal ;
+                              opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Place"^^rdfs:Literal,
+"https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal,
+"https://archive.org/services/purl/domain/modular_ontology_design_library/observation"^^rdfs:Literal,
+"https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal,
+"https://gengchenmai.github.io/papers/2021-WOP-KWG-Causal.pdf"^^rdfs:Literal ;
                               opla-core:hasShortcutFor  "Casual Event" ;
                               opla-core:hasEntanglement "Causal Event Entanglement" ;
                               opla-sd:hasSchemaDiagramFileName "causal-event-pattern.pdf" ;
                               opla-sd:hasShortcutDiagramFileName "causal-event-shortcut.pdf" ;
                               opla-sd:hasExampleDiagramFileName "causal-event-example.pdf" ;
-                              opla-sd:hasConnections """Event-Concrete hasSTE SpatiotemporalExtent Event-Concrete hasResultsInRelation ResultsInRelation Event-Concrete ofType Event-Abstract
-                              Event-Concrete affects Place Place hasSTE SpatiotemporalExtent SpatioTemporalExtent overlapsWith SpatioTemporalExtent
-                              StateOfAffairs pertainsTo SpatioTemporalExtent StateOfAffairs indicates Event-Concrete StateOfAffairs hasConstituent Observation
-                              Event hasResultsInRelation ResultsInRelation ResultsInRelation resultsIn StateOfAffairs
-                              ResultsInRelation accordingToWhom Provenance Event-Abstract hasPossiblyCausesRelation PossiblyCausesRelation
-                              PossiblyCausesRelation resultsIn Event-Abstract PossiblyCausesRelation Provenance Observation hasSTE SpatioTemporalExtent Observation hasObservationType ObservationType
-                              ObservationType pertainsTo Event-Abstract";
-                              
-                              dc:contributor "	Cogan Shimizu, Rui Zhu, Mark Schildhauer, Krzysztof Janowicz, Pascal Hitzler" ;
+                              opla-sd:hasConnections """Event-Concrete hasSTE SpatiotemporalExtent 
+Event-Concrete hasResultsInRelation ResultsInRelation 
+Event-Concrete ofType Event-Abstract
+Event-Concrete affects Place 
+Place hasSTE SpatiotemporalExtent 
+SpatioTemporalExtent overlapsWith SpatioTemporalExtent
+StateOfAffairs pertainsTo SpatioTemporalExtent 
+StateOfAffairs indicates Event-Concrete 
+StateOfAffairs hasConstituent Observation
+ResultsInRelation resultsIn StateOfAffairs
+ResultsInRelation accordingToWhom Provenance 
+Event-Abstract hasPossiblyCausesRelation PossiblyCausesRelation
+PossiblyCausesRelation resultsIn Event-Abstract 
+PossiblyCausesRelation accordingToWhom Provenance
+Observation accordingToWhom Provenance
+Observation hasSTE SpatioTemporalExtent
+Observation hasObservationType ObservationType
+ObservationType pertainsTo Event-Abstract";
+                              dc:contributor "Cogan Shimizu", "Rui Zhu", "Mark Schildhauer", "Krzysztof Janowicz", "Pascal Hitzler" ;
                               dc:creator "" .
 
 #################################################################

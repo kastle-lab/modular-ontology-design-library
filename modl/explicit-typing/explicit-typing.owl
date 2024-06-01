@@ -15,10 +15,8 @@
                                                                                           opla-core:hasPatternName "Explicit Typing Pattern" ;
                                                                                           opla-core:hasShortcutFor "Explicit Typing Shortcut" ;
                                                                                           opla-core:hasEntanglement "Explicit Typing Entanglement" ;
-
-
-                                                                                          opla-cp:addressesScenario """ Use Case
-                                                                                          Assigning types to products""" ;
+                                                                                          opla-cp:addressesScenario """Use Case
+Assigning types to products""" ;
                                                                                           opla-cp:hasCompetencyQuestion "What is the type of Event", 
                                                                                                                         "Which type of apparatus is that?" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "explicit-typing-pattern.pdf" ;
@@ -27,7 +25,7 @@
                                                                                           opla-sd:hasConnections """Thing hasType Type""" ;
                                                                                           opla:hasRelatedPattern "";
                                                                                           dc:contributor "" ;
-                                                                                          dc:creator "Cogan Shimizu, Quinn Hirt, Pascal Hitzler" .
+                                                                                          dc:creator "Cogan Shimizu", "Quinn Hirt", "Pascal Hitzler" .
 
 #################################################################
 #    Annotation properties
