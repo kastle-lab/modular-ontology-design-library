@@ -16,7 +16,7 @@
                                                                                 opla:hasRelatedPattern "https://people.cs.ksu.edu/~hitzler/pub2/2021-trees.pdf"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Tree-shortcut" ;
                                                                                 opla-core:hasEntanglement "Tree Entanglement" ;
-                                                                                opla-cp:addressesScenario """Use Case Phylogenetic Tree
+                                                                                opla-cp:addressesScenario """Phylogenetic Tree
 Organization of organisms into species groupings based on shared traits.""" ;
                                                                                 opla-cp:hasCompetencyQuestion "Determine the root.",
                                                                                                               "Determine all ancestors of a given node.",
@@ -28,7 +28,7 @@ Organization of organisms into species groupings based on shared traits.""" ;
      "Given two nodes, determine the latest common ancestor.",
      "Given two nodes, x and y, determine the earliest ancestor of x which are not an ancestor of y." ;
                                                                                 opla-sd:hasSchemaDiagramFileName "tree-pattern.pdf" ;
-                                                                                opla-sd:hasShortcutDiagramFileName "tree-shortcuts.pdf" ;
+                                                                                opla-sd:hasShortcutDiagramFileName "tree-shortcut.pdf" ;
                                                                                 opla-sd:hasExampleDiagramFileName "tree-example.pdf" ;
                                                                                 opla-sd:hasConnections """LeafNode subclass TreeNode
 RootNode subclass TreeNode
@@ -37,11 +37,11 @@ TreeNode hasChild TreeNode
 TreeNode hasParent TreeNode
 TreeNode hasDescendant TreeNode
 TreeNode hasAncestor TreeNode
-TreeNode hasSibling TreeNode
-LeafNode subclass TreeNode""" ;
-
-                                                                                dc:contributor "Cogan Shimizu, " ;
-                                                                                dc:creator "Pascal Hitzler" .
+TreeNode hasSibling TreeNode""" ;
+                                                                                dc:contributor "David Carral" ;
+                                                                                dc:creator "Cogan Shimizu" ,
+                                                                                        "Quinn Hirt" ,
+                                                                                        "Pascal Hitzler" .
 #################################################################
 #    Annotation properties
 #################################################################

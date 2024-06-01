@@ -13,14 +13,16 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory> rdf:type owl:Ontology ;
                                                                                       opla-core:hasPatternName "Trajectory Pattern" ;
-                                                                                      opla:hasRelatedPattern "https://iccl.inf.tu-dresden.de/web/Inproceedings3121/en"^^rdfs:Literal ;                                                                                      
+                                                                                      opla:hasRelatedPattern "https://iccl.inf.tu-dresden.de/web/Inproceedings3121/en"^^rdfs:Literal,
+"https://www.acsu.buffalo.edu/~yhu42/papers/2016_odptraj_chapter.pdf"^^rdfs:Literal ;                                                                                      
                                                                                       opla-core:hasShortcutFor "Trajectory-shortcut" ;
                                                                                       opla-core:hasEntanglement "Trajectory Entanglement" ;
-                                                                                      opla-cp:addressesScenario """Use Case A transportation management system adopts a modular ontology design based on the Trajectory pattern to monitor and analyze the movement of shipping containers along shipping routes, tracking their positions, arrival times, and departure times at various ports to optimize logistics operations, streamline supply chain processes, and improve overall efficiency.""" ;
+                                                                                      opla-cp:addressesScenario """Use Case
+A transportation management system adopts a modular ontology design based on the Trajectory pattern to monitor and analyze the movement of shipping containers along shipping routes, tracking their positions, arrival times, and departure times at various ports to optimize logistics operations, streamline supply chain processes, and improve overall efficiency.""" ;
                                                                                       opla-cp:hasCompetencyQuestion "What is the first step of the procedure?",
                                                                                       "What was the cruise's final stop?" ;
                                                                                       opla-sd:hasSchemaDiagramFileName "trajectory-pattern.pdf" ;
-                                                                                      opla-sd:hasShortcutDiagramFileName "trajectory-shortcuts.pdf" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "trajectory-shortcut.pdf" ;
                                                                                       opla-sd:hasExampleDiagramFileName "trajectory-example.pdf" ;
                                                                                       opla-sd:hasConnections """Trajectory hasSegment Segment
 Trajectory hasFix Fix
@@ -29,9 +31,18 @@ Segment endsAt Fix
 Fix nextFix Fix 
 StartingFix subclass Fix 
 EndingFix subclass Fix""" ;
-                                                                                      dc:contributor "Cogan Shimizu" ;
-                                                                                      dc:creator "" .
-
+                                                                                      dc:contributor "Yingjie Hu", 
+                                                                                              "Krzysztof Janowicz", 
+                                                                                              "David Carral", 
+                                                                                              "Simon Scheider", 
+                                                                                              "Werner Kuhn", 
+                                                                                              "Gary Berg-Cross", 
+                                                                                              "Pascal Hitzler", 
+                                                                                              "Mike Dean", 
+                                                                                              "Dave Kolas" ;
+                                                                                      dc:creator "Cogan Shimizu" ,
+                                                                                              "Quinn Hirt" ,
+                                                                                              "Pascal Hitzler" .
 #################################################################
 #    Annotation properties
 #################################################################
