@@ -20,7 +20,8 @@
                                                              opla-core:hasPatternName "Cell Relations Pattern" ;
                                                              opla-core:hasShortcutFor "spatiallyRelated spatialRelations hasGeometry$^-$" ;
                                                              opla-core:hasEntanglement "Cell Entanglement" ;
-                                                             opla-cp:addressesScenario """hierarchical relationships between geometric shapes""" ;
+                                                             opla-cp:addressesScenario """Use Case
+Hierarchical relationships between geometric shapes""" ;
                                                              opla-cp:hasCompetencyQuestion "What S2 cells are under a smoke plume, that have a certain crop type?",
                                                                                            "What crop types are under a particular smoke plume?" ;
                                                              opla-sd:hasConnections """Cell isAdjacentTo Cell
@@ -36,7 +37,7 @@ Attribute subclass Provenance""" ;
                                                              opla-sd:hasSchemaDiagramFileName "cell-relations-pattern.pdf" ;
                                                              opla-sd:hasShortcutDiagramFileName "cell-relations-shortcuts.pdf" ;
                                                              opla-sd:hasExampleDiagramFileName "cell-relations-example.pdf" ;
-                                                             dc:contributor "Cogan Shimizu"
+                                                             dc:contributor "Cogan Shimizu",
                                                                             "Rui Zhu" ,
                                                                             "Gengchen Mai" ,
                                                                             "Colby K. Fisher",

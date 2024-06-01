@@ -20,7 +20,7 @@
                                                                                         opla-cp:hasCompetencyQuestion "The merchant is assigned what identifier in this historical database?",
                                                                                                                       "Where can this information be validated/obtained?" ;
                                                                                         opla-sd:hasSchemaDiagramFileName "identifier-pattern.pdf" ;
-                                                                                        opla-sd:hasShortcutDiagramFileName "identifier-shortcuts.pdf" ;
+                                                                                        opla-sd:hasShortcutDiagramFileName "identifier-shortcut.pdf" ;
                                                                                         opla-sd:hasExampleDiagramFileName "identifier-example.pdf" ;
                                                                                         opla-sd:hasConnections """Thing hasIdentifier Identifier
 Identifier identifierAsText xsd:string
