@@ -17,7 +17,8 @@
                                                                                 opla:generalizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Sequence" ;
                                                                                 opla-core:hasEntanglement "Sequence Entanglement" ;
-                                                                                opla-cp:addressesScenario """A music streaming platform utilizes a modular ontology design based on the Sequence pattern to curate personalized playlists for users based on their listening history, preferences, and sequencing rules, enhancing their music discovery experience""" ;
+                                                                                opla-cp:addressesScenario """Use Case
+A music streaming platform utilizes a modular ontology design based on the Sequence pattern to curate personalized playlists for users based on their listening history, preferences, and sequencing rules, enhancing their music discovery experience""" ;
                                                                                 opla-cp:hasCompetencyQuestion "What is the first element of the list?", 
                                                                                                               "What is the last element of the list?",
                                                                                                               "Is x a predecessor of y?" ;
@@ -28,8 +29,10 @@
 LastItem subclass ListItem
 ListItem hasNext ListItem
 ListItem hasSuccessor ListItem""" ;
-                                                                                dc:contributor "" ;
-                                                                                dc:creator "" .
+                                                                                dc:contributor "Aldo Gangemi" ;
+                                                                                dc:creator "Cogan Shimizu" ,
+                                                                                            "Quinn Hirt" ,
+                                                                                            "Pascal Hitzler" .
 
 #################################################################
 #    Annotation properties
