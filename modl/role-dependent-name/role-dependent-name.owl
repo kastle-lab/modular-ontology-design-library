@@ -21,8 +21,8 @@ Use Case Description"""^^xsd:string ;
                                         opla-cp:hasCompetencyQuestion "cq1"^^xsd:string ,
                                                                        "cq2"^^xsd:string ;
                                         opla-sd:hasSchemaDiagramFileName "role-dependent-name-pattern.pdf" ;
-                                        opla-sd:hasShortcutDiagramFileName "agent-role-shortcut.pdf" ;
-                                        opla-sd:hasExampleDiagramFileName "agent-role-example.pdf" ;
+                                        opla-sd:hasShortcutDiagramFileName "role-dependent-name-shortcut.pdf" ;
+                                        opla-sd:hasExampleDiagramFileName "role-dependent-name-example.pdf" ;
                                         opla-sd:hasConnections """Thing providesAgentRole AgentRole r
 AgentRole hasRoleUnderName Name r st
 Agent assumesAgentRole AgentRole st sd iqsf sr
