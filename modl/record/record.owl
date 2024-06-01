@@ -15,7 +15,8 @@
                                                                                     opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                     opla-core:hasShortcutFor "Record" ;
                                                                                     opla-core:hasEntanglement "Record Entanglement" ;
-                                                                                    opla-cp:addressesScenario """A company implements a modular ontology design based on the Record pattern to effectively capture and manage various types of records across different departments and processes.""" ;
+                                                                                    opla-cp:addressesScenario """Use Case
+                                                                                    A company implements a modular ontology design based on the Record pattern to effectively capture and manage various types of records across different departments and processes.""" ;
                                                                                     opla-cp:hasCompetencyQuestion "What types of records are defined in the modular ontology design?",
 
 "How are the records categorized and organized within the ontology?",
@@ -30,15 +31,15 @@
 
 "How is data integrity and security maintained for the recorded information?" ;
                                                                                     opla-sd:hasSchemaDiagramFileName "record-pattern.pdf" ;
-                                                                                    opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                    opla-sd:hasExampleDiagramFileName "" ;
+                                                                                    opla-sd:hasShortcutDiagramFileName "record-shortcut.pdf" ;
+                                                                                    opla-sd:hasExampleDiagramFileName "record-example.pdf" ;
                                                                                     opla-sd:hasConnections """Record hasRecordType RecordType
 Record records Thin
 Record wasDerivedFrom EventRecord
 Record hasTemporalExtent TemporalExtent
 """ ;
-                                                                                    dc:contributor "" ;
-                                                                                    dc:creator "" .
+                                                                                    dc:contributor "katle-lab members" ;
+                                                                                    dc:creator "Cogan Shimizu, Quinn Hirt, Pascal Hitzler" .
 
 #################################################################
 #    Object Properties

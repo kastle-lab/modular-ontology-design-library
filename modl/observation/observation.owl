@@ -31,16 +31,17 @@ Observation hasResult Result
 Observation hasPhenomenonTime TemporalEntity
 Observation hasResultTime TemporalEntity
 Observation hasSimpleResult rdfs:Literal""" ;
-                                                                                        dc:contributor "Rob Atkinson",
-                                                                                                        "Raúl García-Castro",
-                                                                                                        "Joshua Lieberman",
-                                                                                                        "Claus Stadler" ;
-                                                                                        dc:creator "Armin Haller",
+                                                                                        dc:contributor "Armin Haller",
                                                                                         "Krzysztof Janowicz",
                                                                                         "Simon Cox",
-                                                                                        "Danh Le Phuoc",
+                                                                                        "Dahn Le Phuoc",                                                                                      
                                                                                         "Kerry Taylor",
-                                                                                        "Maxime Lefrançois" .
+                                                                                        "Maxime Lefrancois",
+                                                                                        "Rob Atkinson",
+                                                                                        "Raul Garcia-Castro",                                                                                         
+                                                                                        "Joshua Lieberman", 
+                                                                                        "Claus Stadler" ;
+                                                                                        dc:creator "Cogan Shimizu" .
 #################################################################
 #    Object Properties
 #################################################################

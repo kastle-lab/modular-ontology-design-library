@@ -10,7 +10,7 @@
                                                       opla-core:hasPatternName "Winston Part Whole Pattern" ;
 opla-core:hasShortcutFor "Part Whole Contextualized" ;
                                                                                       opla-core:hasEntanglement "Part Whole Contextualized Entanglement" ;
-                                                                                      opla:hasRelatedPattern "" ;
+                                                                                      opla:hasRelatedPattern "https://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1104_2"^^rdfs:Literal ;
                                                                                       opla-cp:addressesScenario """A hypothetical company utilizes a modular ontology design based on the Part-Whole Contextualized pattern to streamline the production of their flagship product by effectively organizing and integrating various components, modules, assembly steps, and quality control criteria?.""" ;
                                                                                       opla-cp:hasCompetencyQuestion "What are the main modules and sub-modules within the ontology design?",
 
@@ -21,14 +21,18 @@ opla-core:hasShortcutFor "Part Whole Contextualized" ;
 How is quality control ensured throughout the production cycle?";
                                                                   
                                                                                       opla-sd:hasSchemaDiagramFileName "part-whole-contextualized-pattern.pdf" ;
-                                                                                      opla-sd:hasShortcutDiagramFileName "" ;
-                                                                                      opla-sd:hasExampleDiagramFileName "" ;
+                                                                                      opla-sd:hasShortcutDiagramFileName "part-whole-contextualized-shortcuts.pdf" ;
+                                                                                      opla-sd:hasExampleDiagramFileName "part-whole-contextualized-example.pdf" ;
                                                                                       opla-sd:hasConnections """RelationInstance hasWhole Thing
 Thing partOf Thing
 Thing spatiallyLocatedIn Thing
 Thing isPartOf RelationInstance""" ;
-                                                                                      dc:contributr "" ;
-                                                                                      dc:creator "" .
+                                                                                      dc:contributor "Morton E. Winston",
+                                                                                      "Roger Chaffin",
+                                                                                      "Douglass Herrmann" ;
+                                                                                      dc:creator "Cogan Shimizu",
+                                                                                      "Pascal Hitzler",
+                                                                                      "Clare Paul" .
 
 
 #################################################################

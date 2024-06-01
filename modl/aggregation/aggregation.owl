@@ -14,11 +14,13 @@
 <https://archive.org/services/purl/domain/modular_ontology_design_library/bag> rdf:type owl:Ontology ;
                                                                                 owl:imports <http://knowwheregraph.com/> ;
                                                                                 opla-core:hasPatternName "Bag Pattern" ;
-                                                                                opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Bag"^^rdfs:Literal ;
+                                                                                opla:hasRelatedPattern "ontologydesignpatterns.org/wiki/Submissions:Collection"^^rdfs:Literal,
+"http://ontologydesignpatterns.org/wiki/Submissions:Bag/Item"^^rdfs:Literal,
+"http://ontologydesignpatterns.org/wiki/Submissions:Bag"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Bag" ;
                                                                                 opla-core:hasEntanglement "Bag Entanglement" ;
                                                                                 opla-cp:addressesScenario """Use Case
-Use Case Description""" ;
+A simple model for connecting many concepts to a single concept""" ;
                                                                                 opla-cp:hasCompetencyQuestion "What bag is this item an element of?",
                                                                                                               "What resource does this item refer to?", 
                                                                                                               "What are the items contained in this bag?" ;
@@ -27,7 +29,7 @@ Use Case Description""" ;
                                                                                 opla-sd:hasExampleDiagramFileName "aggregation-example.pdf" ;
                                                                                 opla-sd:hasConnections """BagItem itemOf Bag 
 Bag subclass Collection""" ;
-                                                                                dc:contributor "" ;
+                                                                                dc:contributor "Eva Blomqvist" ;
                                                                                 dc:creator "" .
 #################################################################
 #    Annotation properties

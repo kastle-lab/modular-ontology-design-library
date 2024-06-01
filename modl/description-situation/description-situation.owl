@@ -16,15 +16,16 @@
                                                                             opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation"^^rdfs:Literal ;
                                                                             opla-core:hasShortcutFor "Description Situation" ;
                                                                             opla-core:hasEntanglement "Description Situation Entanglement" ;
-                                                                            opla-cp:addressesScenario """Event Planning and Management""" ;
+                                                                            opla-cp:addressesScenario """ Use Case
+                                                                            Event Planning and Management""" ;
                                                                             opla-cp:hasCompetencyQuestion "What situations satisfy a certain description?" , 
                                                                                                           "What descriptions can be (partly) satisfied by that situation?" , 
                                                                                                           "What situations (partly) satisfying a certain description can emerge out of this dataset?" ;
                                                                             opla-sd:hasSchemaDiagramFileName "description-situation-pattern.pdf" ;
-                                                                            opla-sd:hasShortcutDiagramFileName "description-situation-shortcuts.pdf" ;
+                                                                            opla-sd:hasShortcutDiagramFileName "description-situation-shortcut.pdf" ;
                                                                             opla-sd:hasExampleDiagramFileName "description-situation-example.pdf" ;
                                                                             opla-sd:hasConnections """Situation hasDescription Description Situation occursOver SpatiotemporalExtent""" ;
-                                                                            dc:contributor "" ;
+                                                                            dc:contributor "AldoGangemi" ;
                                                                             dc:creator "" .
 #################################################################
 #    Object Properties

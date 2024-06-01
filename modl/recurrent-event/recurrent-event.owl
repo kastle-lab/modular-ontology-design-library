@@ -19,8 +19,11 @@
                                                                                                                   "http://ontologydesignpatterns.org/wiki/Submissions:CollectionEntity"^^rdfs:Literal ,
                                                                                                                   "http://ontologydesignpatterns.org/wiki/Submissions:RecurrentEventSeries"^^rdfs:Literal ,
                                                                                                                   "https://ceur-ws.org/Vol-2459/pattern1.pdf"^^rdfs:Literal ;
-                                                                                          opla-cp:addressesScenario """Umbria Jazz
+                                                                                          opla-core:hasEntanglement "Reccurent Event Entanglement"
+                                                                                          opla-cp:addressesScenario """Use Case
+                                                                                          Umbria Jazz
 Umbria Jazz is a collection of events, which all take place in July and in the Italian region of Umbria, and has the musical genre jazz as a topic. Its events recur at regular time periods, i.e. annually.""" ;
+
                                                                                           opla-cp:hasCompetencyQuestion "What are the events of a recurrent event series?" ,
                                                                                                                         "Which is the time period elapsing between two events of a recurrent event series?" ,
                                                                                                                         "When is the next event of a recurrent event series scheduled?" ,
@@ -28,7 +31,7 @@ Umbria Jazz is a collection of events, which all take place in July and in the I
                                                                                                                         "Which is the (immediate) next event in a recurrent event series?" ,
                                                                                                                         "Which is the (immediate) previous event in a recurrent event series?" ;
                                                                                           opla-sd:hasSchemaDiagramFileName "recurrent-event-pattern.pdf" ;
-                                                                                          opla-sd:hasShortcutDiagramFileName "recurrent-event-shortcuts.pdf" ;
+                                                                                          opla-sd:hasShortcutDiagramFileName "recurrent-event-shortcut.pdf" ;
                                                                                           opla-sd:hasExampleDiagramFileName "recurrent-event-example.pdf" ;
                                                                                           opla-sd:hasConnections """RecurrentEventSeries subclass Collection
 RecurrentEventSeries subclass Situation
@@ -42,7 +45,7 @@ Event hasEventNumber xsd:integer
 Event hasTimePeriodBeforeNextEvent TimePeriod
 RecurrentEventSeries hasUnifyingFactor UnifyingFactor
 UnifyingFactor subclass Concept""" ;
-                                                                                          dc:contributor "" ;
+                                                                                          dc:contributor "ValentinaAnitaCarriero" ;
                                                                                           dc:creator "" .
 #################################################################
 #    Object Properties
