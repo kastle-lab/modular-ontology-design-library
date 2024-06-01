@@ -64,6 +64,10 @@
      :hasMODLCategory :OrganizationOfData ;
      :hasRelatedPattern :Partonymy .
 
+###  https://archive.org/services/purl/purl/modular_ontology_design_library#CausalEvent
+
+###  https://archive.org/services/purl/purl/modular_ontology_design_library#DataTransformation
+
 
 ###  https://archive.org/services/purl/purl/modular_ontology_design_library#DescriptionAndDetails
 :DescriptionAndDetails rdf:type owl:NamedIndividual ,
