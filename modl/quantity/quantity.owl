@@ -17,7 +17,7 @@
                                                                                     opla-core:hasShortcutFor "Quantity" ;
                                                                                     opla-core:hasEntanglement "Quantity Entanglement" ;
                                                                                     opla-cp:addressesScenario """Use Case
-                                                                                    A retail company utilizes a modular ontology design based on the Quantity pattern to efficiently manage and track inventory levels across multiple stores.""" ;
+A retail company utilizes a modular ontology design based on the Quantity pattern to efficiently manage and track inventory levels across multiple stores.""" ;
                                                                                     opla-cp:hasCompetencyQuestion "How much does an elephant weigh in kilograms?",
                                                                                                                   "How long is Jupiter from the Sun, at its farthest, in furlongs?",
                                                                                                                   "How long ago was the Mezazoic Era?" ;
@@ -28,7 +28,7 @@
 Quantity hasQuantityValue QuantityValue
 QuantityValue hasUnit Unit 
 QuantityValue hasNumericValue xsd:double""" ;
-                                                                                    dc:contributor "JohnHodges" ;
+                                                                                    dc:contributor "John Hodges" ;
                                                                                     dc:creator "" .
 #################################################################
 #    Annotation properties

@@ -31,7 +31,7 @@ John was elected the meeting secretary of today's board meeting.""" ;
 Event providesParticipantRole ParticipantRole
 ParticipantRole hasTemporalExtent TemporalExtent""" ;
                                                                                             dc:contributor "" ;
-                                                                                            dc:creator "Cogan Shimizu, Quinn Hirt, Pascal Hitzler" .
+                                                                                            dc:creator "Cogan Shimizu", "Quinn Hirt", "Pascal Hitzler" .
 
 #################################################################
 #    Annotation properties

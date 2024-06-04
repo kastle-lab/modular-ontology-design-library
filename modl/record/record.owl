@@ -17,7 +17,7 @@
                                                                                     opla-core:hasShortcutFor "Record" ;
                                                                                     opla-core:hasEntanglement "Record Entanglement" ;
                                                                                     opla-cp:addressesScenario """Use Case
-                                                                                    A company implements a modular ontology design based on the Record pattern to effectively capture and manage various types of records across different departments and processes.""" ;
+A company implements a modular ontology design based on the Record pattern to effectively capture and manage various types of records across different departments and processes.""" ;
                                                                                     opla-cp:hasCompetencyQuestion "What types of records are defined in the modular ontology design?",
 
 "How are the records categorized and organized within the ontology?",
@@ -39,8 +39,8 @@ Record records Thin
 Record wasDerivedFrom EventRecord
 Record hasTemporalExtent TemporalExtent
 """ ;
-                                                                                    dc:contributor "katle-lab members" ;
-                                                                                    dc:creator "Cogan Shimizu, Quinn Hirt, Pascal Hitzler" .
+                                                                                    dc:contributor "Antrea Christou", "Brandon Dave", "Alexis Ellis", "Rakesh Kandula", "Anmol Saini", "Michael McCain" ;
+                                                                                    dc:creator "Cogan Shimizu", "Quinn Hirt", "Pascal Hitzler" .
 
 #################################################################
 #    Object Properties

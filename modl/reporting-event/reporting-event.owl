@@ -17,7 +17,7 @@
                                                                                           opla-core:hasShortcutFor "Reporting Event" ;
                                                                                           opla-core:hasEntanglement "Reporting Event Entanglement" ;
                                                                                           opla-cp:addressesScenario """ Use Case
-                                                                                          A smart city initiative implements a modular ontology design based on the Reporting Event pattern to effectively manage and analyze various events occurring within the city.""" ;
+A smart city initiative implements a modular ontology design based on the Reporting Event pattern to effectively manage and analyze various events occurring within the city.""" ;
                                                                                           opla-cp:hasCompetencyQuestion "How does the modular ontology design using the Reporting Event pattern enhance the event management capabilities of the smart city initiative?",
 
 "What are the key attributes associated with different event types in the modular ontology, such as traffic incidents, environmental hazards, and community events?",
@@ -34,7 +34,7 @@
 ActualEventView hasContext ActualEventViewContext
 ReportingEvent hasAuthor EventReporter
 ReportingEvent isBasedOn Source""" ;
-                                                                                          dc:contributor "EwaKowalczuk" ;
+                                                                                          dc:contributor "Ewa Kowalczuk" ;
                                                                                           dc:creator "Cogan Shimizu" .
 #################################################################
 #    Annotation properties
