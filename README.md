@@ -12,25 +12,37 @@ Here be OWLs.
 
 ### The Patterns
 
--   Causal Event
--   Data Transformation
--   Event
--   Explicit Typing
--   Hierarchical Cell Features
--   Identifier
--   Name Stub
--   Participant Role
--   Part-whole
--   Provenance
--   Quantities
--   Reification
--   Sequence
--   Spatial Extent
--   Spatiotemporal Extent
--   Stub
--   Temporal Extent
--   Trajectory
--   Tree
+- Agent-Role
+- Bag
+- Causal Event
+- Data Transformation
+- Description Situation
+- Event
+- Explicit Typing
+- Hierarchical Cell Features
+- Identifier
+- Name Stub
+- Observation
+- Participant-Role
+- Part-Whole
+- Part-Whole Contextualized
+- Provenance
+- Quantity
+- Record
+- Recurrent-Event
+- Reification
+- Reporting-Event
+- Role Dependent Name
+- Sequence
+- Spatial Extent
+- Spatial Object
+- Spatiotemporal Extent
+- State Transition
+- Stub
+- Taxonomy Alignment
+- Temporal Extent
+- Trajectory
+- Tree
 
 ### OPLa Ontology
 

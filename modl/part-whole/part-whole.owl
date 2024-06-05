@@ -28,7 +28,7 @@ Describing the individual components that are required to build a plane.""" ;
                                                                                       opla-sd:hasConnections """Thing part-of Thing
 Thing spatially-located-in Thing
 Thing isPartOf RelationInstance
-RelationInstance hasWhole Thing existential
+RelationInstance hasWhole Thing
 RelationInstance subclass PO-Component-Type
 RelationInstance subclass PO-Member-Type
 RelationInstance subclass PO-Portion-Type
@@ -37,8 +37,12 @@ RelationInstance subclass PO-Feature-Type
 RelationInstance subclass PO-Place-Type
 RelationInstance subclass PO-Part-Of-Type
 ReflexiveProperty subclass Spatially-Located-In-Type""" ;
-                                                                                      dc:contributr "" ;
-                                                                                      dc:creator "" .
+                                                                                      dc:contributor "Morton E. Winston",
+                                                                                      "Roger Chaffin",
+                                                                                      "Douglass Herrmann" ;
+                                                                                      dc:creator "Cogan Shimizu",
+                                                                                      "Pascal Hitzler",
+                                                                                      "Clare Paul" .
 
 
 #################################################################

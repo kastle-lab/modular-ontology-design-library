@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -9,32 +9,35 @@
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
-@base <http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation#> .
 
-<http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11> rdf:type owl:Ontology ;
+<https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation> rdf:type owl:Ontology ;
                                                                             opla-core:hasPatternName "Description Situation Pattern" ;
-                                                                            opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation"^^rdfs:Literal ;
+                                                                            opla:hasRelatedPattern ""http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"^^rdfs:Literal,
+"https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal ;
                                                                             opla-core:hasShortcutFor "Description Situation" ;
                                                                             opla-core:hasEntanglement "Description Situation Entanglement" ;
-                                                                            opla-cp:addressesScenario """Event Planning and Management""" ;
+                                                                            opla-cp:addressesScenario """ Use Case
+Event Planning and Management""" ;
                                                                             opla-cp:hasCompetencyQuestion "What situations satisfy a certain description?" , 
                                                                                                           "What descriptions can be (partly) satisfied by that situation?" , 
                                                                                                           "What situations (partly) satisfying a certain description can emerge out of this dataset?" ;
                                                                             opla-sd:hasSchemaDiagramFileName "description-situation-pattern.pdf" ;
-                                                                            opla-sd:hasShortcutDiagramFileName "description-situation-shortcuts.pdf" ;
+                                                                            opla-sd:hasShortcutDiagramFileName "description-situation-shortcut.pdf" ;
                                                                             opla-sd:hasExampleDiagramFileName "description-situation-example.pdf" ;
-                                                                            opla-sd:hasConnections """Situation hasDescription Description Situation occursOver SpatiotemporalExtent""" ;
-                                                                            dc:contributor "" ;
+                                                                            opla-sd:hasConnections """Situation hasDescription Description
+Situation occursOver SpatiotemporalExtent""" ;
+                                                                            dc:contributor "AldoGangemi" ;
                                                                             dc:creator "" .
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#hasDescription
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation#hasDescription
 :hasDescription rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#occursOver
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation#occursOver
 :occursOver rdf:type owl:ObjectProperty .
 
 
@@ -42,11 +45,11 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#Description
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation#Description
 :Description rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#Situation
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation#Situation
 :Situation rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
                              owl:onProperty :occursOver ;
@@ -64,7 +67,7 @@
                            ] .
 
 
-###  http://www.semanticweb.org/cogan/ontologies/2022/10/untitled-ontology-11#SpatiotemporalExtent
+###  https://archive.org/services/purl/domain/modular_ontology_design_library/description-situation#SpatiotemporalExtent
 :SpatiotemporalExtent rdf:type owl:Class .
 
 

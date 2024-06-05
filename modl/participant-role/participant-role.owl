@@ -13,7 +13,8 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> rdf:type owl:Ontology ;
                                                                                             opla-core:hasPatternName "Participant Role Pattern" ;
-                                                                                            opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
+                                                                                            opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal;
+                                                                                                                    "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
                                                                                                                     "http://ontologydesignpatterns.org/wiki/Submissions:ParticipantRole"^^rdfs:Literal ;
                                                                                             opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "Participant Role" ;
@@ -24,13 +25,15 @@ John was elected the meeting secretary of today's board meeting.""" ;
                                                                                                                           "Which students attended the lecture?",
                                                                                                                           "Who were the passengers on the cruise?" ;
                                                                                             opla-sd:hasSchemaDiagramFileName "participant-role-pattern.pdf" ;
-                                                                                            opla-sd:hasShortcutDiagramFileName "participant-role-shorcuts.pdf" ;
+                                                                                            opla-sd:hasShortcutDiagramFileName "participant-role-shorcut.pdf" ;
                                                                                             opla-sd:hasExampleDiagramFileName "participant-role-example.pdf" ;
                                                                                             opla-sd:hasConnections """Agent performsAgentRole ParticipantRole
 Event providesParticipantRole ParticipantRole
 ParticipantRole hasTemporalExtent TemporalExtent""" ;
                                                                                             dc:contributor "" ;
-                                                                                            dc:creator "" .
+                                                                                            dc:creator "Cogan Shimizu", 
+                                                                                                      "Quinn Hirt",
+                                                                                                      "Pascal Hitzler" .
 
 #################################################################
 #    Annotation properties

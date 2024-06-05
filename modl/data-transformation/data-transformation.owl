@@ -13,13 +13,19 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern> rdf:type owl:Ontology ;
                                                                   opla-core:hasPatternName "Data Transformation Pattern" ;
-                                                                  opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:DataTransformationPattern"^^rdfs:Literal ;
+                                                                  opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:ComputationalEnvironment"^^rdfs:Literal,
+"http://ontologydesignpatterns.org/wiki/Submissions:DataTransformationPattern/Algorithm"^^rdfs:Literal,
+"https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal,
+"https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal ;                                                                  
                                                                   opla-core:hasShortcutFor "Data Transformation" ;
                                                                   opla-core:hasEntanglement "Data Transformation Entanglement" ;
-                                                                  opla-cp:addressesScenario """E-commerce Order Processing""" ;
-                                                                  opla-cp:hasCompetencyQuestion "What are the different data sources used for customer orders in our e-commerce platform?","How can we transform unstructured customer feedback comments into structured sentiment analysis data?","What transformation rules should be applied to convert a text document written in Markdown format into TXT format?" ;
+                                                                  opla-cp:addressesScenario """Use Case
+E-commerce Order Processing""" ;
+                                                                  opla-cp:hasCompetencyQuestion "What are the different data sources used for customer orders in our e-commerce platform?",
+"How can we transform unstructured customer feedback comments into structured sentiment analysis data?",
+"What transformation rules should be applied to convert a text document written in Markdown format into TXT format?" ;
                                                                   opla-sd:hasSchemaDiagramFileName "data-transformation-pattern.pdf" ;
-                                                                  opla-sd:hasShortcutDiagramFileName "data-transformation-shortcuts.pdf" ;
+                                                                  opla-sd:hasShortcutDiagramFileName "data-transformation-shortcut.pdf" ;
                                                                   opla-sd:hasExampleDiagramFileName "data-transformation-example.pdf" ;
                                                                   opla-sd:hasConnections """DataTransformation subclass Algorithm
 DataTransformation occursInCE ComputationalEnvironment
@@ -34,7 +40,7 @@ Data performsOutputRole OutputRole
 Data performsParameterRole ParameterRole
 Data hasPayload Payload
 Data hasDataType DataType""" ;
-                                                                  dc:contributor "" ;
+                                                                  dc:contributor "Cogan Shimizu", "Ryan M. McGranaghan", "Aaron Eberhart", "Adam C. Kellerman" ;
                                                                   dc:creator "" .
 #################################################################
 #    Annotation properties

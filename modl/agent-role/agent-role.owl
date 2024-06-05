@@ -13,7 +13,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> rdf:type owl:Ontology ;
                                                                                       opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
-                                                                                                              "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal ;
+                                                                                                              "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal;
                                                                                       opla-core:hasPatternName "Agent Role" ;
                                                                                       opla-core:hasShortcutFor "Agent Role Shortcut" ;
                                                                                       opla-core:hasEntanglement "Agent Role Entanglement" ;
