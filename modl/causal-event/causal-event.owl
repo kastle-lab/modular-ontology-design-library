@@ -15,7 +15,7 @@
 <http://knowwheregraph.com/> rdf:type owl:Ontology ;
                               opla-core:hasPatternName "Causal Event Pattern" ;
                               opla-cp:addressesScenario """Use Case
-                              Direct Relief Monsoon after diptheria outbreak""" ,
+Direct Relief Monsoon after diptheria outbreak""" ,
                                                         """Thomas Fire
 Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                               opla-cp:hasCompetencyQuestion "Are there areas in other states than California that are frequently affected by wildfires?" ,
