@@ -13,8 +13,9 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/quantity> rdf:type owl:Ontology ;
                                                                                     opla-core:hasPatternName "Quantity Pattern" ;
-                                                                                    opla:hasRelatedPattern ""^^rdfs:Literal ;
-                                                                                    opla-core:hasShortcutFor "Quantity" ;
+                                                                                    opla:hasRelatedPattern "https://qudt.org/schema/qudt/QuantityKind"^^rdfs:Literal,
+                                                                                    "https://qudt.org/schema/qudt/Unit"^^rdfs:Literal ;
+                                                                                    opla-core:hasShortcutFor "Quantity Shortcut" ;
                                                                                     opla-core:hasEntanglement "Quantity Entanglement" ;
                                                                                     opla-cp:addressesScenario """Use Case
 A retail company utilizes a modular ontology design based on the Quantity pattern to efficiently manage and track inventory levels across multiple stores.""" ;
@@ -28,8 +29,8 @@ A retail company utilizes a modular ontology design based on the Quantity patter
 Quantity hasQuantityValue QuantityValue
 QuantityValue hasUnit Unit 
 QuantityValue hasNumericValue xsd:double""" ;
-                                                                                    dc:contributor "John Hodges" ;
-                                                                                    dc:creator "" .
+                                                                                    dc:contributor "Jack Hodges", "Steve Ray", "Daniel Mekonnen", "David Price", "James E. Masters", "Simon J. D. Cox" ;
+                                                                                    dc:creator "Ralph Hodgson" .
 #################################################################
 #    Annotation properties
 #################################################################

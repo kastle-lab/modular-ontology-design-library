@@ -13,13 +13,13 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> rdf:type owl:Ontology ;
                                                                                             opla-core:hasPatternName "Participant Role Pattern" ;
-                                                                                            opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
+                                                                                            opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal;
+                                                                                                                    "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
                                                                                                                     "http://ontologydesignpatterns.org/wiki/Submissions:ParticipantRole"^^rdfs:Literal ;
                                                                                             opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "Participant Role" ;
                                                                                             opla-core:hasEntanglement "Participant Role Entanglement" ;
-                                                                                            opla-cp:addressesScenario """Use Case
-                                                                                            Specific Role Representation in Particular Events
+                                                                                            opla-cp:addressesScenario """Specific Role Representation in Particular Events
 John was elected the meeting secretary of today's board meeting.""" ;
                                                                                             opla-cp:hasCompetencyQuestion "Who were the participants in this event?",
                                                                                                                           "Which students attended the lecture?",
@@ -31,7 +31,9 @@ John was elected the meeting secretary of today's board meeting.""" ;
 Event providesParticipantRole ParticipantRole
 ParticipantRole hasTemporalExtent TemporalExtent""" ;
                                                                                             dc:contributor "" ;
-                                                                                            dc:creator "Cogan Shimizu", "Quinn Hirt", "Pascal Hitzler" .
+                                                                                            dc:creator "Cogan Shimizu", 
+                                                                                                      "Quinn Hirt",
+                                                                                                      "Pascal Hitzler" .
 
 #################################################################
 #    Annotation properties

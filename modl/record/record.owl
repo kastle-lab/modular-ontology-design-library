@@ -16,7 +16,7 @@
                                                                                     opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                     opla-core:hasShortcutFor "Record" ;
                                                                                     opla-core:hasEntanglement "Record Entanglement" ;
-                                                                                    opla-cp:addressesScenario """Use Case
+                                                                                    opla-cp:addressesScenario """Record types across departments and processes
 A company implements a modular ontology design based on the Record pattern to effectively capture and manage various types of records across different departments and processes.""" ;
                                                                                     opla-cp:hasCompetencyQuestion "What types of records are defined in the modular ontology design?",
 
@@ -34,11 +34,12 @@ A company implements a modular ontology design based on the Record pattern to ef
                                                                                     opla-sd:hasSchemaDiagramFileName "record-pattern.pdf" ;
                                                                                     opla-sd:hasShortcutDiagramFileName "record-shortcut.pdf" ;
                                                                                     opla-sd:hasExampleDiagramFileName "record-example.pdf" ;
-                                                                                    opla-sd:hasConnections """Record hasRecordType RecordType
-Record records Thin
-Record wasDerivedFrom EventRecord
+                                                                                    opla-sd:hasConnections """Record subclass EntityWithProvenance
 Record hasTemporalExtent TemporalExtent
-""" ;
+Record hasRecordType RecordType
+Record records Thing
+Record wasDerivedFrom EventRecord
+EventRecord subclass Record""" ;
                                                                                     dc:contributor "Antrea Christou", "Brandon Dave", "Alexis Ellis", "Rakesh Kandula", "Anmol Saini", "Michael McCain" ;
                                                                                     dc:creator "Cogan Shimizu", "Quinn Hirt", "Pascal Hitzler" .
 

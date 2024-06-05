@@ -16,7 +16,7 @@
                                                                                           opla:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                           opla-core:hasShortcutFor "Agent Role" ;
                                                                                           opla-core:hasEntanglement "Agent Role Entanglement" ;
-                                                                                          opla-cp:addressesScenario """Use Case
+                                                                                          opla-cp:addressesScenario """Customer Feedback System Enhancement
 A retail company adopts a modular ontology design based on the Reification pattern to enhance their customer feedback management system.""" ;
                                                                                           opla-cp:hasCompetencyQuestion "What was the street named during the Great Depression",
                                                                                                                         "From what years was Al Gore Vice President?",
