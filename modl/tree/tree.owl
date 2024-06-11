@@ -1,19 +1,18 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/tree#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/tree#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/tree> rdf:type owl:Ontology ;
                                                                                 opla-core:hasPatternName "Tree Pattern" ;
-                                                                                opla:hasRelatedPattern "https://people.cs.ksu.edu/~hitzler/pub2/2021-trees.pdf"^^rdfs:Literal ;
+                                                                                opla-core:hasRelatedPattern "https://people.cs.ksu.edu/~hitzler/pub2/2021-trees.pdf"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Tree-shortcut" ;
                                                                                 opla-core:hasEntanglement "Tree Entanglement" ;
                                                                                 opla-cp:addressesScenario """Phylogenetic Tree
@@ -47,7 +46,7 @@ TreeNode hasSibling TreeNode""" ;
 #################################################################
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
-opla:isNativeTo rdf:type owl:AnnotationProperty .
+opla-core:isNativeTo rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -58,7 +57,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 :hasAncestor rdf:type owl:ObjectProperty ;
              owl:inverseOf :hasDescendant ;
              rdf:type owl:IrreflexiveProperty ;
-             opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+             opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/tree#hasChild
@@ -66,7 +65,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
           rdfs:subPropertyOf :hasDescendant ;
           owl:inverseOf :hasParent ;
           rdf:type owl:IrreflexiveProperty ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/tree#hasDescendant
@@ -75,20 +74,20 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                owl:propertyChainAxiom ( :hasDescendant
                                         :hasDescendant
                                       ) ;
-               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+               opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/tree#hasParent
 :hasParent rdf:type owl:ObjectProperty ,
                     owl:IrreflexiveProperty ;
-           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+           opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/tree#hasSibling
 :hasSibling rdf:type owl:ObjectProperty ;
             owl:inverseOf :hasSibling ;
             rdf:type owl:IrreflexiveProperty ;
-            opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+            opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 #################################################################
@@ -97,7 +96,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/tree#hasOutDegree
 :hasOutDegree rdf:type owl:DatatypeProperty ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+              opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 #################################################################
@@ -130,7 +129,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                                ) ;
                             rdf:type owl:Class
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/tree#RootNode
@@ -146,7 +145,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                                ) ;
                             rdf:type owl:Class
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/tree#TreeNode
@@ -180,7 +179,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onDataRange xsd:positiveInteger
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal .
 
 
 #################################################################

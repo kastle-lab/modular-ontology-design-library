@@ -1,18 +1,17 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole> rdf:type owl:Ontology ;
-                                                                                      opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
+                                                                                      opla-core:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
                                                                                                               "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal;
                                                                                       opla-core:hasPatternName "Agent Role" ;
                                                                                       opla-core:hasShortcutFor "Agent Role Shortcut" ;
@@ -38,15 +37,15 @@ AgentRole hasTemporalExtent TemporalExtent""" ;
 #################################################################
 
 ###  http://ontologydesignpatterns.org/opla#hasRelatedPattern
-opla:hasRelatedPattern rdf:type owl:AnnotationProperty .
+opla-core:hasRelatedPattern rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
-opla:isNativeTo rdf:type owl:AnnotationProperty .
+opla-core:isNativeTo rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#ofExternalType
-opla:ofExternalType rdf:type owl:AnnotationProperty .
+opla-core:ofExternalType rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -55,29 +54,29 @@ opla:ofExternalType rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#hasTemporalExtent
 :hasTemporalExtent rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal . 
+                   opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal . 
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#isPerformedBy
 :isPerformedBy rdf:type owl:ObjectProperty ;
                owl:inverseOf :performsAgentRole ;
-               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+               opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#isProvidedBy
 :isProvidedBy rdf:type owl:ObjectProperty ;
               owl:inverseOf :providesAgentRole ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+              opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#performsAgentRole
 :performsAgentRole rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+                   opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#providesAgentRole
 :providesAgentRole rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+                   opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
 
 
 #################################################################
@@ -97,8 +96,8 @@ owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#Agent
 :Agent rdf:type owl:Class ;
-       opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
-       opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+       opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
+       opla-core:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#AgentRole
@@ -117,13 +116,13 @@ owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                              owl:onClass :Agent
                            ] ;
-           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
+           opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole#TemporalExtent
 :TemporalExtent rdf:type owl:Class ;
-                opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
-                opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+                opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
+                opla-core:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 
 #################################################################

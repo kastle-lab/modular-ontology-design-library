@@ -1,4 +1,4 @@
-@prefix : <http://knowwheregraph.com/>.
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/causal-event#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,13 +6,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix kwg-ont: <http://knowwheregraph.com/#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
-@base <http://knowwheregraph.com/>.
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/causal-event#>.
 
-<http://knowwheregraph.com/> rdf:type owl:Ontology ;
+<https://archive.org/services/purl/domain/modular_ontology_design_library/causal-event> rdf:type owl:Ontology ;
                               opla-core:hasPatternName "Causal Event Pattern" ;
                               opla-cp:addressesScenario """Use Case
 Direct Relief Monsoon after diptheria outbreak""" ,
@@ -39,7 +38,7 @@ Fire causes bad air quality in Goleta. Obvious to us, but not to a model.""" ;
                                                             "Which regions affected by wildfires are expected to experience heavy rain (flood risk)" ,
                                                             "Which residents are still evacuated from the same region where the second hurricane hit?" ,
                                                             "where to deliver Covid-19 supplies?" ;
-                              opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Place"^^rdfs:Literal,
+                              opla-core:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Place"^^rdfs:Literal,
 "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal,
 "https://archive.org/services/purl/domain/modular_ontology_design_library/observation"^^rdfs:Literal,
 "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal,

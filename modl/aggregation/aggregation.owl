@@ -1,20 +1,19 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/bag> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/bag#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/bag> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/bag#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/bag> rdf:type owl:Ontology ;
                                                                                 owl:imports <http://knowwheregraph.com/> ;
                                                                                 opla-core:hasPatternName "Bag Pattern" ;
-                                                                                opla:hasRelatedPattern "ontologydesignpatterns.org/wiki/Submissions:Collection"^^rdfs:Literal,
+                                                                                opla-core:hasRelatedPattern "ontologydesignpatterns.org/wiki/Submissions:Collection"^^rdfs:Literal,
 "http://ontologydesignpatterns.org/wiki/Submissions:Bag/Item"^^rdfs:Literal,
 "http://ontologydesignpatterns.org/wiki/Submissions:Bag"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Bag" ;
@@ -36,15 +35,15 @@ Bag subclass Collection""" ;
 #################################################################
 
 ###  http://ontologydesignpatterns.org/opla#hasRelatedPattern
-opla:hasRelatedPattern rdf:type owl:AnnotationProperty .
+opla-core:hasRelatedPattern rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
-opla:isNativeTo rdf:type owl:AnnotationProperty .
+opla-core:isNativeTo rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#ofExternalType
-opla:ofExternalType rdf:type owl:AnnotationProperty .
+opla-core:ofExternalType rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -54,12 +53,12 @@ opla:ofExternalType rdf:type owl:AnnotationProperty .
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#itemOf
 :itemOf rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf :po-member ;
-        opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal .
+        opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#po-member
 :po-member rdf:type owl:ObjectProperty ;
-           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/partonomy"^^rdfs:Literal .
+           opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/partonomy"^^rdfs:Literal .
 
 
 #################################################################
@@ -73,19 +72,19 @@ opla:ofExternalType rdf:type owl:AnnotationProperty .
                        owl:onProperty :itemOf ;
                        owl:allValuesFrom :BagItem
                      ] ;
-     opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal ;
-     opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+     opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal ;
+     opla-core:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#BagItem
 :BagItem rdf:type owl:Class ;
-         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal .
+         opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/bag#Collection
 :Collection rdf:type owl:Class ;
-            opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal ;
-            opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+            opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/bag"^^rdfs:Literal ;
+            opla-core:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 
 #################################################################

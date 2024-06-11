@@ -1,19 +1,18 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformation#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformation#> .
 
-<https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformationPattern> rdf:type owl:Ontology ;
+<https://archive.org/services/purl/domain/modular_ontology_design_library/DataTransformation> rdf:type owl:Ontology ;
                                                                   opla-core:hasPatternName "Data Transformation Pattern" ;
-                                                                  opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:ComputationalEnvironment"^^rdfs:Literal,
+                                                                  opla-core:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:ComputationalEnvironment"^^rdfs:Literal,
 "http://ontologydesignpatterns.org/wiki/Submissions:DataTransformationPattern/Algorithm"^^rdfs:Literal,
 "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal,
 "https://archive.org/services/purl/domain/modular_ontology_design_library/provenance"^^rdfs:Literal ;                                                                  

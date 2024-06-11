@@ -1,19 +1,18 @@
-@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.w3.org/2002/07/owl#> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent> rdf:type owl:Ontology ;
                                                                                           opla-core:hasPatternName "Spatial Extent Pattern" ;
-                                                                                          opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal,
+                                                                                          opla-core:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal,
                                                                                                                 "https://archive.org/services/purl/domain/modular_ontology_design_library/trajectory"^^rdfs:Literal ,
                                                                                                                 "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
                                                                                                                 "https://archive.org/services/purl/domain/modular_ontology_design_library/spatiotemporalextent"^^rdfs:Literal ;
@@ -44,11 +43,11 @@ PointInSpace hasValue Value""" ;
 #################################################################
 
 ###  http://ontologydesignpatterns.org/opla#hasRelatedPattern
-opla:hasRelatedPattern rdf:type owl:AnnotationProperty .
+opla-core:hasRelatedPattern rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
-opla:isNativeTo rdf:type owl:AnnotationProperty .
+opla-core:isNativeTo rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -57,42 +56,42 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#constitudtedBy
 :constitudtedBy rdf:type owl:ObjectProperty ;
-                opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+                opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#contains
 :contains rdf:type owl:ObjectProperty ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#hasFirst
 :hasFirst rdf:type owl:ObjectProperty ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#hasLast
 :hasLast rdf:type owl:ObjectProperty ;
-         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+         opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#hasNext
 :hasNext rdf:type owl:ObjectProperty ;
-         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+         opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#hasReferenceSystem
 :hasReferenceSystem rdf:type owl:ObjectProperty ;
-                    opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+                    opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#hasValue
 :hasValue rdf:type owl:ObjectProperty ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#isDefinedBy
 :isDefinedBy rdf:type owl:ObjectProperty ;
-             opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+             opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 #################################################################
@@ -106,7 +105,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :PIS-Sequence
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#PIS-Sequence
@@ -121,7 +120,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass :PIS-SequenceElement
                               ] ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+              opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#PIS-SequenceElement
@@ -136,7 +135,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                        owl:onClass :PIS-SequenceElement
                                      ] ;
-                     opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+                     opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#PointInSpace
@@ -151,12 +150,12 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass :Value
                               ] ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+              opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#ReferenceSystem
 :ReferenceSystem rdf:type owl:Class ;
-                 opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+                 opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#SpatialExtent
@@ -166,12 +165,12 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass :Interior
                                ] ;
-               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+               opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent#Value
 :Value rdf:type owl:Class ;
-       opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
+       opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/spatialextent"^^rdfs:Literal .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

@@ -1,19 +1,18 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/identifier> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/identifier> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/identifier> rdf:type owl:Ontology ;
                                                                                         opla-core:hasPatternName "Identifier Pattern" ;
-                                                                                        opla:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/reification"^^rdfs:Literal ;
+                                                                                        opla-core:hasRelatedPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/reification"^^rdfs:Literal ;
                                                                                         opla-core:hasShortcutFor "Identifier" ;
                                                                                         opla-core:hasEntanglement "Identifier Entanglement" ;
                                                                                         opla-cp:addressesScenario """A merchant being assigned an identifier in a database such as ID number""" ;
@@ -34,11 +33,11 @@ Identifier hasIdentifierType Type""" ;
 #################################################################
 
 ###  http://ontologydesignpatterns.org/opla#hasRelatedPattern
-opla:hasRelatedPattern rdf:type owl:AnnotationProperty .
+opla-core:hasRelatedPattern rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
-opla:isNativeTo rdf:type owl:AnnotationProperty .
+opla-core:isNativeTo rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -47,12 +46,12 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifier
 :hasIdentifier rdf:type owl:ObjectProperty ;
-               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
+               opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#hasIdentifierType
 :hasIdentifierType rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
+                   opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
 
 
 #################################################################
@@ -61,7 +60,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#identifierAsText
 :identifierAsText rdf:type owl:DatatypeProperty ;
-                  opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
+                  opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
 
 
 #################################################################
@@ -85,12 +84,12 @@ owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#IDType
 :IDType rdf:type owl:Class ;
-        opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
+        opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/identifier#Identifier
 :Identifier rdf:type owl:Class ;
-            opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
+            opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/identifier"^^rdfs:Literal .
 
 
 #################################################################

@@ -1,20 +1,19 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/sequence> rdf:type owl:Ontology ;
                                                                                 opla-core:hasPatternName "Sequence Pattern" ;
-                                                                                opla:hasRelatedPattern ""^^rdfs:Literal ;
-                                                                                opla:generalizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
+                                                                                opla-core:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                opla-core:generalizationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/tree"^^rdfs:Literal ;
                                                                                 opla-core:hasShortcutFor "Sequence" ;
                                                                                 opla-core:hasEntanglement "Sequence Entanglement" ;
                                                                                 opla-cp:addressesScenario """Use Case
@@ -39,11 +38,11 @@ ListItem hasSuccessor ListItem""" ;
 #################################################################
 
 ###  http://ontologydesignpatterns.org/opla#generalizationOfPattern
-opla:generalizationOfPattern rdf:type owl:AnnotationProperty .
+opla-core:generalizationOfPattern rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
-opla:isNativeTo rdf:type owl:AnnotationProperty .
+opla-core:isNativeTo rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -53,7 +52,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#hasNext
 :hasNext rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :hasSuccessor ;
-         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
+         opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#hasSuccessor
@@ -62,7 +61,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
               owl:propertyChainAxiom ( :hasNext
                                        :hasSuccessor
                                      ) ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
+              opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
 #################################################################
@@ -83,7 +82,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
+           opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#LastItem
@@ -99,7 +98,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                                ) ;
                             rdf:type owl:Class
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/sequence#SequenceItem
@@ -113,7 +112,7 @@ opla:isNativeTo rdf:type owl:AnnotationProperty .
                                            ] ;
                             owl:allValuesFrom :SequenceItem
                           ] ;
-          opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
+          opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/sequence"^^rdfs:Literal .
 
 
 #################################################################
