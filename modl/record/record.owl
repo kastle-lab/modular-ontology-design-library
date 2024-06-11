@@ -4,7 +4,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
@@ -13,23 +12,17 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/record> rdf:type owl:Ontology ;
                                                                                     opla-core:hasPatternName "Record Pattern" ;
-                                                                                    opla:hasRelatedPattern ""^^rdfs:Literal ;
+                                                                                    opla-core:hasRelatedPattern ""^^rdfs:Literal ;
                                                                                     opla-core:hasShortcutFor "Record" ;
                                                                                     opla-core:hasEntanglement "Record Entanglement" ;
                                                                                     opla-cp:addressesScenario """Record types across departments and processes
 A company implements a modular ontology design based on the Record pattern to effectively capture and manage various types of records across different departments and processes.""" ;
                                                                                     opla-cp:hasCompetencyQuestion "What types of records are defined in the modular ontology design?",
-
 "How are the records categorized and organized within the ontology?",
-
 "What are the key attributes and properties associated with each record type?",
-
 "How is the lifecycle of a record represented in the ontology?",
-
 "How are relationships established between different records within the ontology?",
-
 "What are the mechanisms for searching, retrieving, and updating records within the system?",
-
 "How is data integrity and security maintained for the recorded information?" ;
                                                                                     opla-sd:hasSchemaDiagramFileName "record-pattern.pdf" ;
                                                                                     opla-sd:hasShortcutDiagramFileName "record-shortcut.pdf" ;

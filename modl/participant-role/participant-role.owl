@@ -1,22 +1,21 @@
-@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> .
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> .
+@base <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#> .
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole> rdf:type owl:Ontology ;
                                                                                             opla-core:hasPatternName "Participant Role Pattern" ;
-                                                                                            opla:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal;
+                                                                                            opla-core:hasRelatedPattern  "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal;
                                                                                                                     "https://archive.org/services/purl/domain/modular_ontology_design_library/temporalextent"^^rdfs:Literal,
                                                                                                                     "http://ontologydesignpatterns.org/wiki/Submissions:ParticipantRole"^^rdfs:Literal ;
-                                                                                            opla:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
+                                                                                            opla-core:specializationOfPattern "https://archive.org/services/purl/domain/modular_ontology_design_library/agentrole"^^rdfs:Literal ;
                                                                                             opla-core:hasShortcutFor "Participant Role" ;
                                                                                             opla-core:hasEntanglement "Participant Role Entanglement" ;
                                                                                             opla-cp:addressesScenario """Specific Role Representation in Particular Events
@@ -40,15 +39,15 @@ ParticipantRole hasTemporalExtent TemporalExtent""" ;
 #################################################################
 
 ###  http://ontologydesignpatterns.org/opla#isNativeTo
-opla:isNativeTo rdf:type owl:AnnotationProperty .
+opla-core:isNativeTo rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#ofExternalType
-opla:ofExternalType rdf:type owl:AnnotationProperty .
+opla-core:ofExternalType rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontologydesignpatterns.org/opla#specializationOfPattern
-opla:specializationOfPattern rdf:type owl:AnnotationProperty .
+opla-core:specializationOfPattern rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -57,36 +56,36 @@ opla:specializationOfPattern rdf:type owl:AnnotationProperty .
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#hasTemporalExtent
 :hasTemporalExtent rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+                   opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#isPerformedBy
 :isPerformedBy rdf:type owl:ObjectProperty ;
                owl:inverseOf :performsAgentRole ;
-               opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+               opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#isProvidedBy
 :isProvidedBy rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               owl:inverseOf :providesAgentRole ;
-              opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+              opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#performsAgentRole
 :performsAgentRole rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+                   opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#providesAgentRole
 :providesAgentRole rdf:type owl:ObjectProperty ;
-                   opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+                   opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#providesParticipantRole
 :providesParticipantRole rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :providesAgentRole ;
-                         opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+                         opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 #################################################################
@@ -110,8 +109,8 @@ owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#Agent
 :Agent rdf:type owl:Class ;
-       opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal ;
-       opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+       opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal ;
+       opla-core:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#AgentRole
@@ -125,24 +124,24 @@ owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                              owl:onClass :TemporalExtent
                            ] ;
-           opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+           opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#Event
 :Event rdf:type owl:Class ;
-       opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+       opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#ParticipantRole
 :ParticipantRole rdf:type owl:Class ;
                  rdfs:subClassOf :AgentRole ;
-                 opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
+                 opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal .
 
 
 ###  https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole#TemporalExtent
 :TemporalExtent rdf:type owl:Class ;
-                opla:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal ;
-                opla:ofExternalType "ofExternalType"^^rdfs:Literal .
+                opla-core:isNativeTo "https://archive.org/services/purl/domain/modular_ontology_design_library/participantrole"^^rdfs:Literal ;
+                opla-core:ofExternalType "ofExternalType"^^rdfs:Literal .
 
 
 #################################################################

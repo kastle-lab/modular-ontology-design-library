@@ -1,16 +1,16 @@
+@prefix : <https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @base <https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole#> .
 
-<https://archive.org/services/purl/domain/modular_ontology_design_library/ContextualizedWinstonPartWhole> rdf:type owl:Ontology ;
+<https://archive.org/services/purl/domain/modular_ontology_design_library/WinstonPartWhole> rdf:type owl:Ontology ;
                                                                                       opla-core:hasPatternName "Winston Part Whole Pattern" ;
                                                                                       opla-core:hasShortcutFor "Part Whole Contextualized" ;
                                                                                       opla-core:hasEntanglement "Part Whole Contextualized Entanglement" ;
-                                                                                      opla:hasRelatedPattern "https://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1104_2"^^rdfs:Literal ;
+                                                                                      opla-core:hasRelatedPattern "https://onlinelibrary.wiley.com/doi/10.1207/s15516709cog1104_2"^^rdfs:Literal ;
                                                                                       opla-cp:addressesScenario """A hypothetical company utilizes a modular ontology design based on the Part-Whole Contextualized pattern to streamline the production of their flagship product by effectively organizing and integrating various components, modules, assembly steps, and quality control criteria?.""" ;
                                                                                       opla-cp:hasCompetencyQuestion "What are the main modules and sub-modules within the ontology design?",
 "How do the hardware components and software modules relate to each other in the ontology?",

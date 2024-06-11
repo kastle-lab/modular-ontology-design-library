@@ -4,7 +4,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix opla: <http://ontologydesignpatterns.org/opla#> .
 @prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
 @prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
 @prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
@@ -13,7 +12,7 @@
 
 <https://archive.org/services/purl/domain/modular_ontology_design_library/reporting-event> rdf:type owl:Ontology ;
                                                                                           opla-core:hasPatternName "Reporting Event Pattern" ;
-                                                                                          opla:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Situation"^^rdfs:Literal,
+                                                                                          opla-core:hasRelatedPattern "http://ontologydesignpatterns.org/wiki/Submissions:Situation"^^rdfs:Literal,
 "http://ontologydesignpatterns.org/wiki/Submissions:Information_realization"^^rdfs:Literal,
 "https://archive.org/services/purl/domain/modular_ontology_design_library/event"^^rdfs:Literal,
 "https://archive.org/services/purl/domain/modular_ontology_design_library/agent"^^rdfs:Literal ;
